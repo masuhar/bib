@@ -492,6 +492,64 @@ at ~sumii/papers/Danvy/Type-Directed_Partial_Evaluation.ps.gz"
   OPTannote = 	 "http://www.cs.washington.edu/research/projects/unisw/DynComp/www/Papers/pldi99-abstract.html"
 }
 
+@TechReport{grant99techrep,
+  author = 	 "B. Grant and M. Mock and M. Philipose and
+		  C. Chambers and S. J. Eggers",
+  title = 	 "{DyC}: An Expressive Annotation-Directed Dynamic
+		  Compiler for {C}",
+  institution =  "University of Washington",
+  year = 	 1999,
+  number =	 "UW-CSE-97-03-03",
+  month =	 may,
+  note =	 "An expanded version of Annotation-Directed Run-Time
+		  Specialization in C. To appear in Theoretical
+		  Computer Science",
+  keywords =	 "Abstract
+		We present the design of DyC, a dynamic-compilation
+		  system for C based on run-time
+		  specialization. Directed by a few declarative user
+		  annotations that specify the variables and code on
+		  which dynamic compilation should take place, a
+		  binding-time analysis computes the set of run-time
+		  constants at each program point in the annotated
+		  procedure's control-flow graph; the analysis
+		  supports program- point-specific polyvariant
+		  division and specialization. The results of the
+		  analysis guide the construction of a run-time
+		  specializer for each dynamically compiled region;
+		  the specializer supports various caching strategies
+		  for managing dynamically generated code and mixes of
+		  speculative and demand-driven specialization of
+		  dynamic branch successors. Most of the key
+		  cost/benefit trade-offs in the binding-time analysis
+		  and the run-time specializer are open to user
+		  control through declarative policy annotations.  
+
+		DyC has been implemented in the context of an
+		  optimizing compiler, and initial results have been
+		  promising. The speedups we have obtained are good,
+		  and the dynamic-compilation overhead is among the
+		  lowest of any dynamic-compilation system, typically
+		  20-200 cycles per instruction generated on a Digital
+		  Alpha 21064. The majority of DyC's functionality has
+		  been used to dynamically compile an instruction-set
+		  simulator. Only three annotations were required, but
+		  a few other changes to the program had to be made
+		  due to DyC's lack of support for static global
+		  variables. This deficiency and DyC's rudimentary
+		  support for partially static data structures are the
+		  primary obstacles to making DyC easy to use.  
+
+		Keywords
+
+		 Dynamic compilation, specialization, partial
+		  evaluation, constant folding, run-time code
+		  generation, program optimization, dataflow analysis,
+		  C language. ", 
+  serialNo =	 "15-10",
+  annote =	 "http://www.cs.washington.edu/research/projects/unisw/DynComp/www/Papers/tr-97-03-03-abstract.html"
+}
+
 @InProceedings{guenter95siggraph,
   author = 	 "Brian Guenter and Todd B. Knoblock and Erik Ruf",
   title = 	 "Specializing Shaders",
@@ -539,10 +597,17 @@ at ~sumii/papers/Danvy/Type-Directed_Partial_Evaluation.ps.gz"
   publisher =	 SV,
 }
 
-Fritz Henglein and Christian Mossin
-
-LNCS 788, ESOP '94
-
+@InProceedings{henglein91fpca,
+  author = 	 "F. Henglein",
+  title = 	 "Efficient Type Inference for Higher-Order
+		  Binding-Time Analysis",
+  booktitle = 	 FPCA91,
+  year = 	 1991,
+  volume =	 523,
+  series =	 LNCS,
+  pages =	 "448--472",
+  annote =	 "ftp://ftp.diku.dk/diku/users/henglein/binding-time-analysis.dvi.gz"
+}
 
 @InProceedings{henglein94esop,
   author = 	 "Fritz Henglein and Christian Mossin",
