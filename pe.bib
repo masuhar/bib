@@ -108,6 +108,14 @@
   annote =	 "presented at PE Day'99"
 }
 
+@InProceedings{asai2001saig,
+  author = 	 {Kenichi Asai},
+  title = 	 {Integrating Partial Evaluators into Interpreters},
+  crossref =	 {saig2001},
+  pages =	 {126--145},
+  annote =	 {Abstract. This paper describes our first step towards the integration of partial evaluation into standard interpretation. The two main issues in this integration are the treatment of heap objects and side-effects. To enable specialization with respect to the heap objects that are allocated beforehand in standard evaluation, specialization is performed with respect to the heap state at specialization time rather than based on a program text input so far. To avoid duplication of heap objects, direct references to heap objects are allowed in the specialized programs, in addition to the use of the conventional let-insertion technique. Despite our modest approach on side-effects that we allow partial evaluation of only side-effect free portions of a program, the resulting system covers some typical cases, such as the use of partial evaluation during an interactive debugging session. It also enables us to specialize a (side-effect free) program with respect to cyclic data structures, which was not easy before. We formalize this integration using store semantics and state its correctness. The system is implemented in Scheme and various examples are tested. Among them, we show specialization of a ray tracing program. }
+}
+
 @inproceedings{augustsson97pepm,
   author = 	 "Lennart Augustsson",
   title = 	 "Partial evaluation in aircraft crew planning",
