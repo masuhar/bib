@@ -1,0 +1,1106 @@
+% -*- Mode: BibTeX -*-
+% reflction.bib
+% papers related to reflection
+% exception:	Japanese papers (see japanese-e.bib or japanese-j.bib)
+%		Masuhara's (see masuhara.bib)
+%		ABCL related (see abcl.bib)
+
+% include: strings.bib
+
+@string{ASAI = "Kenichi Asai and Satoshi Matsuoka and Akinori
+		  Yonezawa"}
+
+@InProceedings{asai93rw,
+  author = 	 ASAI,
+  title = 	 "Duplication and Partial Evaluation to Implement
+		  Reflective Languages",
+  booktitle = OOPSLA93RW,
+  year = 	 1993,
+  address = 	 WashingtonDC,
+  month = 	 sep
+}
+
+subsumed by asai96lsc
+
+@comment{asai94draft,
+  author = 	 ASAI,
+  title = 	 "Duplication and Partial Evaluation: --- For Better
+		  Understanding of Reflective Languages ---",
+  howpublished = "Draft",
+  year = 	 1994,
+  serialNo =     "1-2"
+}
+
+@Article{asai96lsc,
+  author = 	 ASAI,
+  title = 	 "Duplication and Partial Evaluation ---For a Better
+		  Understanding of Reflective Languages---",
+  journal = 	 LSC,
+  volume =       9,
+  pages =        "203--241",
+  publisher =    Kluwer,
+  address =      BostonMA,
+  year = 	 1996,
+  serialNo =     "1-2",
+  note =	 ""
+}
+
+@Misc{asai98draft,
+  author = 	 "Kenichi Asai",
+  title = 	 "Reflection in Direct Style",
+  howpublished = "draft",
+  year = 	 1998,
+  month = 	 aug,
+  OPTnote = 	 "",
+  OPTaffil = 	 "",
+  OPTkeywords =  "",
+  serialNo =  "10-13",
+  annote = 	 "submitted to POPL'99, requsted for comments"
+}
+
+@Misc{brandt95draft,
+  author =	 "S\oren Brandt and Ren\'e W. Schmidt",
+  title =	 "Extending {BETA} with Runtime Reflection",
+  howpublished = "draft paper",
+  year =	 1995,
+  month =	 nov,
+  affil =	 "Department of Computer Science, University of
+		  Aarhus, {sbrandt,rws}@daimi.aau.dk",
+  serialNo =	 "4-19",
+  annote =	 "PS file from Matsuoka-san"
+}
+
+@InProceedings{burkhart90rw,
+  author = 	 "Roger M. Burkhart",
+  title = 	 "Reflective Functions for the {C} Language",
+  booktitle = 	 ECOOPOOPSLA90RW,
+  year = 	 1990,
+  address = 	 Ottawa,
+  month = 	 oct
+}
+
+@Misc{buschmann92imsa,
+  author =	 "Frank Buschmann and Konard Kiefer and Frances
+		  Paulisch and Michael Stal",
+  title =	 "The Meta-information-protocal: Run-time Type
+		  Information for {C++}",
+  crossref =	 "imsa92",
+  affil =	 "Siemens AG, mop@ztivax.zfe.siemens.de"
+}
+
+@string{CHIBA = "Shigeru Chiba and Takashi Masuda"}
+
+@InProceedings{chiba93ecoop,
+  author = 	 CHIBA,
+  title = 	 "Designing an Extensible Distributed Language with a
+		  Meta-Level Architecture",
+  booktitle = ECOOP,
+  note =         "LNCS 707",
+  page =         "482--501",
+  year = 	 1993,
+}
+
+
+@InProceedings{chiba93rw,
+  author = 	 CHIBA,
+  title = 	 "Open {C++} and Its Optimization",
+  booktitle = OOPSLA93RW,
+  year = 	 1993,
+  month = 	 sep,
+  address = 	 WashingtonDC
+}
+
+@Misc{chiba94talk,
+  author =	 "Shigeru Chiba",
+  title =	 "Meta Circularity of Compilers---toward {C++}
+		  Metaobject Protocol",
+  howpublished = "Presentation handout for a RWG-WG on Dec.27, 1994",
+  year =	 1994,
+  month =	 Dec,
+  serialNo =     "2-28"
+}
+
+@InProceedings{chiba95oopsla,
+  author = 	 "Shigeru Chiba",
+  title = 	 "A Metaobject Protocol for {C++}",
+  booktitle = 	 OOPSLA95,
+  year = 	 1995,
+  pages =        "285--299",
+  address =      AustinTX,
+  organization = ACM,
+  keywords =     "Open C++ version 2, open compilers, compile-time MOP",
+  serialNo =	 "3-9"
+}
+
+@Misc{chiba96draft,
+  author =	 "Shigeru Chiba",
+  title =	 "Compile-time MOPs Are Workable",
+  howpublished = "draft paper",
+  year =	 1996,
+  affil =	 "University of Tokyo and Xerox PARC",
+  keywords =	 "Compile-time MOP, Reflection, Open Implementation,
+		  Partial Evaluation, Open C++",
+  serialNo =	 "5-1",
+  annote =	 "Originally prepared for Reflection'96" 
+}
+
+@Misc{chiba96inPhD,
+  author =	 "Shigeru Chiba",
+  title =	 "Limitations of C++",
+  howpublished = "Chapter 2 of \cite{chiba96phd}",
+  year =	 1996,
+  month =	 nov,
+  note =	 "draft",
+  serialNo =	 "5-19"
+}
+
+@PhdThesis{chiba96phd,
+  author = 	 "Shigeru Chiba",
+  title = 	 "A Metaobject Protocol for Enabling Better {C++}
+		  Libraries",
+  jtitle =       "コンパイル時メタオブジェクト・プロトコルに関する研究",
+  school = 	 ISUTokyo,
+  year = 	 1996,
+  month =	 nov
+}
+
+@InProceedings{chambers91rw,
+  author = 	 "Craig Chambers",
+  title = 	 "Towards Efficient Implementation of Computational
+		  Reflection",
+  booktitle = OOPSLA91RW,
+  year = 	 1991,
+  month = 	 oct
+}
+
+@InProceedings{cointe87oopsla,
+  author = 	 "Pierre Cointe",
+  title = 	 "Metaclasses are First Class: the {ObjVlisp} Model",
+  crossref = 	 "oopsla87",
+  pages =	 "156--167",
+  serialNo =	 "8-12"
+}
+
+@InProceedings{ferber89oopsla,
+  author = 	 "Jacques Ferber",
+  title = 	 "Computational Reflection in Class Based
+		  Object-Oriented Languages",
+  booktitle = 	 "OOPSLA89",
+  year = 	 1989,
+  pages =	 "317--326",
+  annote =	 "In Nakashima's IMSA92 paper, he cited this as a
+		  reference of the term `structural reflection.'"
+}
+
+@InProceedings{forman94oopsla,
+  author = 	 "Ira R. Forman and Scott Danforth and Hari Madduri",
+  title = 	 "Composition of Before/After Metaclasses in {SOM}",
+  affil =        "IBM Object Technology Producets",
+  pages = 	 "427--439",
+  booktitle =    OOPSLA94,
+  year = 	 1994,
+  organization = ACM,
+  address = 	 Portland,
+  month = 	 oct,
+  serialNo =     "2-20"
+}
+
+@InProceedings{danforth94oopsla,
+  author = 	 "Scott Danforth and Ira R. Forman",
+  title = 	 "Reflections on Metaclass Programming in {SOM}",
+  affil =        "IBM Object Technology Products",
+  pages = 	 "440--452",
+  booktitle =    OOPSLA94,
+  year = 	 1994,
+  organization = ACM,
+  address = 	 Portland,
+  month = 	 oct,
+  serialNo =     "2-21"
+}
+
+@InCollection{danvy88pemc,
+  author = 	 "Olivier Danvy",
+  title = 	 "Across the Bridge between Reflection and Partial Evaluation",
+  booktitle =	 "Partial Evaluation and Mixed Computation",
+  publisher =	 "Elsevier Science",
+  year = 	 1988,
+  editor = 	 "D. Bj{\o}rner and A. P. Ershov and N. D. Jones",
+  pages = 	 "83--116",
+  address = 	 "North-Holland",
+  affil =        "DIKU -- University of Copenhagen",
+  serialNo =       "1-1"
+}
+
+@InProceedings{danvy88lfp,
+	author = "Olivier Danvy and Karoline Malmkj{\ae}r",
+	title = "Intensions and Extensions in the Reflective Tower",
+	booktitle = LFP,
+	year = 1988,
+	organization = ACM,
+	pages = "327--341",
+  serialNo =       "9-5"
+}
+
+@PhdThesis{diaz96phd,
+  author = 	 "Adriana Lopes Diaz",
+  title = 	 "An Object-Oriented Reflective Simulation Environment 
+		  for Distributed Algorithms",
+  school = 	 "Ottawa-Carleton Institute for Computer Science",
+  year = 	 1996,
+  address =	 "School of Computer Science, Carleton University,
+		  Ottawa, Ontario, Canada",
+  month =	 apr,
+  keywords =	 "ABCL/R2"
+}
+
+@InProceedings{gallesio96isotas,
+  author = 	 "Erick Gallesio",
+  title = 	 "Designing a Meta Object Protocol to Wrap a Standard
+		  Graphical Toolkit",
+  booktitle = 	 "ISOTAS'96",
+  year = 	 1996
+}
+
+@InProceedings{golm97ecoopws,
+  author = 	 "Michael Golm and J{\"u}rgen Klein{\"o}der",
+  title = 	 "Implementing Real-Time Actors with {MetaJava}",
+  booktitle = 	 "Object-Oriented Technology, ECOOP'97 Workshop
+		  Reader, Workshop on Refletive Real-Time
+		  Object-Oriented Programming and Systems",
+  year = 	 1997,
+  editor =	 "J. Bosch and  S. Mitchell",
+  number =	 1357,
+  series =	 LNCS,
+  pages =	 "68--73",
+  publisher =	 SV,
+  month =	 jun,
+  annote =	 "http://www.cs.york.ac.uk/~stuart/ecoop97_papers/golm.ps.gz"
+}
+
+@InProceedings{haraldsson78popl,
+  author = 	 "Anders Haraldsson",
+  title = 	 "A Partial Evaluator, and its Use for Compiling
+		  Iterative Statements in {Lisp}",
+  booktitle = 	 POPL,
+  year = 	 1978,
+  pages =	 "195--202",
+  organization = ACM,
+  address =	 "Tuscon, Arizona",
+  affil =        "Informatics Laboratory, Linkoeping University, Sweden",
+  serialNo =     "3-19",
+  annote =	 "[113] of bibliography in \cite{jones93pe-book}."
+}
+
+@InCollection{hirsch87cp,
+  author = 	 "Michanel Hirsch and William Silverman and Ehud Shapiro",
+  title = 	 "Computation Control and Portection in the {Logix} System",
+  booktitle = 	 "Concurrent Prolog: Collected Papers",
+  publisher = 	 MITPress,
+  year = 	 1987,
+  editor =	 "Ehud Shapiro",
+  volume =	 2,
+  chapter =	 20,
+  pages =	 "28--45",
+  affil =	 "The Weizmann Institute of Science",
+  serialNo =	 "3-12",
+  annote =	 "pointed out by JSPP reviewer,
+		  The Logix system is introduced.  Since this system
+		  uses fixed interpreters for the enhancement of the
+		  semantics, there is no need to apply partial
+		  evaluation practically; rather some source-to-source 
+		  transfromation is enough.  Actually, it is not
+		  explicity mentioned the use of partial evaluation in 
+		  the Logix system."
+}
+
+@InProceedings{honda92imsa,
+  author = 	 "Yasuaki Honda and Mario Tokoro",
+  authororg =    "Sony CSL",
+  title = 	 "Soft Real-Time Programming through Reflection",
+  booktitle = IMSA,
+  year = 	 1992,
+  address = 	 Tama,
+  pages =        "12--23",
+  month = 	 nov
+}
+
+@Misc{hookXXdraft,
+  author =	 "James Hook and Tim Sheard",
+  title =	 "A Semantics of Compile-time Reflection",
+  howpublished = "draft",
+  year =	 "?",
+  month =	 "?",
+  affil =	 "Oregon Graduate Institute
+		  {hook,sheard}@cse.ogi.edu",
+  annote =	 "http://www.cse.ogi.edu/~sheard/papers/crmlsemantics.dvi"
+}
+
+@PhdThesis{ichisugi93phd,
+  author = 	 "Yuuji Ichisugi",
+  title = 	 "A Reflective Object-Oriented Concurrent Language for
+		  Distributed Environments",
+  school = 	 UTokyo,
+  year = 	 1993,
+  month = 	 mar,
+  type = 	 "{Ph. D. Thesis}"
+}
+
+@InProceedings{ichisugi92imsa,
+  author = 	"Yuuji Ichisugi and Satoshi Matsuoka and Akinori
+		 Yonezawa",
+  title = 	"{RbCl}: A Reflective Object-Oriented Concurrent
+		 Language without a Run-Time Kernel",
+  booktitle = 	IMSA,
+  address =     Tama,
+  year = 	1992,
+  OPTeditor = 	"Akinori Yonezawa and Brian C. Smith",
+  pages = 	"24--35",
+  month = 	nov,
+}
+
+@Proceedings{imsa92,
+  title = 	 IMSA92,
+  year = 	 1992,
+  editor =	 "Akinori Yonezawa and Brian C. Smith",
+  address =	 Tama,
+  month =	 nov
+}
+
+@Misc{irwin97misc,
+  OPTauthor = 	 "John Irwin and Jean-Marc Loingtier and John Gilbert
+		  and Gregor Kiczales and John Lamping and Anurag
+		  Mendhekar and Tatiana Shpeisman",
+  OPTtitle = 	 "Aspect-Oriented Programming of Sparse Matrix Code",
+  OPThowpublished = "submitted for publication",
+  OPTyear = 	 "1997",
+  OPTmonth = 	 "",
+  OPTnote = 	 "",
+  OPTaffil = 	 "Xerox PARC",
+  OPTkeywords =  "software engineering, analysis and design,
+		  programming languages, numerical methods, sparse
+		  matrices, SPA, LU factorization, Gaussian
+		  elimination with partial pivoting (GEPP), MathLab,
+		  AML, SuperLU",
+  OPTserialNo =  "6-15",
+  OPTannote = 	 "reviewing for OOPSLA'97"
+}
+
+@Misc{ishikawa94talk,
+  author =	 "Yutaka Ishikawa",
+  title =	 "{MPC++}: Massively Parallel, Message Passing,
+		  Meta-Level Programming {C++}",
+  howpublished = "Presentation handout, for a RWC-WG on Dec. 27,
+		  1994",
+  year =	 1994,
+  month =	 Dec,
+  serialNo =     "2-29"
+}
+
+@TechReport{ishikawa94techrep,
+  author =     "Yutaka Ishikawa",
+  title =      "Meta-Level Architecture for Extendable {C++}",
+  institution =  RWCP,
+  year =       1994,
+  number =     "TR-94024",
+  affil =      "TRC-RWCP",
+  keywords =   "MPC++, Open Compilers, Compile-time MOP, Reflection",
+  annote =     "http://www.rwcp.or.jp/people/ishikawa/papers.html"
+}
+
+@Misc{ishikawa94draft,
+  author =	 "Yutaka Ishikawa and Atsushi Hori and Jorg Nolte and
+		  Hiroki Konaka and Munenori Maeda and Takashi
+		  Tomokiyo and Mitsuhisa Sato",
+  affil =        "RWCP, ishikawa@rwcp.or.jp",
+  title =	 "Language Extension Facility for {C++}",
+  howpublished = "Draft paper",
+  year =	 1994,
+  serialNo =     "2-27"
+}
+
+@Misc{ishikawa95talk,
+  author =	 "Yutaka Ishikawa and Atsushi Hori and Mitsuhisa Sato
+		  and Toshiyuki Takahashi and Hideki Asazu and
+		  Motohiko Masuda and Hiroshi Tezuka and Jorg Nolte
+		  and Hiroki Konaka and Munenori Maeda and Takashi
+		  Tomokiyo",
+  title =	 "{MPC++} Approach to High Performance Computing",
+  howpublished = "Presentation handout for a \cite{ACC-workshop-95}",
+  year =	 1995,
+  month =	 Sep,
+  affil =	 "RWCP",
+  serialNo =	 "4-15"
+}
+
+@InProceedings{ishikawa96reflection,
+  author = 	 "Yutaka Ishikawa and Atsushi Hori and Mitsuhisa Sato
+		  and Motohiko Matsuda and Jorg Nolte and Hiroshi
+		  Tezuka and Hiroki Konaka and Munenori Maeda and
+		  Kazuto Kubota",
+  title = 	 "Design and Implementation of Metalevel Architecture
+		  in {C++}: {MPC++} Approach",
+  booktitle = 	 Reflection96,
+  pages = 	"153--166",
+  year = 	 1996,
+  address =	 SanFrancisco,
+  month =	 apr,
+  affil =	 "Real-World Computing Partnership",
+  keywords =	 "compile-time MOP, compile-time reflection, open
+		  compilers, matrix optimization, paralell C++",
+  annote =	 "http://www.rwcp.or.jp/papers/1996/mpsoft/reflection96.ps.gz"
+}
+
+@InCollection{ishikawa96ppuc-book,
+  author = 	 "Yutaka Ishikawa and Atsushi Hori and Hiroshi Tezuka
+		  and Motohiko Matsuda and Hiroki Konaka and Munenori
+		  Maeda and Takashi Tomokyo and J{\"o}rg Nolte and
+		  Mitsuhisa Sato",
+  title = 	 "{MPC++}",
+  booktitle = 	 "wilson96pcpp-book",
+  chapter =	 11,
+  pages =	 "429--464"
+}
+
+@Misc{iwpcxx96,
+  title =	 "International Workshop on Parallel {C++}",
+  howpublished = "unpublished",
+  year =	 1996,
+  month =	 "mar",
+  address =      "Kanazawa, Ishikawa, Japan",
+  note =	 "IWCP++'96 Agenda",
+  serialNo =	 "5-6"
+}
+
+@Misc{jaganathannHTTP,
+  OPTauthor = 	 "Suresh Jagannathan and Gul Agha",
+  OPTtitle = 	 "A Reflective Model of Inheritance",
+  OPThowpublished = "unknown",
+  OPTyear = 	 "",
+  OPTmonth = 	 "",
+  OPTnote = 	 "http://biobio.cs.uiuc.edu/Papers/inheritance.ps",
+  OPTaffil = 	 "",
+  OPTkeywords =  "",
+  OPTserialNo =  "6-5",
+  OPTannote = 	 ""
+}
+
+@InProceedings{kleinoeder96iwoos,
+  author = 	 "J{\"u}rgen Klein{\"o}der and Michael Golm",
+  title = 	 "{MetaJava}: An Efficient Run-Time Meta Architecture
+		  for {Java}",
+  booktitle = 	 "Proceedings of the International Workshop on
+		  Object-Orientation in Operating Systems (IWOOS'96)",
+  year = 	 1996,
+  organization = "IEEE",
+  address =	 "Seattle, WA",
+  month =	 oct,
+  annote =	 "http://www4.informatik.uni-erlangen.de/TR/ps/TR-I4-96-03.ps.Z"
+}
+
+@Article{laddaga97cacm,
+  author = 	 "Robert Laddaga and James Veitch",
+  title = 	 "Dynamic Object Technology",
+  journal = 	 CACM,
+  year = 	 1997,
+  volume =	 40,
+  number =	 5,
+  pages =	 "36--38",
+  month =	 may,
+  note =	 "introduction to the collection of articles",
+  affil =	 "Defense Advanced Rsearch Projects Agency Information 
+		  Technology Office (DARPA-ITO) rladdaga@darpa.mil /
+		  Franz, Inc., jim@franz.com",
+  annote =	 "Authors mention that the dynamic object technology
+		  uses techniques of reflection and meta-level
+		  techniques which excel the technique itself."
+}
+
+@InProceedings{lamping92imsa,
+  author = 	 "John Lamping and Gregor Kiczales and Luis Rodriguez
+		  and Erik Ruf",
+  authororg =    "Xerox PARC",
+  title = 	 "An Architecture for an Open Compiler",
+  pages = 	 "95--106",
+  booktitle = 	 IMSA,
+  year = 	 1992,
+  address = 	 Tama,
+  month = 	 nov
+}
+
+@InProceedings{lopes96isotas,
+  author = 	 "Cristina Videira Lopes",
+  title = 	 "Adaptive Parameter Passing",
+  booktitle = 	 "Object Technologies for Advance Software (ISOTAS'96)",
+  year = 	 1996,
+  editor =	 "Kokichi Futatsugi and Satoshi Matsuoka",
+  number =	 1049,
+  series =	 LNCS,
+  pages =	 "118--136",
+  organization = JSSST,
+  publisher =	 SV,
+  address =	 Isikawa,
+  month =	 mar,
+  affil =	 "Northeastern University / Xerox PARC",
+  keywords =	 "GOOP, distributed computing, Aspect Oriented"
+}
+
+@Misc{lopes97draft,
+  OPTauthor = 	 "Cristina Videira Lopes and Gregor Kiczales",
+  OPTtitle = 	 "D: A Language Framework for Distributed Programming",
+  OPThowpublished = "submitted for publication",
+  OPTyear = 	 "1997",
+  OPTmonth = 	 "",
+  OPTnote = 	 "",
+  OPTaffil = 	 "Xerox PARC",
+  OPTkeywords =  "Jcore, Cool, Ridl, Aspect-Orineted Programming
+		  (AOP), Aspect Weaver, Java RMI",
+  OPTserialNo =  "6-14",
+  OPTannote = 	 "reviewing for OOPSLA'97"
+}
+
+@InProceedings{lortz94oopsla,
+  author = 	 "Victor B. Lortz and Kang G. Shin",
+  title = 	 "Combining Contracts and Exemplar-Based Programming
+		  for Class Hiding and Customization",
+  affil =        "Real-Time Computing Lab., Dept. of Electrical Eng.
+		  and Computer Sci., Univ. of Michigan,
+		  {vbl,kgshin}@eecs.umich.edu",
+  pages = 	 "453--467",
+  booktitle =    OOPSLA94,
+  year = 	 1994,
+  organization = ACM,
+  address = 	 Portland,
+  month = 	 oct,
+  serialNo =     "2-22"
+}
+
+@InProceedings{kiczales90lfp,
+  author = 	"Gregor Kiczales and Luis Rodriguez",
+  title = 	"Efficient Method Dispatch in {PCL}",
+  booktitle = 	LFP,
+  month =       jun,
+  address =	"Nice, France",
+  year = 	1990,
+  pages = 	"99--105",
+  serialNo =       "9-8"
+}
+
+@Book{kiczales91amop-book,
+  author = 	"Gregor Kiczales and Jim des Rivi\`eres and Daniel G.
+		 Bobrow",
+  title = 	"The Art of the Metaobject Protocol",
+  publisher = 	MITPress,
+  year = 	1991,
+  address = 	CambridgeMA
+}
+
+@InProceedings{kiczales92oopsla,
+  author = 	 "Gregor Kiczales and John Lamping",
+  title = 	 "Issues in the Desgin and Specification of Class
+		  Libraries",
+  booktitle = 	 OOPSLA,
+  year = 	 1992,
+  pages =	 "435--451",
+  organization = ACM,
+  address =	 "Vacouver",
+  month =	 oct,
+  affil =	 "Xerox PARC"
+}
+
+@InProceedings{kiczales92imsa,
+  author = 	 "Gregor Kiczales",
+  title = 	 "Towards a New Model of Abstraction in Software
+		  Engineering",
+  booktitle = 	 IMSA92,
+  year = 	 1992,
+  editor =	 "Akinori Yonezawa and Brian Smith",
+  address =	 Tama,
+  month =	 nov,
+  affil =	 "Xerox PARC",
+  keywords =	 "open implementation, metaobject protocol"
+}
+
+@Misc{kiczales94lfp,
+  author = 	 "Gregor Kiczales and John Lamping and Anurag
+		  Mendhekar",
+  title = 	 "What A Metaobject Protocol Based Compiler Can Do For
+		  {Lisp}",
+  howpublished = "Draft paper",
+  year = 	 1994
+}
+
+@InProceedings{kishon91pldi,
+  author = 	 "Amir Kishon and Paul Hudak and Charles Consel",
+  title = 	 "Monitoring Semantics: A Formal Framework for
+		  Specfying, Implementing, and Reasoning about
+		  Execution Monitors",
+  booktitle = 	 PLDI,
+  year = 	 1991,
+  pages =	 "338--352",
+  address =	 Tronto,
+  month =	 jun,
+  note =	 "(published as ACM SIGPLAN Notices 26(6).)",
+  affil =	 "Yale University, Dept. of Computer Science,
+		  kishon,hudak,consel@cs.yale.edu",
+  serialNo =	 "3-14",
+  annote =	 "pointed out by OOPSLA reviewer,
+		  Only inspection (monitoring) is allowed: original
+		  behavior cannot be changed. Target is pure
+		  functional language and the base and the monitor
+		  languages are strictly seprated.  Application of
+		  partial evaluation is mentioned, but no technical
+		  details are mentioned."
+}
+
+@InProceedings{mcaffer93rw,
+  author = 	 "Jeff McAffer",
+  title = 	 "The {CodA MOP}",
+  booktitle = OOPSLA93RW,
+  year = 	 1993,
+  address = 	 WashingtonDC,
+  month = 	 sep
+}
+
+@InProceedings{mcaffer95ecoop,
+  author = 	 "Jeff McAffer",
+  title = 	 "Meta-level Programming with {CodA}",
+  booktitle = 	 ECOOP,
+  year = 	 1995,
+  series =      LNCS,
+  vol =         952,
+  pages =	 "190--214",
+  serialNo =	 "3-4"
+}
+
+@InProceedings{mcaffer95iwoos,
+  author = 	 "Jeff McAffer",
+  title = 	 "Meta-level Architecture Support for Distributed Objects",
+  booktitle = 	 "IWOOS",
+  year = 	 1995,
+  note =	 "submitted"
+}
+
+@inproceedings{maes87oopsla,
+	author = "Pattie Maes",
+	title = "Concepts and Experiments in Computational Reflection",
+	crossref = "oopsla87",
+	pages = "147--155",
+        serialNo =	 "8-13"
+}
+
+@InCollection{maes88marbook,
+  author = 	"Pattie Maes",
+  title = 	"Issues in Computational Reflection",
+  booktitle = 	"Meta-Level Architecture and Reflection",
+  publisher = 	"Elsevier Science",
+  year = 	1988,
+  editor = 	"P. Maes and D. Nardi",
+  pages = 	"21--35",
+  address = 	"North-Holland",
+  serialNo =	 "9-2"
+}
+
+@string{OKAMURA = "Hideaki Okamura and Yutaka Ishikawa and Mario Tokoro"}
+@InProceedings{okamura92imsa,
+  author = 	OKAMURA,
+  title = 	"{AL-1/D}: Distributed Programming System with
+		 Multi-Model Reflection Framework",
+  booktitle = 	IMSA92,
+  address =     Tama,
+  year = 	1992,
+  OPTeditor = 	"Akinori Yonezawa and Brian C. Smith",
+  pages = 	"36--47",
+  month = 	nov,
+}
+
+@InProceedings{okamura93rw,
+  author = 	 OKAMURA,
+  title = 	 "Modification of Shared Resources in {AL-1/D}",
+  booktitle = OOPSLA93RW,
+  year = 	 1993,
+  month = 	 sep,
+  address = 	 WashingtonDC
+}
+
+@InProceedings{okamura93isotas,
+  author = 	 OKAMURA,
+  title = 	 "Metalevel Decomposition in {AL-1/D}",
+  editor = 	 "Nishio and Yonezawa",
+  pages = 	 "110--127",
+  year =         1993,
+  booktitle = ISOTAS93,
+  publisher = SV,
+  serialNo =     "2-12"
+}
+
+@Article{okamura93compsoft,
+  author = 	 OKAMURA,
+  title = 	 "Object Migration on Reflective Distributed
+		  Programming System {AL-1/D}",
+  journal =	 CompSoft,
+  year =	 1994,
+  volume =	 11,
+  number =	 3,
+  pages =	 "49--64",
+  month =	 may,
+  note =	 inJapanese
+}
+
+@InProceedings{okamura94ecoop,
+  author = 	 "Hideaki Okamura and Yutaka Ishikawa",
+  affil =        "DCS, Keio Univ. and TRC-RWC",
+  title = 	 "Object Location Control Using Meta-level Programming",
+  editor =	 "Mario Tokoro and Remo Pareschi",
+  volume =	 821,
+  series =	 LNCS,
+  pages =	 "299--319",
+  booktitle =	 ECOOP,
+  year =	 1994,
+  publisher =	 SV,
+  month =	 jul,
+  serialNo =     "2-31"
+}
+
+@PhdThesis{okamura95phd,
+  author = 	 "Hideaki Okamura",
+  title = 	 "A Study on Multi-Model Reflection Framework in
+		  Distributed Environments",
+  school = 	 CSKeio,
+  year = 	 1995,
+  address =	 "3-14-1 Hiyoshi, Kohoku-ku, Yokohama, 223, JAPAN",
+  month =	 feb,
+  affil =	 "current: Sony CSL, okamura@csl.sony.co.jp",
+  annote =	 "presented by the author"
+}
+
+@Misc{panwar94pdc,
+  author = 	 "Rajendra Panwar and Gul Agha",
+  title = 	 "A Methodology for Programming Scalable Architectures",
+  year = 	 1994,
+  howpublished = "to appear in Journal of Parallel and Distributed Computing",
+  affil =        "Open Systems Laboratory, Department of Computer
+		  Science, University of Illinois at Urbana-Champaign",
+  serialNo =     "1-6"
+}
+
+@InProceedings{rao91ecoop,
+  author = 	"Ramana Rao",
+  title = 	"Implementational Reflection in {Silica}",
+  booktitle = 	ECOOP,
+  series =      LNCS,
+  vol =         512,
+  year = 	1991,
+  pages = 	"251--266",
+  serialNo =       "9-6",
+  annote =	"computational reflection vs. implementational
+		  reflection, Silica window system"		
+}
+
+@Article{robertson97cacm,
+  author = 	 "Paul Robertson",
+  title = 	 "Integrating Legacy Systems with Modern Corporate
+		  Applications",
+  journal = 	 CACM,
+  year = 	 1997,
+  OPTvolume = 	 40,
+  OPTnumber = 	 5,
+  OPTpages = 	 "39--46",
+  OPTmonth = 	 may,
+  OPTnote = 	 "Dynamic Object Technology, Reflection, Kaiser Permanente",
+  OPTaffil = 	 "Dynamic Object Language Laboratories probertson@doll.com",
+  OPTkeywords =  "in the collection of articles on Dynamic Object
+		  Technology",
+  OPTserialNo =  "",
+  OPTannote = 	 ""
+}
+
+@InProceedings{rodoriguez92imsa,
+  author = 	 "Luis {Rodoriguez Jr.}",
+  authororg =    "MIT",
+  title = 	 "A Study on the Viability of a Production-Quality
+		  Metaobject Protocol-Based Statically Parallelizing
+		  Compiler",
+  pages = 	 "107--112",
+  booktitle =	 IMSA,
+  year = 	 1992,
+  address = 	 Tama,
+  month = 	 nov
+}
+
+@InProceedings{desRivieres84lfp,
+  author = 	"Jim des Rivi\`eres and Brian Cantwell Smith",
+  title = 	"The Implementation of Procedurally Reflective Languages",
+  booktitle = 	"Conference Record of the 1984 ACM Symposium on
+		 Lisp and Functional Programming",
+  year = 	1984,
+  serialNo =       "9-7"
+}
+
+@InProceedings{desRivieres88marbook,
+  author = 	"Jim des Rivi\`eres",
+  title = 	"Control-Related Meta-Level Facilities in {LISP}",
+  booktitle = 	"Meta-Level Architectures and Reflection",
+  year = 	1988,
+  editor = 	"P. Maes and D. Nardi",
+  pages = 	"101--110",
+  serialNo =	 "9-3"
+}
+
+@InProceedings{rodriguez92imsa,
+  author = 	"Rodriguez, Jr., Luis",
+  title = 	"A Study on the Viability of a Production-Quality
+		 Metaobject Protocol-Based Statically Parallelizing
+		 Compiler",
+  booktitle = 	IMSA,
+  year = 	1992,
+  OPTeditor = 	"Akinori Yonezawa and Brian C. Smith",
+  pages = 	"107--112",
+  month = 	nov,
+}
+
+@InProceedings{rose91rw,
+	author = "John R. Rose",
+	title = "A Minimal Metaobject Protocol for Dynamic Dispatch",
+	booktitle = OOPSLA91RW,
+	year = 1991,
+	month = oct,
+  serialNo =       "9-9"
+}
+
+@InProceedings{ruf93rw,
+  author = 	 "Erik Ruf",
+  title = 	 "Partial Evaluation in Reflecitve System Implementation",
+  booktitle = OOPSLA93RW,
+  year = 	 1993,
+  address = 	 WashingtonDC,
+  month = 	 sep
+}
+
+@TechReport{safra86techrep,
+  author = 	 "Shmuel Safra",
+  title = 	 "Partial Evaluation of Concurrent Prolog and its
+		  Implications",
+  institution =  "Weizmann Institute of Science",
+  year = 	 1986,
+  number =	 "CS86--24",
+  serialNo =	 "3-15",
+  annote =	 "Specialization of meta-interpreters of Concurrent
+		  Prolog is shown, However, techniques about partial
+		  evaluation is not fully described(?).  A copy is
+		  obtained via Prof. Ueda."
+}
+
+@InCollection{safra87cp,
+  author = 	 "Shmuel Safra and Ehud Shapiro",
+  title = 	 "Meta Interpreters for Real",
+  booktitle = 	 "Concurrent Prolog: Collected Papers",
+  publisher = 	 MITPress,
+  year = 	 1987,
+  editor =	 "Ehud Shapiro",
+  volume =	 2,
+  chapter =	 25,
+  pages =	 "166--179",
+  affil =	 "The Weizmann Institute of Science",
+  serialNo =	 "3-13",
+  annote =	 "It is pointed out by an OOPSLA reviewer.  It introduces 
+		  a meta-interpreter for the concurrent prolog (GHC), and
+		  shows `enhanced' variations, such as for termination 
+		  detection.  Then interpreters are partially
+		  evaluated w.r.t. a reverse program.  The residual
+		  program looks as if it is manually written, but the
+		  techniques about partial evalution is not described
+		  at all."
+}
+
+@Misc{sheard93draft,
+  author =	 "Tim Sheard",
+  title =	 "Guide to using {CRML} Compile-Time Reflective {ML}",
+  howpublished = "draft paper",
+  year =	 1993,
+  month =	 oct,
+  affil =	 "Oregon Graduate Institute of Science & Technology
+		  sheard@cse.ogi.edu",
+  annote =	 "http://www.cse.ogi.edu/~sheard/papers/crmlmanual.dvi"
+}
+
+@Misc{sheard94draft,
+  author =	 "Tim Sheard and James Hook",
+  title =	 "Meta-Programming tools for {ML}",
+  howpublished = "unpublished?",
+  year =	 1994,
+  month =	 feb,
+  affil =	 "Oregon Graduate Institute",
+  annote =	 "ftp://cse.ogi.edu/pub/pacsoft/papers/MetaML.dvi"
+}
+
+@TechReport{sheard95techrep,
+  author = 	 "Tim Sheard and Neal Nelson",
+  title = 	 "Type Safe Abstraction Using Program Generators",
+  institution =  "Oregon Graduate Institute of Science and Technology",
+  year = 	 1995,
+  number =	 "OGI tech report 95--013",
+  address =	 "P.O. Box 910000, Portland, OR 97291--1000 USA",
+  serialNo =	 "4-8",
+  annote =	 "from Prof. Yonezawa"
+}
+
+@TechReport{sheard97techrep,
+  author = 	 "Tim Sheard and Matthieu Martel",
+  title = 	 "Introduction to Multi-Stage Programming Using {MetaML}",
+  institution =  "Pacific Software Research Center, Oregon Graduate
+		  Institute of Science and Technology",
+  year = 	 1997,
+  number =	 "97/??",
+  address =	 PortlandOR,
+  month =	 sep,
+  annote =	 "http://cse.ogi.edu/~sheard/papers/metaSmlMan.ps"
+}
+
+@TechReport{simmons92techrep,
+  author = 	 "John W. {Simmons II} and Stanley Jefferson and
+		  Daniel P. Friedman",
+  title = 	 "Language Extension Via First-class Interpreters",
+  institution =  "Computing Science Department, Indiana University",
+  year = 	 1992,
+  number = 	 "Technical Report No.~362",
+  address = 	 "Bloomington, Indiana",
+  month = 	 "sep",
+  serialNo =     "1-4"
+}
+
+@InProceedings{smith84popl,
+  author = 	"Brian Cantwell Smith",
+  title = 	"Reflection and Semantics in {Lisp}",
+  booktitle = 	PoPL,
+  year = 	1984,
+  pages = 	"23--35",
+  serialNo =       "9-10"
+}
+
+@InProceedings{smith90rw,
+  author = 	 "Brian Cantwell Smith",
+  title = 	 "What do you mean, Meta?",
+  booktitle =	 ECOOPOOPSLA90RW,
+  year = 	 1990,
+  address =	 Ottawa,
+  month =	 oct
+}
+
+@Manual{javasoft97reflection,
+  title = 	 "Java Core Reflection: {API} and Specification",
+  organization = "{JavaSoft}",
+  address =	 "Mountain View, CA",
+  year =	 1997,
+  month =	 jan,
+  serialNo =	 "8-18",
+  annote =	 "http://www.javasoft.com/products/jdk/1.1/docs/guide/reflection/index.html"
+}
+
+@Misc{takahasi95iclp,
+  author =	 "Toshiyuki Takahashi and Masayuki Takeda",
+  title =	 "An Efficient Reflective Architecture For Parallel
+		  Logic Programming Languages",
+  howpublished = "to appear in ICLP workshop",
+  year =	 1995,
+  serialNo =	 "3-11"
+}
+
+@InProceedings{takahasi96swopp,
+  author = 	 "Toshiyuki Takahashi and Yutaka Ishikawa and
+		  Mitsuhisa Sato and Akinori Yonezawa",
+  jauthor = 	 "高橋 俊行 and 石川 裕  and
+		  佐藤 三久 and 米澤 明憲",
+  title = 	 "Parallel Programming using Meta-level Architecture",
+  jtitle = 	 "メタレベル機能による並列プログラミング",
+  booktitle = 	 SWoPP96,
+  year = 	 1996,
+  OPTeditor = 	 "",
+  OPTvolume = 	 "",
+  OPTnumber = 	 "",
+  OPTseries = 	 "",
+  OPTpages = 	 "6",
+  OPTorganization = "",
+  OPTpublisher = "",
+  OPTaddress = 	 "Akita",
+  OPTmonth = 	 "",
+  OPTnote = 	 "in Japanese",
+  OPTaffil = 	 "",
+  OPTkeywords =  "",
+  OPTserialNo =  "5-7",
+  OPTannote = 	 "MPC++, forall, latency-hiding, static analysis,
+		  compiler extension, inspector/executor"
+}
+
+@InProceedings{tomokiyo93rw,
+  author = 	 "Takashi Tomokiyo and Hiroki Konaka and Munenori
+		  Maeda and Atsushi Hori and Yutaka Ishikawa",
+  title = 	 "Meta-level Architecture in {OCore}",
+  booktitle = OOPSLA93RW,
+  year = 	 1993,
+  address = 	 WashingtonDC,
+  month = 	 sep
+}
+
+@Misc{ubayasi96draft,
+  author =	 "Naoyasu Ubayashi and Tetsuo Tamai",
+  jauthor =      "鵜林 尚靖 and 玉井 哲雄",
+  title =	 "Reflective Concurrent Computing Model for
+		  Expressiong Collaboration among Objects",
+  jtitle =       "オブジェクト間の協調動作を表現する
+		  自己反映並行計算モデル",
+  howpublished = "???",
+  note =         "in Japanese",
+  year =	 1996,
+  month =	 oct,
+  keywords =	 "Context Wide Architecture, Eden, OOA/OOD, use-case and
+		  sceinario, role",
+  serialNo =	 "5-18"
+}
+
+@InCollection{wand88marbook,
+  author = 	"Mitchell Wand and Daniel P. Friedman",
+  title = 	"The Mystery of the Tower Revealed: A Non-Reflective
+		 Description of the Reflective Tower",
+  booktitle = 	"Meta-Level Architecture and Reflection",
+  publisher = 	"Elsevier Science",
+  year = 	1988,
+  editor = 	"P. Maes and D. Nardi",
+  pages = 	"111--134",
+  address = 	"North-Holland",
+  serialNo =	 "9-1"
+}
+
+@Misc{xerox96position,
+  author =	 "Xerox PARC Aspect-Oriented Programming Project",
+  title =	 "Aspect-Oriented Programming",
+  howpublished = "position paper",
+  year =	 1996,
+  serialNo =	 "5-17",
+  annote =	 "Gregor Kiczales (project leader), John Irwin, John
+		  Lamping, Jean-Marc Loingtier, Cristina Videria
+		  Lopes, Chris Maeda, Anurag Mendhekar. Can be found
+		  under <http://www.parc.xerox.com/spl/projects/aop/>.
+		  Saved as <work/others-papers/aop-position.{pdf,ps.Z}>."
+}
+
+@inproceedings{yokote89ecoop,
+	author = "Yasuhiko Yokote and Fumio Teraoka and Mario Tokoro",
+	title = "A Reflective Architecture for an Object-Oriented
+		  Distributed Operating System",
+	booktitle = ECOOP,
+	year = 1989,
+	publisher = CambridgeUPress,
+	pages = "89--106",
+	editor = "Stephen Cook"
+}
+
+@InProceedings{yokote92oopsla,
+  author = 	 "Yasuhiko Yokote",
+  title = 	 "The {A}pertos Reflective Operating System: The Concept
+		  and Its Implementation",
+  pages = 	 "414--434",
+  booktitle = OOPSLA92,
+  year = 	 1992,
+  address = 	 Vancouver,
+  month = 	 oct
+}

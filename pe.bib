@@ -1,0 +1,673 @@
+% -*- Mode: BibTeX -*-
+% pe.bib
+% papers on partial evaluation
+% exception: masuhara, abcl, reflection
+
+@InProceedings{andersen92cc,
+  author =       "Lars Ole Andersen",
+  title =        "Partial Evaluation of {C} and Automatic Compiler
+                 Generation (extended abstract)",
+  booktitle =    "Proc.\ of Compiler Constructions---4th International
+                 Conference, CC'92 (LNCS 641)",
+  year =         1992,
+  editor =       "U. Kastens and P. Pfahler",
+  pages =        "251--257",
+  publisher =    "Springer-Verlag",
+  month =        oct,
+  keywords =     "Partial evaluation of C, self-application, compiler
+                 generation",
+  annote =      "The paper contains an algorithmic description of a
+                 self-applicable partial evaluator for a subset of C.
+		  Original is available at 
+		ftp://ftp.diku.dk/diku/semantics/papers/D-139.ps.Z,
+		saved as /home/users/papers/pe/D-139.ps.Z
+		In this paper, the outline of the parital evaluation
+		  for C programs is shown, but not detailed
+		  discussions.  Several results of specialization such 
+		  as general scanner, polish interpreter, and the
+		  specializer itself are shown.",
+  affil =       "DIKU, Department of University of Copenhagen",
+  serialNo =    "3-18"
+}
+
+
+
+@Article{andersen93in-pe-book,
+  author = 	 "Lars Ole Andersen",
+  title = 	 "Partial Evaluation for the {C} Language",
+  journal = 	 "Chapter 11 of \cite{jones93pe-book}",
+  year = 	 1993,
+  pages =	 "229-260"
+}
+
+@PhdThesis{andersen94phd,
+  author = 	 "Lars Ole Andersen",
+  title = 	 "Program Analysis and Specialization for the {C}
+                 Programming Language",
+  school = 	 "DIKU, University of Copenhagen",
+  year = 	 1994,
+  month =	 may,
+  note =	 "(DIKU report 94/19)",
+  annote =	 "Found in
+		  ftp://ftp.diku.dk/diku/semantics/papers/D-203.dvi.Z"
+}
+
+@MastersThesis{andersen96master,
+  author = 	 "Peter Holst Andersen",
+  title = 	 "Static Memory Management in {C-Mix}",
+  school = 	 "DIKU?",
+  year = 	 1996,
+  month =	 dec,
+  serialNo =	 "10-8",
+  annote =	 "Supervised by Neil D. Jones"
+}
+
+@Misc{asai95draft,
+  author =	 "Kenichi Asai and Hidehiko Masuhara and Akinori Yonezawa",
+  title =	 "Toward Partial Evaluation of Functional Programs
+		  with Side-effects: --- Online Approach ---",
+  howpublished = "draft paper",
+  year =	 1995,
+  month =	 dec,
+  keywords =	 "assignment, preaction, scope, destroy list",
+  serialNo =	 "4-21",
+  annote =	 "submitted to PE workshop on Feb. 1995"
+}
+
+@inproceedings{augustsson97pepm,
+  author = 	 "Lennart Augustsson",
+  title = 	 "Partial evaluation in aircraft crew planning",
+  booktitle = 	 PEPM,
+  year = 	 1997,
+  pages =	 "127--136",
+  organization = ACM,
+  address =	 Amsterdam,
+  month =	 jun,
+  affil =	 "Carlstedt Research & Technology,
+		  augustss@carlstedt.se,
+		  http://www.carlstedt.se/~augustss",
+  keywords =	 "partial evaluation, program transformation,
+		  generalized constant propagahiotn, airline crew
+		  scheduling",
+  serialNo =	 "7-12"
+}
+
+@InProceedings{baier94pepm,
+  author = 	 "Romana Baier and Robert Gl{\"u}k and Robert Z{\"o}chling",
+  title = 	 "Partial Evaluation of Numerical Programs in {F}ortran",
+  booktitle = 	 PEPM,
+  year = 	 1994,
+  organization = SIGPLAN,
+  address =	 OrlandoFL,
+  month =	 jun,
+  note =	 "Published as Technical Report 94/9, Department of
+		  Computer Science, University of Melbourne",
+  OPTaffil = 	 "University of Technology Vienna, Institut f{\"u}r
+		  Computersprachen / e1802gab@vm.univie.ac.at",
+  serialNo =	 "3-1"
+}
+
+@InProceedings{berlin94pepm,
+  author = 	 "Andrew A. Berlin and Rajeev J. Surati",
+  title = 	 "Partial Evaluation for Scientific Computing: The
+		  Supercomputer Toolkit Experience",
+  affil =        "Xerox PARC, berlin@parc.xerox.com / 
+		  MIT AI Lab., raj@zurich.ai.mit.edu",
+  pages = 	 "133--141",
+  booktitle = PEPM,
+  year = 	 1994,
+  organization = SIGPLAN,
+  address = 	 OrlandoFL,
+  month = 	 jun,
+  note = 	 "Published as Technical Report 94/9, Department of
+		  Computer Science, University of Melbourne",
+  serialNo =     "1-8"
+}
+
+@Misc{bondorf93similix,
+  author =	 "Anders Bondorf",
+  title =	 "Similix 5.0 Manual",
+  year =	 1993,
+  month =	 may,
+  affil =	 "DIKU anders@diku.dk",
+  serialNo =	 "8-1"
+}
+
+@Misc{consel95techrep,
+  OPTauthor = 	 "Charles Consel and Francois No{\"e}l",
+  title =	 "A General Approach for Run-Time Specialization and
+		  its Application to {C}",
+  howpublished = "INRIA/IRISA Technical Reportdraft 946",
+  year =	 1995,
+  month =	 july,
+  affil =	 "Univ. of Rennes/Irisa, conel,fonel@irisa.fr",
+  serialNo =	 "4-16",
+  annote =	 "given via Calton Pu"
+}
+
+@InProceedings{danvy96popl,
+  author = 	 "Olivier Danvy",
+  title = 	 "Type-directed partial evaluation",
+  booktitle = 	 POPL,
+  year = 	 1996,
+  OPTeditor = 	 "",
+  OPTvolume = 	 "",
+  OPTnumber = 	 "",
+  OPTseries = 	 "",
+  OPTpages = 	 "",
+  OPTorganization = "",
+  OPTpublisher = "",
+  OPTaddress = 	 "",
+  OPTmonth = 	 "",
+  OPTnote = 	 "",
+  OPTaffil = 	 "",
+  OPTkeywords =  "",
+  OPTserialNo =  "",
+  annote = 	 "referenced in \cite{sumii98resume}"
+}
+
+@InProceedings{emanuelson80lc,
+  author = 	 "P. Emanuelson and A. Haraldsson",
+  title = 	 "On Compiling Embedded Languages in {Lisp}",
+  booktitle = 	 "Lisp Conference",
+  year = 	 1980,
+  pages =	 "208--215",
+  organization = ACM,
+  address =	 "Stanford, California",
+  annote =	 "[75] of bibliography in \cite{jones93pe-book}."
+}
+
+@Misc{fujinami97draft,
+  author =	 "Nobuhisa Fujinami",
+  title =	 "Automatic Run-Time Code Generation in {C++}",
+  howpublished = "draft paper",
+  year =	 1997,
+  affil =	 "Sony CSL",
+  serialNo =	 "7-20",
+  annote =	 "obtained via Sugita-kun"
+}
+
+@Misc{fujinami95draft,
+  author =	 "Nobuhisa Fujinami",
+  title =	 "Automatic and Efficient Run-Time Code Generation
+		  Using Object-Oriented Languages",
+  howpublished = "draft paper",
+  year =	 1995,
+  affil =	 "Sony CSL",
+  keywords =	 "partial evaluation, object-oriented programming
+		  languages",
+  serialNo =	 "4-7",
+  annote =	 "via Matuoka-san"
+}
+
+@Article{futamura71scc,
+  author = 	 "Yoshihiko Futamura",
+  title = 	 "Partial evaluation of computation process---an
+		  approach to a compiler-compiler",
+  journal =	 "Systems, Computers, Controls",
+  year =	 1971,
+  volume =	 2,
+  number =	 5,
+  pages =	 "45--50"
+}
+
+
+@InProceedings{gengler97pepm,
+  crossref =     "pepm97",
+  author = 	 "Marc Gengler and Matthieu Martel",
+  title = 	 "Self-applicable partial evaluation for the
+		  pi-calculus",
+  affil =	 "Ecole Normale Superieure de Lyon, Laboratoire de
+		  l'Informatique du Parallelisme, 46, Allee d'Italie,
+		  69364 Lyon Cedex 07, France.
+		  {Marc.Gengler,Matthieu.Martel}@lip.ens-lyon.fr",
+  keywords =	 "partial evaluation, parallelism, pi-calculus,
+		  meta-interpretation, binding-time analysis",
+  serialNo =	 "7-2",
+  annote =	 "found in ~asai/ps/matthiew-pepm.ps"
+}
+
+@InProceedings{grant97pepm,
+  crossref =     "pepm97",
+  author = 	 "Brian Grant and Markus Mock and Matthai Philipose
+		  and Craig Chambers and Susan J. Eggers",
+  title = 	 "Annotation-Directed Run-Time Specialization in {C}", 
+  pages =	 "163--178",
+  affil =	 "Dept. CS, University of Washington",
+  serialNo =	 "7-13"
+}
+
+@InProceedings{guenter95siggraph,
+  author = 	 "Brian Guenter and Todd B. Knoblock and Erik Ruf",
+  title = 	 "Specializing Shaders",
+  booktitle = 	 "SIGGRAPH'95 (Computer Graphics Proceedings, Annual
+		  Conference Series)",
+  year = 	 1995,
+  pages =	 "343--349",
+  affil =	 "Microsoft Research",
+  serialNo =	 "6-7",
+  annote =       "saved as ~/work/others-papers/guenter-siggraph95.tar.gz"
+}
+
+@InProceedings{hornof97sas,
+  author = 	 "Luke Hornof and Charles Consel and Jacques Noy{\'e}",
+  title = 	 "Effective Specialization of Realistic Programs via
+		  Use Sensitivity",
+  booktitle = 	 "Static Analysis Symposium (SAS'97)",
+  year = 	 1997,
+  OPTeditor = 	 "",
+  OPTvolume = 	 "",
+  OPTnumber = 	 "",
+  OPTseries = 	 "",
+  OPTpages = 	 "293--314",
+  OPTorganization = "",
+  OPTpublisher = "",
+  OPTaddress = 	 Paris,
+  OPTmonth = 	 sep,
+  OPTnote = 	 "",
+  OPTaffil = 	 "Irisa hornof,consel@irisa.fr / Ecole des Mines de
+		  Nantes noye@emn.fr",
+  OPTkeywords =  "",
+  OPTserialNo =  "7-19",
+  OPTannote = 	 "partial evaluator for C, Tempo"
+}
+
+@Misc{hosoya96wooc,
+  author =	 "Haruo Hosoya and Naoki Kobayashi and Akinori Yonezawa",
+  title =	 "Partial Evaluation for Concurrent Languages and its
+		  Formalization",
+  howpublished = "extended abstract for WOOC'96",
+  year =	 1996,
+  keywords =	 "HACL, correctness, concurrent object-oriented,
+		  barbed simulation",
+  serialNo =	 "4-23"
+}
+
+@Book{jones93pe-book,
+  author = 	 "Neil D. Jones and Carsten K. Gomard and Peter Sestoft",
+  title = 	 "Partial Evaluation and Automatic Program Generation",
+  publisher = 	 PrenticeHall,
+  pages =	 415,
+  year = 	 1993,
+  annote =	 "ISBN 0130202495, IS library 30:J:11"
+}
+
+@InBook{jones93pe-book-speedup,
+  crossref =     "jones93pe-book",
+  chapter = 	 "6: Efficiency, Speedup, and Optimality",
+  pages =	 "127--143"
+}
+
+@Article{jones96cs,
+  author = 	 "Neil D. Jones",
+  title = 	 "An Introduction to Partial Evaluation",
+  journal = 	 CS,
+  year = 	 1996,
+  volume =	 28,
+  number =	 3,
+  pages =	 "480--503",
+  month =	 sep,
+  keywords =	 "compilers, compiler generators, interpreters,
+		  partial evaluation, program specialization",
+  serialNo =	 "8-2",
+  annote =	 "downloaded through ACM digital library"
+}
+
+@Article{kleinrubatscher95sigplan,
+  author = 	 "Paul Kleinrubatscher and Albert Kreigshaber and
+		  Robert Z{\"{o}}chling and Robert Gl{\"{u}}ck",
+  title = 	 "{F}ortran Program Specialization",
+  journal = 	 SIGPLANnote,
+  year = 	 1995,
+  volume =	 30,
+  number =	 4,
+  pages =	 "61--70",
+  month =	 apr,
+  affil =	 "University of Technology Vienna, Institut fuer
+		  Computersprachen, Austria / e1802@vm.univie.ac.at",
+  annote =	 "Partial evaluation for Fortan, with richer(?)
+		  related work description"
+}
+
+@InProceedings{knoblock96pldi,
+  author = 	 "Todd B. Knoblock and Erik Ruf",
+  title = 	 "Data Specialization",
+  booktitle = 	 PLDI96,
+  year = 	 1996,
+  pages =	 "215--225",
+  organization = ACM,
+  address =	 "Philadelphia, PA",
+  month =	 may,
+  affil =	 "Microsoft Research, One Microsoft Way, Redmond, WA,
+		  98052 USA.  {toddk, erikruf}@microsoft.com",
+  serialNo =	 "6-6"
+}
+
+@InProceedings{launchbury91fpca,
+  author = 	 "John Launchbury",
+  title = 	 "A Strongly-Typed Self-Applicable Partial Evaluator",
+  booktitle = 	 FPCA91,
+  year = 	 1991,
+  editor =	 "J. Hughes",
+  pages =	 "145--164",
+  organization = ACM,
+  publisher =	 SV,
+  month =	 aug,
+  affil =	 "Computing Science Deparment, Glasgow University,
+		  jl@dcs.glasgow.ac.uk",
+  serialNo =	 "4-3",
+  annote =       "problems in self-application of partial evaluators
+		  for strongly-typed languages are described, and
+		  solutions (not complete, though) are shown.  One of
+		  the major problems is double encoding, which may be
+		  solved by using values dicetly(?), and the other one 
+		  is that case statements will be expanded sequential
+		  test and branch operations, which may be solved
+		  sophisticated post-processor, but have not made
+		  yet."
+}
+
+@InProceedings{leone94pepm,
+  author = 	 "Mark Leone and Peter Lee",
+  title = 	 "Lightweight Run-Time Code Generation",
+  booktitle = 	 PEPM,
+  year = 	 1994,
+  pages =	 "97--106",
+  organization = SIGPLAN,
+  address =	 OrlandoFL,
+  month =	 jun,
+  note =	 "published as Technical Report 94/9, Department of
+		  Computer Science, The University of Melbourne",
+  affil =	 "CMU. {mleone,petel}@cs.cmu.edu",
+  keywords =	 ".",
+  serialNo =	 "5-13",
+  annote =	 "Asai-san has Proc of PEPM'94."
+}
+
+@InProceedings{lisper91pepm,
+  author = 	 "Bj{\"{o}}rn Lisper",
+  title = 	 "Detecting Static Algorithms by Partial Evaluation",
+  booktitle = 	 PEPM,
+  year = 	 1991,
+  pages =	 "31--42",
+  affil =	 "Dept. of Telecommunication and Computer Systems, the 
+		  Royal Institute of Technology, Sweden",
+  annote =	 "in the PE box"
+}
+
+@InProceedings{malmkjaer94mla,
+  author = 	 "Karoline Malmkj\ae{}r and Nevin Heintze and Olivier
+		  Danvy",
+  title = 	 "{ML} Partial Evaluation using Set-Based Analysis",
+  booktitle = 	 MLWorkshop94,
+  year = 	 1994,
+  editor =	 "John Reppy",
+  pages =	 "112--119",
+  organization = ACM,
+  address =	 OrlandFL,
+  month =	 Jun,
+  note =	 "Also appears as Technical report CMU-CS-94-129.",
+  affil =	 "Malmkjaer, Aarhus University, karoline@daimi.aau.dk, 
+		  Nevin Heintze, CMU, nch@cs.cmu.edu, Olivier Danvy,
+		  Aarhus University, danvy@daimi.aau.dk",
+  serialNo =	 "4-6",
+  annote =	 "given by Danvy, via Matsuoka-san.
+		  The partial evaluation is taken place in the
+		  intermediate language of SML compiler, LAMBDA.  They
+		  uses set-based analysis to know how static input
+		  arguments of each function; partially static values
+		  and `the trick' could be well handled in this
+		  framework, although it is not described well in the
+		  paper.  Their analysis seems not to be BTA in terms
+		  of that they are using values of static parameters
+		  for the analysis."
+}
+
+@InProceedings{marinescu97pepm,
+  crossref =     "pepm97",
+  author = 	 "Mihnea Marinescu and  Benjamin Goldberg",
+  title = 	 "Partial Evaluation Techniques for Concurrent
+		  Programs",
+  pages =	 "47--62",
+  affil =	 "Dept. CS, New York University
+		  {marinesc,goldberg}@cs.nyu.edu",
+  keywords =	 "partial evaluation, binding-time analysis,
+		  concurrency, CSP, nondeterminism",
+  serialNo =	 "7-15"
+}
+
+@InProceedings{meyer91pepm,
+  author = 	 "Uwe Meyer",
+  title = 	 "Techniques for Partial Evaluation of Imperative
+		  Languages",
+  booktitle = 	 PEPM,
+  year = 	 1991,
+  pages =	 "94--105",
+  month =	 jun,
+  affil =	 "AG Informatik/FB Mathematik
+		  Justus-Liebig-Universitaet Gissen",
+  keywords =	 "partial evaluation, imperative languages, dynamic
+		  annotations, specialization, side-effects",
+  serialNo =	 "3-17",
+  annote =	 "For imperative languages (specifically for Pascal)
+		  is shown.  It allows side-effects such as read/write
+		  and assignments.  Treatment of structured data,
+		  arrays, pointers is unknown."
+}
+
+@InProceedings{muller97pepm,
+  crossref =     "pepm97",
+  author = 	 "Gilles Muller and Eugen-Nicolae Volanschi and Renaud 
+		  Marlet",
+  title = 	 "Scaling up Partial Evaluation for Optimizing the
+		  {Sun} Commercial {RPC} Protocol",
+  pages =	 "116--126",
+  affil =	 "IRISA/INRIA {muller,volanski,marlet}@irisa.fr",
+  serialNo =	 "7-11"
+}
+
+@InProceedings{nirkhe92popl,
+  author = 	 "Vivek Nikhe and William Pugh",
+  title = 	 "Partial Evaluation of High-Level Imperative
+		  Programming Languages, with application in Hard
+		  Real-Time Systems",
+  booktitle = 	 POPL,
+  year = 	 1992,
+  pages =	 "269--280",
+  affil =        "Dept. of Computer Science, Univ. of Maryland,
+		  vivek@cs.um.edu / pugh@cs.umd.edu",
+  annote =	 "in the PE box"
+}
+
+@TechReport{orbaek94techrep,
+  author = 	 "Peter \O{}rb\ae{}k",
+  title = 	 "POPE: An On-line Partial Evaluator",
+  institution =  "DAIMI?",
+  year = 	 1994,
+  month =	 jun,
+  note =	 "to appear",
+  affil =	 "BRICS, Center of the DNRF, Aarhus University,
+		  Denmark, poe@daimi.aau.dk",
+  keywords =	 "Scheme, Side-effect",
+  serialNo =	 "4-24",
+  annote =	 "Author = Peter Orbaek, paper found in ftp://ftp.daimi.aau.dk/pub/empl/poe/index.html"
+}
+
+@Proceedings{pepm97,
+  title = 	 "Proceedings of Partial Evaluation and
+		  Semantics-Based Program Manipulation (PEPM'97)",
+  booktitle = 	 "Proceedings of Partial Evaluation and
+		  Semantics-Based Program Manipulation (PEPM'97)",
+  series =       SIGPLAN,
+  volume =       32,
+  number =       12,
+  year = 	 1997,
+  organization = ACM,
+  address =	 Amsterdam,
+  month =	 jun
+}
+
+@InProceedings{romanenko90esop,
+  author = 	 "Sergei A. Romanenko",
+  affil =        "Keldysh Institute of Applied Mathematics, Academy of
+		  Sciences of the USSR",
+  title = 	 "Arity Raiser and its Use in Program Specialization",
+  editor = 	 "Neil Jones",
+  pages = 	 "341--360",
+  booktitle = ESOP90,
+  year = 	 1990,
+  publisher = SV,
+  address = 	 Copenhagen,
+  month = 	 may,
+  keywords =     "arity raiser, compiler generator, partial
+		  evaluation, retyping, specializer, variable
+		  splitting",
+  serialNo =     "1-9"
+}
+
+@PhdThesis{ruf93phd,
+  author = 	 "Erik Ruf" ,
+  title = 	 "Topics in Online Partial Evaluation",
+  school = 	 StanfordU,
+  year = 	 1993,
+  month = 	 mar,
+  note = 	 "(Technical Reprt CSL-TR-93-563)",
+  keywords = "Partial Evaluation, Program Specialization, Online
+		  Specialization, Abstract Interpretation, Control
+		  Flow Analysis, Polyvariant Specialization, Re-use
+		  Analysis, Program Generation"
+}
+
+@InProceedings{sperber96pldi,
+  author = 	 "Michael Sperber and Peter Thiemann",
+  title = 	 "Realistic Compilation By Partial Evaluation",
+  booktitle = 	 PLDI96,
+  year = 	 1996,
+  pages =	 "206--214",
+  organization = SIGPLAN,
+  address =	 PhiladelphiaPA,
+  month =	 may,
+  affil =	 "Wilhelm-Schickard-Institut fuer Informatik,
+		  Universitaet Tuebingen, Germany.
+		  {sperber,thiemann}@informatik.uni-tuebingen.de",
+  annote =       "This work shows a way to compile Scheme programs by
+		  using a parital evaluator for Scheme and an
+		  interpreter of Scheme written in CPS &
+		  closure-converting interpreter style.  Further, it
+		  can be easily obtained C programs from a resulted
+		  closure-converted program, and the compilation
+		  result is as efficient as existing Scheme to C compilers.",  
+  serialNo =	 "5-8"
+}
+
+@InProceedings{sperber97pldi,
+  author = 	 "Michael Sperber and Peter Thiemann",
+  title = 	 "Two for the Price of One: Composing Partial
+		  Evaluation and Compilation",
+  crossref = 	 "pldi97",
+  pages =	 "215--225",
+  affil =	 "Wilhelm-Schickard-Institute fuer Informatik,
+		  Universitaet Tuebingen
+		  {sperber,thiemann}@informatik.uni-tuebingen.de",
+  serialNo =	 "8-4",
+  annote =	 "mentioned by Taura on the Sugita-kun's talk"
+}
+
+@InProceedings{sundaresh91pepm,
+  author = 	 "R. S. Sundaresh",
+  title = 	 "Building incremental Programs using Partial Evaluation",
+  booktitle = 	 PEPM,
+  year = 	 1991,
+  pages =	 "83--93"
+}
+
+@Article{sugita97pro,
+  author = 	 "Yuuya Sugita",
+  jauthor=       "杉田 祐也",
+  title = 	 "An Approach for Adavptive Runtime Code
+		  Optimization",
+  jtitle =	 "アダプティブな実行時コード最適化",
+  journal = 	 IPSJ-SIG,
+  year = 	 1997,
+  OPTvolume = 	 "",
+  OPTnumber = 	 "",
+  OPTpages = 	 "",
+  OPTmonth = 	 5,
+  OPTnote = 	 "in Japanese",
+  OPTaffil = 	 "Department of Science and Technology, Keio University",
+  OPTkeywords =  "",
+  OPTserialNo =  "7-1",
+  OPTannote = 	 "draft version: work/others-papers/sugita-pro97.ps.gz"
+}
+
+@InProceedings{surati94pact,
+  author = 	 "R. Surati and A. Berlin",
+  title = 	 "Exploiting the Parallelism Exposed by Partial Evaluation",
+  booktitle = 	 PACT94,
+  year = 	 1994,
+  editor =	 "Michel Cosnard and Guang R. Gao and Gabriel M. Silberman",
+  pages =	 "181--192",
+  publisher =	 NorthHolland,
+  address =	 Montreal,
+  month =	 aug,
+  affil =	 "MIT AI Lab. / Xerox PARC",
+  keywords =	 "Parallel Compilation, Partial Evaluation, Parallel
+		  Instruction Scheduling, Fine-grain Parallelism"
+}
+
+@MastersThesis{surati95masterthesis,
+  author = 	 "Rajeev Surati",
+  title = 	 "Practical Partial Evaluation",
+  school = 	 "Department of Electrical Engineering and Computer
+		  Science, MIT",
+  year = 	 1995,
+  month =	 may
+}
+
+@InProceedings{taha97pepm,
+  crossref =     "pepm97",
+  author = 	 "Walid Taha and Tim Sheard",
+  title = 	 "Multi-Stage Programming with Explicit Annotations",
+  pages =	 "203--217",
+  affil =	 "Oregon Graduate Institute of Science & Technology,
+		  {walidt, sheard}@cse.ogi.edu",
+  serialNo =	 "7-14",
+  annote =	 "http://cse.ogi.edu/~sheard/papers/PepmMulStg97.ps"
+}
+
+@Misc{thiemann97draft,
+  OPTauthor = 	 "Peter Thiemann and Dirk Dussart", 
+  OPTtitle = 	 "Partial Evaluation for Higher-Order Languages with
+		  State",
+  OPThowpublished = "submitted for publication",
+  OPTyear = 	 1997,
+  OPTmonth = 	 "",
+  OPTnote = 	 "",
+  OPTaffil = 	 "Wilhelm-Schickard-Institut fuer Informatik,
+		  Universitaet Tuebingen,
+		  thiemann@informatik.uni-tuebingen.de / Department of 
+		  Computer Science, K.U.Leuven,
+		  Dirk.Dussart@cs.kuleuven.ac.be",
+  OPTkeywords =  "higher-order prorgamming, program transformation,
+		  partial evaluation, state, CPS, store-passing style, 
+		  region-based monovariant BTA",
+  OPTserialNo =  "6-16",
+  OPTannote = 	 "reviewing for TOPLAS"
+}
+
+@InCollection{weise91fpca,
+  author = 	 "Daniel Weise and Roland Conybeare and Erik Ruf and
+		  Scott Seligman",
+  affil =        "Computer Systems Laboratory, Stanford University",
+  title = 	 "Automatic Online Partial Evaluation",
+  booktitle =	 FPCA91,
+  year =	 1991,
+  editor =	 "J. Hughes",
+  publisher =    SV,
+  pages =	 "165--191",
+  month =	 aug,
+  keywords =     "on-line partial evaluation, Fuse, avoiding code
+		  duplication by graph",
+  serialNo =     "4-2"
+}
+

@@ -1,0 +1,6 @@
+#!/bin/csh
+# do doinclude
+while ($#argv > 0)
+    emacs -batch $argv[1] -l doinclude -f doinclude-and-save
+    shift
+end

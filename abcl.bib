@@ -1,0 +1,479 @@
+% -*- Mode: BibTeX -*-
+% abcl.bib
+% papers related to ABCL
+% exception:	Japanes papers (see japanese-e.bib or japanese-j.bib)
+%		Masuhara's (see masuhara.bib)
+
+% include: strings.bib
+
+
+@InProceedings{endo97sc,
+  author = 	 "Toshio Endo and Kenjiro Taura and Akinori Yonezawa",
+  title = 	 "A Scalable Mark-Sweep Garbage Collector on
+		  Large-Scale Shared-Memory Machines",
+  booktitle = 	 SC,
+  year = 	 1997,
+  OPTeditor = 	 "",
+  OPTvolume = 	 "",
+  OPTnumber = 	 "",
+  OPTseries = 	 "",
+  OPTpages = 	 "",
+  OPTorganization = "",
+  OPTpublisher = "",
+  OPTaddress = 	 "",
+  OPTmonth = 	 "",
+  OPTnote = 	 "to appear",
+  OPTaffil = 	 "",
+  OPTkeywords =  "",
+  OPTserialNo =  "7-9",
+  OPTannote = 	 "UltraEnterprise"
+}
+
+ >小林さんの研究を「静的解析を使って自明な送受信を除去する最適
+ >化」という文脈で引用する場合、どの文献を参照するのが妥当でしょ
+ >うか。
+
+たぶん直接関係あるのは
+
+@InProceedings{igarashi97sas,
+  author = 	 "Atsushi Igarashi and Naoki Kobayashi",
+  title = 	 "Type-Based Analysis of Usage of Communication
+		  Channels for Concurrent Programming Languages",
+  OPTcrossref =  "",
+  OPTkey = 	 "",
+  OPTeditor = 	 "",
+  volume = 	 "1302",
+  OPTnumber = 	 "",
+  series = 	 LNCS,
+  pages = 	 "187-201",
+  booktitle = "Proceedings of International Static Analysis Symposium (SAS'97)",
+  year = 	 "1997",
+  OPTorganization = "",
+  publisher = SV,
+  OPTaddress = 	 "",
+  OPTmonth = 	 "",
+  note = 	 "",
+  OPTannote = 	 ""
+}
+
+で、関連するのは
+
+@InProceedings{kobayashi96popl,
+  author = 	 "Naoki Kobayashi and Benjamin C. Pierce and David N. Turner",
+  title = 	 "Linearity and the Pi-Calculus",
+  OPTkey = 	 "",
+  OPTvolume = 	 "",
+  OPTnumber = 	 "",
+  OPTseries = 	 "",
+  pages = 	 "358-371",
+  booktitle = POPL,
+  year = 	 "1996",
+  OPTorganization = "",
+  OPTpublisher = "",
+  OPTaddress = 	 "",
+  month = 	 "January",
+  OPTnote = 	 "",
+  OPTannote = 	 ""
+}
+
+@inproceedings{kobayashi95sas,
+  author = 	 "Naoki Kobayashi and Motoki Nakade and Akinori Yonezawa",
+  title = 	 "Static Analysis of Communication for Asynchronous
+		  Concurrent Programming Languages",
+  OPTcrossref =  "",
+  OPTkey = 	 "",
+  OPTeditor = 	 "",
+  volume = 	 "983",
+  OPTnumber = 	 "",
+  series = 	 LNCS,
+  pages = 	 "225-242",
+  booktitle = "Second International Static Analysis Symposium (SAS'95)",
+  year = 	 "1995",
+  OPTorganization = "",
+  publisher = SV,
+  OPTaddress = 	 "",
+  OPTmonth = 	 "",
+  OPTnote = 	 "",
+  OPTannote = 	 ""
+}
+
+といったところでしょうか。最後のやつでもじつは通信の除去について
+ふれています。
+
+	こばやし
+
+
+
+@InProceedings{ichisugi91cccc,
+  author = 	 "Yuuji Ichisugi and Satoshi Matsuoka and Takuo
+		  Watanabe and Akinori Yonezawa",
+  title = 	 "An Object-Oriented Concurrent Reflective
+		  Architecture for Distributed Computing
+		  Environments", 
+  booktitle = 	 "Proceedings of 29th Annual Allerton Conference on
+		  Communication, Control and Computing",
+  year = 	 1991,
+  address =	 "Allerton, Illinois",
+  month =	 oct
+}
+
+
+@InProceedings{ichisugi91jssstconf,
+  author = 	 "Yuuji Ichisugi and Satoshi Matsuoka and Takuo
+		  Watanabe and Akinori Yonezawa",
+  title = 	 "An Object-Oriented Concurrent Reflective
+		  Architecture for Distributed Environments",
+  booktitle = 	 "8th Conference Proceedings Japan Society of Software 
+		  Science and Technology",
+  year = 	 1991,
+  pages =	 "405--408"
+}
+
+@InProceedings{matsuoka90rw,
+  author = 	 "Satoshi Matsuoka and Akinori Yonezawa",
+  title = 	 "Metalevel Solution to Inheritance Anomaly in
+		  Concurrent Object-Oriented Languages",
+  booktitle =	 ECOOPOOPSLA90RW,
+  year = 	 1990
+}
+
+@InProceedings{matsuoka91ecoop,
+  author = 	"Satoshi Matsuoka and Takuo Watanabe and Akinori Yonezawa",
+  title = 	"Hybrid Group Reflective Architecture for
+		 Object-Oriented Concurrent Reflective Programming",
+  booktitle = 	ECOOP,
+  year = 	"1991",
+  series =      LNCS,
+  vol =         512,
+  pages =	 "231--250"
+}
+
+@InProceedings{matsuoka91obcp,
+  author = 	"Satoshi Matsuoka and Takuo Watanabe and Yuji Ichisugi
+		 and Akinori Yonezawa",
+  title = 	"Object-Oriented Concurrent Reflective Architectures",
+  booktitle = 	OBCP,
+  year = 	1991,
+  address = 	Geneve,
+  month = 	jul,
+  series =      LNCS,
+  vol =         612,
+  pages =       "211--226",
+  publisher =   SV
+}
+
+@InProceedings{matsuoka93oopsla,
+  author = 	 "Satoshi Matsuoka and Kenjiro Taura and Akinori Yonezawa",
+  title = 	 "Highly Efficient and Encapsulated Re-use of
+		  Synchronization Code in Concurrent Object-Oriented
+		  Languages",
+  crossref = 	 "oopsla93",
+  pages =	 "109--126"
+}
+
+
+
+@InCollection{matsuoka93rdcoop,
+  author = 	 "Satoshi Matsuoka and Akinori Yonezawa",
+  title = 	 "Analysis of Inheritance Anomaly in Object-Oriented
+		  Concurrent Programming Languages",
+  crossref = 	 "agha93rdcoop-book",
+  chapter =	 4,
+  pages =	 "107--150",
+  serialNo =	 "."
+}
+
+@Article{nakaya95cabios,
+  author = 	 "Akihiro Nakaya and K. Yamamoto and Akinori Yonezawa",
+  title = 	 "RNA Secondary Structure Prediction Using Highly
+		  Parallel Computers",
+  journal = 	 "Compt. Appl. Biosci.",
+  year = 	 1995,
+  volume =	 11,
+  pages =	 "685--692"
+}
+
+@InProceedings{oyama97europar,
+  author = 	 "Yoshihiro Oyama and Kenjiro Taura and Akinori Yonezawa",
+  title = 	 "An Efficient Compilation Framework for Languages
+		  Based on a Concurrent Process Calculus",
+  series =	 LNCS,
+  booktitle =	 "Proceedings of Euro-Par '97 Object-Oriented Programming",
+  year =	 1997,
+  publisher =	 SV,
+  address = 	 "Passau, Germany",
+  month =	 aug
+}
+
+@InProceedings{oyama98pdcs,
+  author = 	 "Yoshihiro Oyama and Kenjiro Taura and Toshio Endo
+		  and Akinori Yonezawa",
+  title = 	 "An Implementation and Performance Evaluation of
+		  Language with Fine-Grain Thread Creation on Shared
+		  Memory Parallel Computer",
+  booktitle = 	 "PDCS",
+  year = 	 1998,
+  OPTeditor = 	 "",
+  OPTvolume = 	 "",
+  OPTnumber = 	 "",
+  OPTseries = 	 "",
+  OPTpages = 	 "",
+  OPTorganization = "",
+  OPTpublisher = "",
+  OPTaddress = 	 "",
+  OPTmonth = 	 "",
+  OPTnote = 	 "",
+  OPTaffil = 	 "",
+  OPTkeywords =  "",
+  serialNo =  "10-12",
+  annote = 	 "requested for comments"
+}
+
+@string{TAURA = "Kenjiro Taura and Satoshi Matsuoka and Akinori Yonezawa"}
+@InProceedings{taura93ppopp,
+  author = 	 TAURA,
+  title = 	 "An Efficient Implementation Scheme of Concurrent
+		  Object-Oriented Languages on Stock Multicomputers", 
+  booktitle = 	 PPOPP,
+  organization = SIGPLAN,
+  year = 	 1993,
+  address =	 SanDiego,
+  month =	 may
+}
+
+@InProceedings{taura93jspp,
+  author = 	 TAURA,
+  title = 	 "Incorporating Locality Management into Garbage
+		  Collection in Massively Parallel Object-Oriented Languages",
+  pages = 	 "277--282",
+  booktitle = JSPP,
+  year = 	 1993,
+  month = 	 may
+}
+
+@InProceedings{taura94jspp,
+  author = 	 TAURA,
+  title = 	 "{{\sl StackThreads}}: An Abstract Machine for Scheduling
+		  Fine-Grain Threads on Stock CPUs",
+  pages = 	 "25--32",
+  booktitle = JSPP,
+  year = 	 1994,
+  month = 	 may
+}
+
+@InProceedings{taura94dimacs,
+  author = 	 TAURA,
+  title = 	 "{ABCL/{\it f\/}}: A Future-Based Polymorphic Typed
+		  Concurrent Object-Oriented Language -- Its Design
+		  and Implementation --",
+  booktitle = 	 "Proceedings of the {DIMACS} workshop on Specification of
+		  Parallel Algorithms",
+  year = 	 1994,
+  editor = 	 "G. Blelloch and M. Chandy and S. Jagannathan",
+  pages =	 "275--292",
+  organization = AMS
+}
+
+@Comment{taura95draft,
+  author =	 "Kenjiro Taura and Akinori Yonezawa",
+  title =	 "Schematic: A Concurrent Object-Oriented Extension to 
+		  Scheme",
+  howpublished = "draft paper",
+  year =	 1995,
+  month =	 dec,
+  note =	 "to apper in post-proceedings of OBCP LNCS?",
+  serialNo =	 "4-22",
+  annote =	 "~tau/papers/obpdc/paper/schematic.ps"
+}
+
+
+@TechReport{taura95techrep,
+  author =	 "Kenjiro Taura and Akinori Yonezawa",
+  title =	 "Schematic: A Concurrent Object-Oriented Extension to 
+		  Scheme",
+  institution =  ISUTokyo,
+  year = 	 1995,
+  number =	 "95--11",
+  month =	 dec,
+  keywords =	 "concurrent object-oriented programming language,
+		  Scheme, process calculus, linearizable objects",
+  serialNo =	 "4-22",
+  annote =	 "This obsoletes taura95draft. Maybe on
+		  ~tau/papers/obpdc/paper/schematic.ps" 
+}
+
+@InProceedings{taura96obpdc,
+  author =	 "Kenjiro Taura and Akinori Yonezawa",
+  title =	 "Schematic: A Concurrent Object-Oriented Extension to 
+		  Scheme",
+  series =       LNCS,
+  booktitle =    OBPDC,
+  year = 	 1996,
+  number =	 "1107",
+  pages =        "59--82",
+  publisher =    SV,
+  keywords =	 "concurrent object-oriented programming language,
+		  Scheme, process calculus, linearizable objects",
+  OPTserialNo =	 "",
+  annote =	 "This obsoletes taura95draft. Maybe on
+		  ~tau/papers/obpdc/paper/schematic.ps" 
+}
+
+
+@Manual{taura95schematic,
+  title = 	 "Schematic Usage Commands and Some Basics",
+  author =	 "Kenjiro Taura",
+  year =	 1995,
+  month =	 jun,
+  keywords =	 "Schematic Manual, Scheme->C",
+  serialNo =	 "5-2",
+  annote =	 "/usr/local/src/schematic/doc/usage.dvi"
+}
+
+@Misc{taura96draft,
+  author =	 "Kenjiro Taura and Akinori Yonezawa",
+  title =	 "Performance of A Simple Garbage Global Collection on 
+		  Large Scale Machines",
+  howpublished = "Draft",
+  year =	 1996,
+  month =	 sep,
+  serialNo =	 "5-16"
+}
+
+@PhdThesis{taura97phd,
+  author = 	 "Kenjiro Taura",
+  title = 	 "Efficient and Reusable Implementation of Fine-Grain
+		  Multithreading and Garbage Collection on
+		  Distributed-Memory Parallel Computers",
+  school = 	 ISUT,
+  year = 	 1997,
+  annote =	 "The definition of the RNA problem is found in Appendix A."
+}
+
+@InProceedings{watanabe88oopsla,
+  author = 	"Takuo Watanabe and Akinori Yonezawa",
+  title = 	"Reflection in an Object-Oriented Concurrent Language",
+  booktitle = 	OOPSLA88,
+  year = 	1988,
+  pages = 	"306--315",
+  organization = ACM,
+  address = 	SanDiego,
+  month = 	sep,
+  note =	"(revised version in \cite{abclbook})"
+}
+
+@InProceedings{watanabe89ssd,
+  author = 	 "Takuo Watanabe and Akinori Yonezawa",
+  title = 	 "Reflective Computation in Object-Oriented Concurrent 
+		  Systems and its Applications",
+  booktitle = 	 "Proceedings of the Fifth International Workshop on
+		  Software Specification and Design",
+  year = 	 1989,
+  pages =	 "56--58",
+  address =	 "Pittsburgh, PA",
+  month =	 may,
+  serialNo =	 "8-9"
+}
+
+@InBook{watanabe90abclbook,
+  author = 	 "Takuo Watanabe and Akinori Yonezawa",
+  title = 	 "Reflection in an Object-Oriented Concurrent
+		  Language",
+  chapter = 	 3,
+  publisher = MITpress,
+  year = 	 1990,
+  editor = 	 "Akinori Yonezawa",
+  pages = 	 "45--70",
+  address = 	 CambdridgeMA
+}
+
+@InProceedings{watanabe90rexfool,
+  author = 	"Takuo Watanabe and Akinori Yonezawa",
+  title = 	"An Actor-Based Metalevel Architecture for Group-Wide
+		 Reflection",
+  booktitle = 	"REX School/Workshop on Foundations of Object-Oriented 
+		  Languages 1990",
+  series =      LNCS,
+  volume =      489,
+  pages =       "405--425",
+  year = 	1991,
+  publisher =   SV
+}
+
+@InProceedings{yasugi92ics,
+  author = 	 "Masahiro Yasugi and Satoshi Matsuoka and Akinori
+		  Yonezawa",
+  title = 	 "{ABCL/onEM-4}: A new software/hardware architecture
+		  for object oriented concurrent computing on an
+		  extended dataflow supercomputer",
+  booktitle = ICS,
+  year = 	 1992,
+  address = 	 WashingtonDC,
+  month = 	 jul
+}
+
+
+@InProceedings{yonezawa86oopsla,
+  author = 	 "Akinori Yonezawa and Jean-Pierre Briot and Etsuya
+		  Shibayama",
+  title = 	 "Object-Oriented Concurrent Programming in {ABCL/1}",
+  crossref = 	 "oopsla86",
+  pages =	 "258--268",
+  serialNo =	 "8-14"
+}
+
+@Book{yonezawa87oocp-book,
+  title = 	 "Object-Oriented Concurrent Programming",
+  publisher = 	 MITPress,
+  year = 	 1987,
+  editor =	 "Akinori Yonezawa and Mario Tokoro",
+  series =	 "Computer Systems",
+  annote =	 "ISBN 0-262-24026-2, IS-lib 30:O:7"
+}
+
+@InProceedings{yonezawa89obcp,
+  author = 	"Akinori Yonezawa and Takuo Watanabe",
+  title = 	"An Introduction to Object-Based Reflective Concurrent
+		 Computation",
+  booktitle = 	OBCP,
+  year = 	1989,
+  pages = 	"50--54",
+  note =	"published as ACM SIGPLAN Notices 24(4)"
+}
+
+@Book{abclbook,
+  editor = 	"Akinori Yonezawa",
+  title = 	"ABCL: An Object-Oriented Concurrent System",
+  publisher = 	MITPress,
+  year = 	1990,
+  pages =       343,
+  address = 	CambridgeMA
+}
+
+@InProceedings{yonezawa91wpl,
+  author = 	 "Akinori Yonezawa",
+  title = 	 "A Reflective Object-Oriented Concurrent Language
+		  {ABCL/R}",
+  booktitle = 	 "Proceedings UK/Japan Workshop on Parallel Lisp:
+		  Languages and Systems, 1989",
+  year = 	 1991,
+  volume =	 491,
+  series =	 LNCS,
+  pages =	 "254--256",
+  address =	 "Sendai",
+  publisher =    SV
+}
+
+@Article{yonezawa93pdt,
+  author = 	 "Akinori Yonezawa and Satoshi Matsuoka and Masahiro
+		  Yasugi and Kenjiro Taura",
+  title = 	 "Implementing Concurrent Object-Oriented Languages on
+		  Multicomputers",
+  journal = 	 PDT,
+  year = 	 1993,
+  volume = 	 1,
+  number = 	 2,
+  pages = 	 "49--61",
+  month = 	 may
+}
+

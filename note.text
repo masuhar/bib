@@ -1,0 +1,13 @@
+Files contained in this directory are:
+
+English papers:
+  my work:				masuhara.bib
+  ABCL related:				abcl.bib
+  reflection related:			reflection.bib
+  others:				misc.bib
+
+Japanese papers:
+  my work (in Japanese paper)		masuhara-jj.bib
+  my work (in English paper)		masuhara-je.bib
+  in JBibTeX style:			japanese-j.bib
+  in English:				japanese-e.bib
