@@ -165,7 +165,7 @@
   year =	 1999,
   month =	 apr,
   note =	 "http://www.dina.kvl.dk/~pmb/",
-  serialNo =	 "12-20",
+  serialNo =	 "15-17",
   annote =	 "Found by Sumii-kun"
 }
 
@@ -188,6 +188,44 @@
   month =	 may,
   affil =	 "DIKU anders@diku.dk",
   serialNo =	 "8-1"
+}
+
+@InProceedings{braux99ecoop-plaw,
+  author = 	 "Mathias Braux",
+  title = 	 "Speeding up the Java(TM) Serialization Framework
+		  through Partial Evaluation",
+  booktitle = 	 "Workshop on Object-Oriented Product Line
+		  Architectures ",
+  year = 	 1999,
+  month =	 jun,
+  serialNo =	 "15-13"
+}
+
+@InProceedings{braux2000pepm,
+  author = "Mathias Braux and Jacques Noy{\'e}",
+  title = 	 "Towards Partially Evaluating Reflection in Java",
+  crossref = 	 "pepm2000",
+  pages =	 "2-11",
+  serialNo =	 "17-5",
+  annote =	 "http://www.emn.fr/info/perso//braux/articles.html"
+}
+
+@InProceedings{chambers2000dynamo,
+  author = 	 "Craig Chambers",
+  title = 	 "{DyC}",
+  crossref =     "dynamo00",
+  booktitle = 	 "Proceedings of ACM SIGPLAN Workshop on Dynamic and
+		  Adaptive Compilation and Optimization (Dynamo'00)",
+  year = 	 2000,
+  pages =	 "73--74",
+  annote =	 "``Building our system in the context of a serious
+		  optimizing compiler was good in theory, but it took
+		  a lot of time in practice and force limitations on
+		  us that were from the limitations of the underlying
+		  compiler system.  For example, interprocedural
+		  analysis and alias analysis were not well supported
+		  by the underlying compiler framework, and as a
+		  result it was infeasible to include them in DyC.''"
 }
 
 @InProceedings{chirokoff99pepm,
@@ -250,6 +288,23 @@
 		  de Beaulieu 35042 Rennes Cedex, France,
 		  {consel,fnoel}@irisia.fr",
   annote =	 "published version of \cite{consel95techrep}"
+}
+
+@InProceedings{consel96pe-seminar,
+  author = 	 "Charles Consel and Luke Hornof and Fran{\c{c}}ois
+		  No{\"e}l and Jacques  Noy{\'e} and Nicolae Volanschi",
+  title = 	 "A Uniform Approach for Compile-Time and Run-Time Specialization",
+  booktitle = 	 "International Seminar of Partial Evaluation",
+  year = 	 1996,
+  volume =	 1110,
+  series =	 LNCS,
+  pages =	 "54--72",
+  publisher =	 SV,
+  address =	 "Dagstuhl Castle, Germany",
+  month =	 feb,
+  note =	 "revised version is published as INRIA Research Report 2775",
+  serialNo =	 "15-12",
+  annote =	 "http://www.irisa.fr/compose/papers/tempo-tr96.ps.gz"
 }
 
 @InProceedings{danvy96popl,
@@ -343,10 +398,19 @@ at ~sumii/papers/Danvy/Type-Directed_Partial_Evaluation.ps.gz"
   annote =	 "via Matuoka-san"
 }
 
-@Article{futamura71scc,
+@InProceedings{fujinami98tic,
+  author = 	 "Nobuhisa Fujinami",
+  title = 	 "Determination of Dynamic Method Dispatches Using
+		  Run-Time Code Generation", 
+  crossref = 	 "tic98",
+  pages =	 "253--271",
+  serialNo =     "17-4"
+}
+
+@comment{futamura71scc,
   author = 	 "Yoshihiko Futamura",
   title = 	 "Partial evaluation of computation process---an
-		  approach to a compiler-compiler",
+		   approach to a compiler-compiler",
   journal =	 "Systems, Computers, Controls",
   year =	 1971,
   volume =	 2,
@@ -354,6 +418,19 @@ at ~sumii/papers/Danvy/Type-Directed_Partial_Evaluation.ps.gz"
   pages =	 "45--50"
 }
 
+
+
+@Article{futamura71scc,
+  author = 	 "Yoshihiko Futamura",
+  title = 	 "Partial evaluation of computation process---an approach to a
+  compiler-compiler",
+  journal = 	 "Higher-Order and Symbolic Computation",
+  year = 	 1999,
+  volume =	 12,
+  number =	 4,
+  pages =	 "381--391",
+  note =	 "Reprinted from {\em Systems, Computers, Controls}, 2(5):45--50, 1971"
+}
 
 @Misc{futamura99peday,
   author =	 "Yoshihiko Futamura and Zenjiro Konishi and Song
@@ -627,13 +704,8 @@ at ~sumii/papers/Danvy/Type-Directed_Partial_Evaluation.ps.gz"
   author = 	 "L. Hornof and J. Noy{\'e}",
   title = 	 "Accurate Binding-Time Analysis for Imperative
 		  Languages: Flow, Context, and Return Sensitivity", 
-  booktitle = 	 PEPM97,
-  year = 	 1997,
-  volume =	 "32(12)",
-  series =	 SIGPLANNotices,
+  crossref = 	 "pepm97",
   pages =	 "63--73",
-  address =	 "Amsterdam, The Netherlands",
-  month =	 jun,
   serialNo =	 "13-7",
   annote =	 "http://www.cis.upenn.edu/~hornof/bta-sens.ps saved
 		  as hornof97pepm.ps.gz"
@@ -966,6 +1038,21 @@ Henning Makholm. . Postscript or gzipped postscript.
   annote =	 "http://www.irisa.fr/EXTERNE/projet/compose/papers/incrpe.ps.gz saved as marlet99pldi.ps.gz"
 }
 
+@InProceedings{marlet2000dynamo,
+  author = 	 "Renaud Marlet",
+  title = 	 "Tempo, a program specializer for {C}",
+  crossref = 	 "dynamo00",
+  pages =	 "76--77",
+  annote =	 "``Tempo works on an abstract syntax tree.  It
+		  includes a \texttc{goto} elimination phase to make
+		  sure that all \texctt{goto}s are rewritten into
+		  \texttt{while} loops.  In some (fortunately, rae)
+		  cases, this transformation can shift static
+		  statements under dynamic control, which turns them
+		  dynamic.  It thus reduces specialization
+		  opportunities.''"
+}
+
 @MastersThesis{marquard-steensgaard92master,
   author = 	 "Morten Marquard and Bjarne Steensgaard",
   title = 	 "Partial Evaluation of an Object-Oriented Imperative
@@ -1110,6 +1197,15 @@ Henning Makholm. . Postscript or gzipped postscript.
   annote =	 "ftp://ftp.irisa.fr/techreports/1998/PI-1216.ps.gz"
 }
 
+@InProceedings{schultz99ecoop,
+  author = 	 "Ulrik Pagh Schultz and Julia L. Lawall and Charles
+		  Consel and Gilles Muller",
+  title = 	 "Towards Automatic Specialization of {Java} Programs",
+  crossref = 	 "ecoop99",
+  pages =        "367--390",
+  annote =       "http://link.springer.de/link/service/series/0558/bibs/1628/16280367.htm"
+}
+
 @TechReport{schultz99techrep2,
   author = 	 "Ulrik Pagh Schultz and Julia L. Lawall and Charles
 		  Consel",
@@ -1125,6 +1221,32 @@ Henning Makholm. . Postscript or gzipped postscript.
 		  object-oriented programming, Java, optimization",
   serialNo =	 "15-6",
   annote =	 "http://www.inria.fr/RRRT/RR-3853.html"
+}
+
+@PhdThesis{schultz2000phd,
+  author = 	 "Ulrik Schultz",
+  title = 	 "Object-Oriented Software Engineering using Partial Evaluation.",
+  school = 	 "University of Rennes",
+  year = 	 2000,
+  month =	 dec,
+  note =	 "English version available as IRISA PI 1395"
+}
+
+@Misc{schultz2000unpublished,
+  author =	 "Ulrik Pagh Schultz and Julia L. Lawall and Charles
+		  Consel",
+  title =	 "Automatic Program Specialization for Java",
+  howpublished = "unpublished",
+  year =	 "2000(?)",
+  serialNo =	 "17-6",
+  annote =	 "obtained directly from the first author, http://www.daimi.au.dk/~ups/"
+}
+
+@InProceedings{schultz2001pado,
+  author = 	 "Ulrik Schultz",
+  title = 	 "Partial Evaluation for Class-Based Object-Oriented Languages",
+  crossref = 	 "pado2",
+  pages =	 "173--197"
 }
 
 @InProceedings{sheard97pepm,
@@ -1217,6 +1339,16 @@ Henning Makholm. . Postscript or gzipped postscript.
   OPTkeywords =  "",
   OPTserialNo =  "7-1",
   OPTannote = 	 "draft version: work/others-papers/sugita-pro97.ps.gz"
+}
+
+@InProceedings{sullivan01pado2,
+  author = 	 "Gregory T. Sullivan",
+  title = 	 "Dynamic Partial Evaluation",
+  crossref = 	 "pado2",
+  pages =	 ".",
+  affil =	 "MIT AI Lab.",
+  serialNo =	 "17-5",
+  annote =	 "http://www.ai.mit.edu/~gregs/"
 }
 
 @InProceedings{surati94pact,
