@@ -16,12 +16,39 @@
   serialNo =	 "4-9"
 }
 
+@InProceedings{Colcombet2000popl,
+  author = 	 "Thomas Colcombet and Pascal Fradet",
+  title = 	 "Enforcing trace properties by program transformation",
+  booktitle = 	 "Proceedings of the 27th ACM
+		  SIGPLAN-SIGACT symposium on Principles of
+		  programming languages", 
+  year = 	 2000,
+  pages =	 "54--66",
+  publisher =	 ACM,
+  annote =	 "abstract: We propose an automatic method to enforce trace properties on programs. The programmer specifies the property separately from the program; a program transformer takes the program and the property and automatically produces another “equivalent” pogram satisfying the property. This separation of concerns makes the program easier to develop and maintain. Our approach is both static and dynamic. It integrates static analyses in order to avoid useless transformations. On the other hand, it never rejects programs but adds dynamic checks when necessary. An important challenge is to make this dynamic enforcement as inexpensive as possible. The most obvious application domain is the enforcement of security policies. In particular, a potential use of the method is the securization of mobile code upon receipt. 
+",
+  serialNo =	 "19-20"
+}
+
 @Book{abadi96theory-book,
   author = 	 "Martin Abadi and Luca Cardelli",
   title = 	 "A Theory of Objects",
   publisher = 	 SV,
   year = 	 1996,
   series =	 "Monographs in Computer Science"
+}
+
+@inproceedings{abadi99popl,
+    author = "Mart{\'i}n Abadi and Anindya Banerjee and Nevin Heintze and Jon G. Riecke",
+    title = "A core calculus of dependency",
+    booktitle = "{POPL} '99. Proceedings of the 26th {ACM} {SIGPLAN-{SIGACT}} on Principles of programming languages, January 20--22, 1999, San Antonio, {TX}",
+    publisher = "ACM Press",
+    address = "New York, NY, USA",
+    editor = "{ACM}",
+    pages = "147--160",
+    year = 1999,
+    url = "citeseer.ist.psu.edu/abadi99core.html",
+  serialNo =	 "20-5" 
 }
 
 @Book{abelson85sicp,
@@ -164,6 +191,18 @@
   serialNo =	 "11-1"
 }
 
+@inproceedings{agichtein2001www10,
+    author = "Eugene Agichtein and Steve Lawrence and Luis Gravano",
+    title = "Learning search engine specific query transformations for
+		  question answering", 
+    booktitle = "World Wide Web",
+    pages = "169-178",
+    year = "2001",
+    url = "citeseer.ist.psu.edu/agichtein01learning.html",
+  OPTserialNo =	"20-9",
+  note = "presented in the Kototoi project, perhaps"
+}
+
 @InProceedings{aldrich2004foal,
   author = 	 "Jonathan Aldrich",
   title = 	 "Open Modules: Modular Reasoning about Advice",
@@ -223,6 +262,19 @@
   month = 	feb,
 }
 
+@inproceedings{apiwattanapong2004ase,
+ author = {Taweesup Apiwattanapong and Alessandro Orso and Mary Jean Harrold},
+ title = {A Differencing Algorithm for Object-Oriented Programs},
+ booktitle = {ASE '04: Proceedings of the Automated Software Engineering, 19th International Conference on (ASE'04)},
+ year = {2004},
+ isbn = {0-7695-2131-2},
+ pages = {2--13},
+ doi = {http://dx.doi.org/10.1109/ASE.2004.5},
+ publisher = {IEEE Computer Society},
+ address = {Washington, DC, USA},
+  serialNo =	"21-3"
+}
+
 @Book{appel92cwcbook,
   author = 	 "Andrew W. Appel",
   title = 	 "Compiling with Continuations",
@@ -270,6 +322,14 @@
 		  University of Washington.  {ausland, mattahi,
 		  chambers, eggers, bershad}@cs.washington.edu",
   serialNo =	 "5-10"
+}
+
+@inproceedings{baker2002aosd,
+    title          = {Runtime Aspect Weaving Through Metaprogramming},
+    author         = {Jason Baker and Wilson Hsieh},
+    pages          = {86-98},
+    crossref       = {:aosd02},
+  OPTserialNo =	"20-2"
 }
 
 @InProceedings{ball2002popl,
@@ -547,6 +607,31 @@
   type =	 "Tech Tips",
   month =	 feb,
   annote = "http://www.cert.org/tech_tips/malicious_code_mitigation.html"
+}
+
+@inproceedings{chiba2004aosd,
+ author = {Shigeru Chiba and Kiyoshi Nakagawa},
+ title = {Josh: an open AspectJ-like language},
+ booktitle = {AOSD '04: Proceedings of the 3rd international conference on Aspect-oriented software development},
+ year = {2004},
+ isbn = {1-58113-842-3},
+ pages = {102--111},
+ location = {Lancaster, UK},
+ doi = {http://doi.acm.org/10.1145/976270.976284},
+ publisher = {ACM Press},
+ address = {New York, NY, USA},
+  OPTserialNo =	"21-12"
+ }
+
+@Misc{chien92misc,
+  author =	 "Andrew A. Chien",
+  title =	 "Concurrent Aggregates ({CA}): Design and Experience
+		  with a Concurrent Object-oriented Language based on
+		  Aggregates",
+  howpublished = "unknown",
+  year =	 1992,
+  month =	 oct,
+  serialNo =	 "20-13"
 }
 
 @InProceedings{collberg97pldi,
@@ -907,6 +992,16 @@ ACM Conference on Principles of Programming Languages, pages .
   annote =	 "http://www.cs.purdue.edu/homes/hosking/papers.html"
 }
 
+@TechReport{danvy2001techrep,
+  author = 	 "Olivier Danvy and Bernd Grobauer and Morten Rhiger",
+  title = 	 "A Unifying Approach to Goal-Directed Evaluation",
+  institution =  "BRICS",
+  year = 	 2001,
+  number =	 "RS--01--29",
+  month =	 jul,
+  serialNo =	 "20-8"
+}
+
 @TechReport{dealwis2003techrep,
   author = 	 {Brian de Alwis and Gregor Kiczales},
   title = 	 {Apostle: A Simple Incremental Weaver for a Dynamic Aspect Language},
@@ -914,6 +1009,57 @@ ACM Conference on Principles of Programming Languages, pages .
   year = 	 2003,
   number =	 {TR-2003-16}
 }
+
+@TechReport{douence2002techrep,
+  author = 	 "R\'emi Douence and Pascal Fradet and Mario S\"udholt",
+  title = 	 "Detection and resolution of aspect interactions",
+  institution =  INRIA,
+  year = 	 2002,
+  number =	 "RR--4435",
+  month =	 apr, 
+  keywords =	 "ASPECT-ORIENTED PROGRAMMING / ASPECT INTERACTION /
+		  STATIC ANALYSIS / ASPECTJ",
+  annote =	 "Abstract : Aspect-Oriented Programming (AOP)
+		  promises separation of concerns at the
+		  implementation level. However, aspects are not
+		  always orthogonal and aspect interaction is an
+		  important problem. Currently there is almost no
+		  support for the detection and resolution of such
+		  interactions. The programmer is responsible for
+		  identifying interactions between conflicting aspects
+		  and implementing conflict resolution code. In this
+		  paper, we propose a solution to this problem based
+		  on a generic framework for AOP. The contributions
+		  are threefold: we present a formal and expressive
+		  crosscut language, two static conflict analyses and
+		  some linguistic support for conflict resolution. ",
+  serialNo =	 "19-19" 
+}
+
+@InProceedings{dutchyn01coots,
+  author = 	 "Christpoher Dutchyn and Paul Lu and Duane Szafron and
+		  Steven Bromling and Wade Holst",
+  title = 	 "Multi-dispatch in the {J}ava Virtual Machine: Design and implementation",
+  booktitle = 	 "6th Usenix Conference on Object-Oriented
+		  Technologies and Systems (COOTS 2001)",
+  year = 	 2001,
+  OPTeditor = 	 "",
+  OPTvolume = 	 "",
+  OPTnumber = 	 "",
+  OPTseries = 	 "",
+  OPTpages = 	 "",
+  OPTorganization = "",
+  OPTpublisher = "",
+  OPTaddress = 	 "",
+  OPTmonth = 	 "",
+  OPTnote = 	 "",
+  OPTaffil = 	 "",
+  OPTkeywords =  "",
+  OPTserialNo =  "",
+  OPTannote = 	 "",
+  OPTserialNo =	"21-1"
+}
+
 @InProceedings{eide97pldi,
   author = 	 "Eric Eide and Kevin Frei and Bryan Ford and Jay
 		  Lepreau and Gary Lindstrom",
@@ -1092,6 +1238,31 @@ ACM Conference on Principles of Programming Languages, pages .
 		  documents. http://www.ics.uci.edu/pub/websoft/MOMspider/"
 }
 
+@InProceedings{filman2000asoc-workshop,
+  author = 	 {Robert E. Filman and Daniel P. Friedman},
+  title = 	 {Aspect-Oriented Programming is Quantification and Obliviousness},
+  booktitle = 	 {Workshop on Advanced Separation of Concerns, OOPSLA 2000},
+  year =	 2000,
+  month =	 oct,
+  annote =	 {printed sep 2002; related to the AO-model paper
+		  read through 25 sep 2002;
+		  http://ic-www.arc.nasa.gov/ic/~darwin/oif/leo/filman/text/oif/aop-is.pdf},
+  OPTserialNo =	"20-16"
+
+}
+
+@InProceedings{filman2002ase,
+  author = 	 "Robert E. Filman and Klaus Havelund",
+  title = 	 "Realizing Aspects by Transforming for Events",
+  booktitle = 	 "Robust Software Engineering 2002 (ASE'02)",
+  year = 	 2002,
+  pages =	 "23--27",
+  publisher =	 "IEEE Computer Society",
+  address =	 "Edinburgh, Scottland",
+  month =	 sep,
+  serialNo =	 "19-18"
+}
+
 @Misc{finin93kqml-draft,
   author =	 "Tim Finin and Jay Weber and Gio Wiederhold and
 		  Michael Genesereth and Richard Fritzon and Donal
@@ -1115,6 +1286,20 @@ ACM Conference on Principles of Programming Languages, pages .
   affil =	 "U of Kentucky",
   annote =	 "ISBN 0-8053-1191-2"
 }
+
+@inproceedings{fox99javagrande,
+ author = {Geoffrey Fox and Tomasz Haupt and Erol Akarsu and Alexey Kalinichenko and Kang-Seok Kim and Praveen Sheethalnath and Choon-Han Youn},
+ title = {The Gateway System: Uniform Web Based Access to Remote Resources},
+ booktitle = {JAVA '99: Proceedings of the ACM 1999 conference on Java Grande},
+ year = {1999},
+ isbn = {1-58113-161-5},
+ pages = {1--7},
+ location = {San Francisco, California, United States},
+ doi = {http://doi.acm.org/10.1145/304065.304085},
+ publisher = {ACM Press},
+ address = {New York, NY, USA},
+  OPTserialNo =	"20-19"
+ }
 
 @InProceedings{furuichi90ppopp,
   author = 	 "Masakazu Furuich and Kazuo Taki and Nobuyuki
@@ -1378,6 +1563,17 @@ Memoization},
 		  Vcode, which is a target VM for NESL, to JVML."
 }
 
+@inproceedings{harrison1993oopsla,
+    author = {William Harrison and Harold Ossher},
+    url = {http://www.research.ibm.com/sop/abstracts/oopsla93.htm},
+    title = {Subject-Oriented Programming---A Critique of Pure Objects},
+    booktitle = {Proc. 1993 Conf. Object-Oriented Programming Systems, Languages, and Applications},
+    month = sep,
+    year = 1993,
+    pages = {411--428},
+  OPTserialNo =	"21-8"
+}
+
 @InProceedings{harrison98iccl,
   author = 	 "William L. Harrison and Samuel N. Kamin",
   title = 	 "Modular Compilers Based on Monad Transformers",
@@ -1411,6 +1607,21 @@ Memoization},
 		  in a mix-and-match fashion just as in a
 		  monad-structured interpreter."
 }
+
+@article{hashimoto2001tcs,
+ author = {Masatomo Hashimoto and Atsushi Ohori},
+ title = {A typed context calculus},
+ journal = {Theor. Comput. Sci.},
+ volume = {266},
+ number = {1-2},
+ year = {2001},
+ issn = {0304-3975},
+ pages = {249--272},
+ doi = {http://dx.doi.org/10.1016/S0304-3975(00)00174-2},
+ publisher = {Elsevier Science Publishers Ltd.},
+ address = {Essex, UK},
+  OPTserialNo =	"21-11"
+ }
 
 @InProceedings{hassen96oopsla,
   author = 	 "Saniya Ben Hassen and Irina Athanasiu and Henri E. Bal",
@@ -1656,6 +1867,32 @@ Memoization},
   annote =	 {http://link.springer.de/link/service/series/0558/bibs/2374/23740062.htm}
 }
 
+@inproceedings{imamura2002xmlsec,
+ author = {Takeshi Imamura and Andy Clark and Hiroshi Maruyama},
+ title = {A stream-based implementation of XML encryption},
+ booktitle = {XMLSEC '02: Proceedings of the 2002 ACM workshop on XML security},
+ year = {2002},
+ isbn = {1-58113-632-3},
+ pages = {11--17},
+ location = {Fairfax, VA},
+ doi = {http://doi.acm.org/10.1145/764792.764795},
+ publisher = {ACM Press},
+ address = {New York, NY, USA},
+  OPTserialNo =	"21-13"
+ }
+
+@Article{jackson2002tosem,
+  author = 	 "Daniel Jackson",
+  title = 	 "Alloy: A Lightweight Object Modelling Notation",
+  journal = 	 "ACM Transactions on Software Engineering and Methodology (TOSEM) ",
+  year = 	 2002,
+  volume =	 11,
+  number =	 2,
+  pages =	 "256--290",
+  month =	 apr,
+  serialNo =	 "21-10"
+}
+
 @InProceedings{jagannathan92pldi,
   author = 	 "Suresh Jagannathan and Jim Philbin",
   title = 	 "A Customizable Substrate for Concurrent Languages",
@@ -1798,7 +2035,8 @@ Memoization},
   year =         1993,
   pages =        "598--607",
   address =	 Portland,
-  month =	 nov
+  month =	 nov,
+  OPTserialNo =	"20-14"
 }
 
 
@@ -1889,6 +2127,7 @@ Memoization},
   address =	 "Jyv{\"a}skyl{\"a}, Finland",
   publisher =	 SV,
   URL = "http://aspectj.org/documentation/papersAndSlides/ECOOP1997-AOP.pdf",
+  OPTserialNo =	"21-7"
 }
 
 @InProceedings{kiczales2001ecoop,
@@ -1898,6 +2137,7 @@ Memoization},
   pages = 	 "327--353",
   year = 	 2001,
   URL = "http://www.parc.xerox.com/groups/csl/projects/aspectj/downloads/ECOOP2001-Overview.pdf",
+  OPTserialNo =	"21-5"
 }
 
 
@@ -1992,6 +2232,19 @@ Memoization},
   pages =	 "305--312",
   publisher =	 "Elsevier Science B.V.",
   annote =	 "this information was found in the RWC's WWW page."
+}
+
+@InProceedings{koubarakis2000caise,
+  author = 	 "Manolis Koubarakis and Dimitris Plexousakis",
+  title = 	 "A Formal Model for Business Process Modeling and Design",
+  booktitle = 	 "Proceedings of CAISE'00",
+  year = 	 2000,
+  pages =	 "142--157",
+  address =	 "Stockholm, Sweden",
+  month =	 jun,
+  annote =	 "presented at TM-seminar on 21/6/2005 by Takemura 
+		http://www.ics.forth.gr/isl/publications/by_author.html",
+  serialNo =	 "21-2"
 }
 
 @InProceedings{kuwabara95ictai,
@@ -2114,6 +2367,29 @@ Memoization},
   title = 	 "The {Java} Virtual Machine Specification",
   publisher = 	 AddisonWesley,
   year = 	 1997
+}
+
+@InProceedings{little98coots,
+  author = 	 "M. C. Little and S. K. Shrivastava",
+  title = 	 "{J}ava Transactions for the {I}nternet",
+  booktitle = 	 "the 4th Conference on Object-Oriented Technologies
+		  and Systems (COOTS)",
+  year = 	 1998,
+  OPTeditor = 	 "",
+  OPTvolume = 	 "",
+  OPTnumber = 	 "",
+  OPTseries = 	 "",
+  OPTpages = 	 "89--100",
+  OPTorganization = "",
+  OPTpublisher = "",
+  OPTaddress = 	 "",
+  OPTmonth = 	 apr,
+  OPTnote = 	 "",
+  OPTaffil = 	 "",
+  OPTkeywords =  "",
+  OPTserialNo =  "",
+  OPTannote = 	 "citeseer.ist.psu.edu/article/little98java.html",
+  OPTserialNo =	"20-18"
 }
 
 @InProceedings{liu93sc,
@@ -2289,6 +2565,17 @@ Memoization},
   keywords =     "Termination Detection with Weight"
 }
 
+@InProceedings{melnik2001www,
+  author = 	 "Sergey Melnik and Sriram Raghavan and Beverly Yang
+		  and Hector Garcia-Molina ",
+  title = 	 "Building a Distributed Full-Text Index for the Web",
+  booktitle = 	 "WWW10",
+  year = 	 2001,
+  address =	 "Hong Kong",
+  month =	 may,
+  serialNo =	 "20-17"
+}
+
 @InProceedings{mezini2002oopsla,
   author = 	 "Mira Mezini and Klaus Ostermann", 
   title = 	 "Integrating Independent Components with On-Demand
@@ -2353,6 +2640,16 @@ Memoization},
   affil =	 "Computer Scienec Department, University of
 		  Edinburgh, Edinburgh, Scotland",
   serialNo =	 "12-15"
+}
+
+@Article{minsky1961ire,
+  author = 	 "Marvin Minsky",
+  title = 	 "Steps Toward Artificial Intelligence",
+  journal = 	 "Proceedings of the IRE",
+  year = 	 1961,
+  pages =	 "8--30",
+  month =	 jan,
+  serialNo =	 "21-9"
 }
 
 @Misc{mlj-home,
@@ -2542,6 +2839,15 @@ Abstract. DJ is a new pure-Java library for adaptive programming that allows tra
   serialNo =	 "19-9"
 }
 
+@inproceedings{orleans2002aosd,
+    title          = {Incremental Programming with Extensible Decisions},
+    author         = {Doug Orleans},
+    pages          = {56-64},
+    URL = "http://www.ccs.neu.edu/home/dougo/papers/aosd02/",
+    crossref       = {aosd02},
+  OPTserialNo =	"21-4"
+}
+
 @Misc{osawa95draft,
   author =	 "Noritaka Osawa and Toshitsugu Yuba",
   title =	 "A Parallel Language for Discrete Event Simulation:
@@ -2592,6 +2898,15 @@ Abstract. DJ is a new pure-Java library for adaptive programming that allows tra
  doi = {http://doi.acm.org/10.1145/361598.361623},
  publisher = {ACM Press},
  serialNo =	 "19-3"
+}
+
+@inproceedings{pawlak2001reflection,
+    title          = {{JAC}: {A} Flexible Solution for Aspect-Oriented Programming in {J}ava},
+    author         = {Renaud Pawlak and Lionel Seinturier and Laurence Duchien and G\'erard Florin},
+    crossref       = {:reflection01},
+    pages          = {1-24},
+   URL= "http://jac.aopsys.com/papers/reflection.ps",
+  OPTserialNo =	"21-6"
 }
 
 @Misc{pierce9x,
@@ -2677,6 +2992,7 @@ Abstract. DJ is a new pure-Java library for adaptive programming that allows tra
  crossref = {aosd2003},
  pages = {100--109},
  doi = {http://doi.acm.org/10.1145/643603.643614},
+  OPTserialNo =	"20-3"
  }
 
 @Article{psounis99ieee-cs,
@@ -2995,6 +3311,28 @@ Abstract. DJ is a new pure-Java library for adaptive programming that allows tra
   OPTauthorOrg = "Computer Systems Laboratory, Stanford University"
 }
 
+@InProceedings{smith2005ecoop,
+  author = 	 "Charles Smith and Sophia Drossopoulou",
+  title = 	 "{Chai}: Traits for {Java}-like languages",
+  booktitle = 	 ECOOP2005,
+  year = 	 2005,
+  OPTeditor = 	 "",
+  OPTvolume = 	 "",
+  OPTnumber = 	 "",
+  OPTseries = 	 "",
+  OPTpages = 	 "",
+  OPTorganization = "",
+  OPTpublisher = "",
+  OPTaddress = 	 "",
+  OPTmonth = 	 "",
+  OPTnote = 	 "to appear",
+  OPTaffil = 	 "",
+  OPTkeywords =  "",
+  OPTserialNo =  "",
+  OPTannote = 	 "Igarashi-san survey at a Kumiki meeting.",
+  OPTserialNo =	"20-6"
+}
+
 @Article{smith90ieee-trans-comp,
   author = 	 "Reid G. Smith",
   title = 	 "The {Contract Net Protocol}: High-Level
@@ -3046,6 +3384,19 @@ Abstract. DJ is a new pure-Java library for adaptive programming that allows tra
   url = "http://www.aspectc.org/download/tools2002.ps.gz",
   OPTserialNo =	"18-11"
 }
+
+@TechReport{stankovic90techrep,
+  author = 	 "John A. Stankovic",
+  title = 	 "On the Reflective Nature of the {Spring} Kernel",
+  institution =  "Department of Computer and Information Science,
+		  University of Massachusetts",
+  year = 	 1990,
+  type =	 "COINS",
+  number =	 "90--119",
+  address =	 "Amherst, MA 01003",
+  serialNo =	 "20-15"
+}
+
 @InProceedings{stata98popl,
   author = 	 "Raymie Stata and Mart\'in Abadi",
   title = 	 "A Type System for {Java} Bytecode Subroutines",
@@ -3349,6 +3700,15 @@ transformation of components implemented as actor systems.
   annote =	 "Sekiguti-kun has the proceedings"
 }
 
+@inproceedings{ubayashi2001reflection,
+    title          = {Separation of Concerns in Mobile Agent Applications},
+    author         = {Naoyasu Ubayashi and Tetsuo Tamai},
+    crossref       = {:reflection01},
+    pages          = {89-109},
+    url            = {http://www.graco.c.u-tokyo.ac.jp/~tamai/pub/reflection2001.pdf},
+  OPTserialNo =	"20-1"
+}
+
 @Article{ueda90compj,
   author = 	 "Kazunori Ueda and Takashi Chikayama",
   title = 	 "Design of the Kernel Language for the Parallel
@@ -3445,6 +3805,7 @@ transformation of components implemented as actor systems.
  location = {Denver, Colorado, United States},
  doi = {http://doi.acm.org/10.1145/320384.320392},
  publisher = {ACM Press},
+  OPTserialNo =	"21-14"
  }
 
 
@@ -3712,3 +4073,10 @@ Foundations of Object-Oriented Languages (FOOL9)},
  note 2       : Includes bibliographical references
  IS library  30:L:14.1 <201-2287666> (5380)
 
+@Misc{yonezawaXXincomplete,
+  author =	 "Akirnori Yonezawa and Shigemi Aoyagi and P. S. Krishnaprasad",
+  title =	 "An Object-Oriented Parallel Algorithm for the
+		  Newtonian (Gravitational) N-Body Problem",
+  howpublished = "incomplete draft",
+  serialNo =	 "20-12"
+}
