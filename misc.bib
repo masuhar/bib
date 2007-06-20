@@ -1254,6 +1254,41 @@ ACM Conference on Principles of Programming Languages, pages .
   number =	 {TR-2003-16}
 }
 
+@InProceedings{dean2004osdi,
+  author = 	 {Jeffrey Dean and Sanjay Ghemawat},
+  title = 	 {{MapReduce}: Simplified Data Processing on Large Clusters},
+  booktitle =	 {OSDI'04: Sixth Symposium on Operating System Design and Implementation},
+  year =	 2004,
+  month =	 dec,
+  url= {http://labs.google.com/papers/mapreduce.html},
+  serialNo =	 "24-16",
+  abstract = "MapReduce is a programming model and an associated
+implementation for processing and generating large
+data sets. Users specify a map function that processes a
+key/value pair to generate a set of intermediate key/value
+pairs, and a reduce function that merges all intermediate
+values associated with the same intermediate key. Many
+real world tasks are expressible in this model, as shown
+in the paper.
+Programs written in this functional style are automatically
+parallelized and executed on a large cluster of commodity
+machines. The run-time system takes care of the
+details of partitioning the input data, scheduling the program's
+execution across a set of machines, handling machine
+failures, and managing the required inter-machine
+communication. This allows programmers without any
+experience with parallel and distributed systems to easily
+utilize the resources of a large distributed system.
+Our implementation of MapReduce runs on a large
+cluster of commodity machines and is highly scalable:
+a typical MapReduce computation processes many terabytes
+of data on thousands of machines. Programmers
+nd the system easy to use: hundreds of MapReduce programs
+have been implemented and upwards of one thousand
+MapReduce jobs are executed on Google's clusters
+every day."
+}
+
 @TechReport{douence2002techrep,
   author = 	 "R\'emi Douence and Pascal Fradet and Mario S{\"u}dholt",
   title = 	 "Detection and resolution of aspect interactions",
@@ -1784,6 +1819,23 @@ ACM Conference on Principles of Programming Languages, pages .
   serialNo =	 "11-10"
 }
 
+
+@InProceedings{ghemawat2003sosp,
+  author = 	 {Sanjay Ghemawat and Howard Gobioff and Shun-Tak Leung},
+  title = 	 {The {Google} File System },
+  booktitle =	 {19th ACM Symposium on Operating Systems Principles (SOSP)},
+  year =	 2003,
+  address =	 {Lake George, NY},
+  month =	 oct,
+  serialNo =	 "24-19",
+  abstract = "We have designed and implemented the Google File System, a scalable distributed file system for large distributed data-intensive applications. It provides fault tolerance while running on inexpensive commodity hardware, and it delivers high aggregate performance to a large number of clients. 
+
+While sharing many of the same goals as previous distributed file systems, our design has been driven by observations of our application workloads and technological environment, both current and anticipated, that reflect a marked departure from some earlier file system assumptions. This has led us to reexamine traditional choices and explore radically different design points. 
+
+The file system has successfully met our storage needs. It is widely deployed within Google as the storage platform for the generation and processing of data used by our service as well as research and development efforts that require large data sets. The largest cluster to date provides hundreds of terabytes of storage across thousands of disks on over a thousand machines, and it is concurrently accessed by hundreds of clients. 
+
+In this paper, we present file system interface extensions designed to support distributed applications, discuss many aspects of our design, and report measurements from both micro-benchmarks and real world use. "
+}
 
 @Book{gradecki2003mastering,
   author = 	 "Joseph D. Gradecki and Nicholas Lesiecki",
@@ -2860,6 +2912,16 @@ Memoization},
  doi = {http://doi.acm.org/10.1145/1052898.1052907},
  }
 
+@unpublished{laemmel2006scpj,
+ author = "Ralf L{\"a}mmel",
+ title = "{Google's {MapReduce} Programming Model -- Revisited}",
+ year = 2006--2007,
+ note = {Accepted for publication in the Science of Computer Programming Journal;
+         Online since 2 January, 2006;
+         42 pages},
+  serialNo =	 "24-17"
+}
+
 @inproceedings{lafferty2003oopsla,
  author = {Donal Lafferty and Vinny Cahill},
  title = {Language-independent Aspect-oriented Programming},
@@ -3693,6 +3755,18 @@ Abstract. DJ is a new pure-Java library for adaptive programming that allows tra
   year =	 "199x",
   affil =	 "LFCS, Univ of Edinburgh",
   annote =	 "read at Tamai seminar"
+}
+
+@Article{pike200Xspj,
+  author = 	 {Rob Pike and Sean Dorward and Robert Griesemer and Sean Quinlan},
+  title = 	 {Interpreting the Data: Parallel Analysis with {Sawzall}},
+  journal = 	 {Scientific Programming Journal:
+Special Issue on Grids and Worldwide Computing Programming Models and Infrastructure},
+  year = 	 {.},
+  volume =	 13,
+  number =	 4,
+  pages =	 {227--298},
+  serialNo =	 "24-18"
 }
 
 @InProceedings{poletto97pldi,
