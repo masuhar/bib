@@ -903,6 +903,28 @@
   annote = "http://www.cert.org/tech_tips/malicious_code_mitigation.html"
 }
 
+@InProceedings{chakravarty07damp,
+  author = 	 {Manuel M. T. Chakravarty and Roman Leshchinskiy and Simon Peyton Jones and Gabriele Keller and Simon Marlow},
+  title = 	 {Data Parallel {Haskell}: a status report},
+  abstract = 	 {We describe the design and current status of our
+                  effort to implement the programming model of nested
+                  data parallelism into the Glasgow Haskell
+                  Compiler.We extended the original programming model
+                  and its implementation, both of which were first
+                  popularised by the NESL language, in terms of
+                  expressiveness as well as efficiency. Our current
+                  aim is to provide a convenient programming
+                  environment for SMP parallelism, and especially
+                  multicore architectures. Preliminary benchmarks show
+                  that we are, at least for some programs, able to
+                  achieve good absolute performance and excellent
+                  speedups.},
+  booktitle = {DAMP},
+  year = 	 2007,
+  month = 	 jan,
+  serialNo =	"27-3"
+}
+
 @article{chandy1985tcs,
  author = {K. Mani Chandy and Leslie Lamport},
  title = {Distributed snapshots: determining global states of distributed systems},
@@ -965,6 +987,15 @@
   year =	 1992,
   month =	 oct,
   serialNo =	 "20-13"
+}
+
+@InProceedings{claessen2008dcc,
+  author = 	 {Koen Claessen and Mary Sheeran and Joel Svensson},
+  title = 	 {{Obsidian}: {GPU} Programming in {Haskell}},
+  booktitle = {DCC},
+  year = 	 2008,
+  month = 	 mar,
+  serialNo =	"27-4"
 }
 
 @Misc{clegg2003computingserveys,
@@ -3428,6 +3459,48 @@ journal = 	 {Science of Computer Programming},
 		  interpreter specialization, sparse matrix"
 }
 
+@inproceedings{lejdfors2006sac,
+ author = {Calle Lejdfors and Lennart Ohlsson},
+ title = {Implementing an embedded GPU language by combining translation and generation},
+ booktitle = {SAC '06: Proceedings of the 2006 ACM symposium on Applied computing},
+ year = 2006,
+ isbn = {1-59593-108-2},
+ pages = {1610--1614},
+ location = {Dijon, France},
+ doi = {http://doi.acm.org/10.1145/1141277.1141654},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+  serialNo =	"27-5"
+ }
+
+@unpublished{lejdfors2006unpublished,
+  author = 	 {Calle Lejdfors and Lennart Ohlsson},
+  title = 	 {{PyGPU}: A high-level language for high-speed image processing},
+  note = 	 {draft at http://www.cs.lth.se/home/Calle_Lejdfors/pygpu/},
+  year = 	 2006,
+  serialNo =	"27-6",
+  abstract = 	 {Image processing is an area with many
+                  computationally demanding algorithms. When
+                  implementing an algorithm the programmer has to make
+                  the choice of either using a high-level language,
+                  thereby gaining rapid development at the expense of
+                  run-time performance. Or, using a lower-level
+                  language having higher runtime performance, but also
+                  a higher implementation cost. In this paper we
+                  present PyGPU, an embedded language that enables
+                  image processing algorithms to be written in the
+                  highlevel, object-oriented language Python. PyGPU
+                  functions are compiled to execute on the graphics
+                  processing unit (GPU) present on modern graphics
+                  cards, a streaming processor capable of speeds more
+                  than a magnitude higher than those of current
+                  generation CPUs. We demonstrate a number of common
+                  image processing algorithms, showing how these can
+                  be implemented succinctly and clearly using
+                  high-level abstractions, while at the same time
+                  achieving high performance.}
+}
+
 @InProceedings{leroy1997tic,
   author = 	 {Xavier Leroy},
   title = 	 {The effectiveness of type-based unboxing},
@@ -3745,6 +3818,39 @@ journal = 	 {Science of Computer Programming},
   pages =	 "195--200",
   annote =	 "Kamada knows how to get the one",
   keywords =     "Termination Detection with Weight"
+}
+
+@Article{mccormicka2007parallel-computing,
+  author = 	 {Patrick McCormicka and Jeff Inmana and James Ahrensa and Jamaludin Mohd-Yusofa and Greg Rothb and Sharen Cumminsa},
+  title = 	 {Scout: a data-parallel programming language for graphics processors },
+  journal = 	 {Parallel Computing},
+  year = 	 2007,
+  volume = 	 33,
+  number = 	 {10--11},
+  pages = 	 {648--662},
+  month = 	 nov,
+  note = 	 {special issue on High-Performance Computing Using Accelerators},
+  abstract = 	 {Commodity graphics hardware has seen incredible
+                  growth in terms of performance, programmability, and
+                  arithmetic precision. Even though these trends have
+                  been primarily driven by the entertainment industry,
+                  the price-to-performance ratio of graphics
+                  processors (GPUs) has attracted the attention of
+                  many within the high-performance computing
+                  community. While the performance of the GPU is well
+                  suited for computational science, the programming
+                  interface, and several hardware limitations, have
+                  prevented their wide adoption. In this paper we
+                  present Scout, a data-parallel programming language
+                  for graphics processors that hides the nuances of
+                  both the underlying hardware and supporting graphics
+                  software layers. In addition to general-purpose
+                  programming constructs, the language provides
+                  extensions for scientific visualization operations
+                  that support the exploration of existing or computed
+                  data sets.  },
+  keywords = 	 {Graphics processors; Data-parallel programming; Heterogeneous computing; Visualization},
+  serialNo =	"27-7"
 }
 
 @inproceedings{mceachen2005aosd,
@@ -4713,6 +4819,21 @@ Languages, and Applications (OOPSLA 2006)},
   pages =	 "207--225",
   serialNo =	 "17-8",
   url="citeseer.nj.nec.com/schwabe98object.html"
+}
+
+@InProceedings{sean2009epham,
+  author = {Lee, Sean   and Chakravarty, Manuel  M.  and Grover, Vinod   and Keller, Gabriele  },
+
+  title = {GPU Kernels as Data-Parallel Array Computations in Haskell},
+  keywords = {compiler, functional, parallel},
+
+	citeulike-article-id = 3872848,
+	posted-at = {2009-01-10 08:09:18},
+	priority = 0,
+	year = 2009,
+  booktitle = {Workshop on Exploiting Parallelism using GPUs and other Hardware-Assisted Methods (EPHAM 2009)},
+	abstract = {We present a novel high-level parallel programming model aimed at graphics processing units (GPUs). We embed GPU kernels as data-parallel array computations in the purely functional language Haskell. GPU and CPU computations can be freely interleaved with the type system tracking the two different modes of computation. The embedded language of array computations is sufficiently limited that our system can automatically extract these computations and compile them to efficient GPU code. In this paper, we outline our approach and present the results of a few preliminary benchmarks.},
+  serialNo =	"27-2"
 }
 
 @inproceedings{segura-devillechaise2003aosd,
