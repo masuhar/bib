@@ -226,6 +226,21 @@
   note = "presented in the Kototoi project, perhaps"
 }
 
+@inproceedings{aksit2009aosd,
+ author = {Aksit, Mehmet and Rensink, Arend and Staijen, Tom},
+ title = {A graph-transformation-based simulation approach for analysing aspect interference on shared join points},
+ booktitle = {AOSD '09: Proceedings of the 8th ACM international conference on Aspect-oriented software development},
+ year = 2009,
+ isbn = {978-1-60558-442-3},
+ pages = {39--50},
+ location = {Charlottesville, Virginia, USA},
+ doi = {http://doi.acm.org/10.1145/1509239.1509247},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+  serialNo =	"27-14",
+  abstract = 	 {Aspects that in isolation behave correctly, may interact when being combined. When interaction changes an aspect's behaviour or disables an aspect, we call this interference. One particular type of interference occurs when aspects are applied to shared join points, since then the ordering of the aspects can also influence the behaviour of the composition. We present an approach to detect aspect interference at shared join points. Aspect compositions are modelled by using a graph production system for modelling aspect-language semantics. A graph-based model of a join point is generated from the source-code of the system. This graph is transformed into a runtime-state representation. Combined with the production system (and the correct tooling) the execution of the aspects is simulated. This simulation results in a labelled transition system that can be used to analyse and verify different properties of the system at the join point. Simulation of the entire system can be computationally expensive. In our approach, we decide to abstract base system execution into non-deterministic valuation and carefully choosing advice semantics, such that simulation of the entire system can be avoided.}
+ }
+
 @InProceedings{aldrich2004foal,
   author = 	 "Jonathan Aldrich",
   title = 	 "Open Modules: Modular Reasoning about Advice",
@@ -938,6 +953,21 @@
  publisher = {ACM},
  address = {New York, NY, USA},
   serialNo =	 "26-4"
+ }
+
+@inproceedings{chavez2009aosd,
+ author = {Chavez, Christina and Garcia, Alessandro and Batista, Thais and Oliveira, Marcel and Sant'Anna, Claudio and Rashid, Awais},
+ title = {Composing architectural aspects based on style semantics},
+ booktitle = {AOSD '09: Proceedings of the 8th ACM international conference on Aspect-oriented software development},
+ year = 2009,
+ isbn = {978-1-60558-442-3},
+ pages = {111--122},
+ location = {Charlottesville, Virginia, USA},
+ doi = {http://doi.acm.org/10.1145/1509239.1509254},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+  serialNo =	"27-13",
+  abstract = 	 {The lack of architecturally-significant mechanisms for aspectual composition might artificially hinder the specification of stable and reusable design aspects. Current aspect-oriented approaches at the architecture-level tend to mimic programming language join point models while overlooking mainstream architectural concepts such as styles and their semantics. Syntax-based pointcuts are typically used to select join points based on the names of architectural elements, exposing architecture descriptions to pointcut fragility and reusability problems. This paper presents style-based composition, a new flavor of aspect composition at the architectural level based on architectural styles. We propose style-based join point models and provide a pointcut language that supports the selection of join points based on style-constrained architectural models. Stability and reusability assessments of the proposed style-based composition model were carried out through three case studies involving different styles. The interplay of style-based pointcuts and some style composition techniques is also discussed.}
  }
 
 @inproceedings{cheng2005aosd,
@@ -2313,6 +2343,32 @@ Memoization},
   title = 	 {Parametric Introductions},
   crossref =	 {aosd2003},
   pages =	 {80--89},
+}
+
+@InProceedings{hankin2008coordination,
+  author = 	 {Chris Hankin and Flemming Nielson and Hanne Riis Nielson and Fan Yang},
+  title = 	 {Advice for Coordination},
+  booktitle = {Coordination Models and Languages (COORDINATION'08)},
+  pages = 	 {153--168},
+  year = 	 2008,
+  editor = 	 {D. Lea and G. Zavttaro},
+  volume = 	 5052,
+  series = 	 LNCS,
+  doi = 	 {10.1007/978-3-540-68265-3_10},
+  serialNo =	"27-10",
+  abstract = 	 {We show how to extend a coordination language with
+                  support for aspect oriented programming. The main
+                  challenge is how to properly deal with the trapping
+                  of actions before the actual data have been bound to
+                  the formal parameters. This necessitates dealing
+                  with open joinpoints -- which is more demanding than
+                  the closed joinpoints in more traditional aspect
+                  oriented languages like AspectJ. The usefulness of
+                  our approach is demonstrated by mechanisms for
+                  discretionary and mandatory access control policies,
+                  as usually expressed by reference monitors, as well
+                  as mechanisms for logging actions. },
+
 }
 
 @inproceedings{hannemann2001icse-asoc,
@@ -4156,6 +4212,21 @@ journal = 	 {Science of Computer Programming},
   affil =	 "Fujitsu Laboratories Ltd."
 }
 
+@inproceedings{niu2009aosd,
+ author = {Niu, Nan and Easterbrook, Steve},
+ title = {Concept analysis for product line requirements},
+ booktitle = {AOSD '09: Proceedings of the 8th ACM international conference on Aspect-oriented software development},
+ year = 2009,
+ isbn = {978-1-60558-442-3},
+ pages = {137--148},
+ location = {Charlottesville, Virginia, USA},
+ doi = {http://doi.acm.org/10.1145/1509239.1509259},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+  serialNo =	"27-12",
+  abstract = 	 {Traditional methods characterize a software product line's requirements using either functional or quality criteria. This appears to be inadequate to assess modularity, detect interferences, and analyze trade-offs. We take advantage of both symmetric and asymmetric views of aspects, and perform formal concept analysis to examine the functional and quality requirements of an evolving product line. The resulting concept lattice provides a rich notion which allows remarkable insights into the modularity and interactions of requirements. We formulate a number of problems that aspect-oriented product line requirements engineering should address, and present our solutions according to the concept lattice. We describe a case study applying our approach to analyze a mobile game product line's requirements, and review lessons learned.}
+ }
+
 @InProceedings{noble1995usenix-mlic,
   author = 	 {Brian D. Noble and Morgan Price and M. Satyanarayanan },
   title = 	 {A Programming Interface for Application-Aware Adaptation in Mobile Computing },
@@ -4220,6 +4291,18 @@ journal = 	 {Science of Computer Programming},
   crossref =	 {oopsla2001},
   pages =	 {83--95},
   annote =	 {Kamio reported (June 2002).}
+}
+
+@TechReport{ogata2009tech-rep,
+  author = 	 {Kazunori Ogata and Dai Mikurube and Kiyokuni Kawachiya and Tamiya Onodera},
+  title = 	 {A Study of Java's non-Java Memory},
+  institution =  {IBM Research, Tokyo Laboratory},
+  year = 	 2009,
+  number = 	 {RT0854},
+  address = 	 {Yamato, Kanagawa, Japan},
+  month = 	 apr,
+  annote = 	 {Limited Distribution},
+  serialNo =	"27-8"
 }
 
 @Article{okui2006ipsj-pro,
@@ -5594,6 +5677,35 @@ transformation of components implemented as actor systems.
   month =	 mar
 }
 
+@inproceedings{villazon2008pppj,
+ author = {Villaz\'{o}n, Alex and Binder, Walter and Moret, Philippe},
+ title = {Aspect weaving in standard Java class libraries},
+ booktitle = {PPPJ '08: Proceedings of the 6th international symposium on Principles and practice of programming in Java},
+ year = 2008,
+ isbn = {978-1-60558-223-8},
+ pages = {159--167},
+ location = {Modena, Italy},
+ doi = {http://doi.acm.org/10.1145/1411732.1411754},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+  serialNo =	"27-11",
+  abstract={Aspect-oriented programming (AOP) has been successfully
+                  applied to application code thanks to techniques
+                  such as Java bytecode
+                  instrumentation. Unfortunately, with current
+                  technology, such as AspectJ, aspects cannot be woven
+                  into standard Java class libraries. This restriction
+                  is particularly unfortunate for aspects that would
+                  benefit from a complete bytecode coverage, such as
+                  profiling or debugging aspects. In this paper we
+                  present an adaptation of the popular AspectJ weaver
+                  that is able to weave aspects also into standard
+                  Java class libraries. We evaluate our approach with
+                  existing profiling aspects, which now cover all
+                  bytecode executing in the virtual machine. In
+                  addition, we present a new aspect for memory leak
+                  detection that also benefits from our approach.}}
+
 @Article{vinoski97ieee,
   author = 	 "Steve Vinoski",
   title = 	 "{CORBA:} Integrating Diverse Applications Within Distributed
@@ -6030,6 +6142,14 @@ Foundations of Object-Oriented Languages (FOOL9)},
   title = 	 {Shadow Programming: Reasoning about Programs using Lexical Join Point Information},
   crossref =	 {gpce2005}
 }
+
+@Misc{yang2009submitted,
+  author = 	 {Fan Yang and Chris Hankin and Flemming Nielson and Hanne Riis Nielson},
+  title = 	 {Aspects for Enfocing {EHR} Policies },
+  howpublished = {submitted to Elsevier},
+  month = 	 apr,
+  year = 	 2009,
+  serialNo =	"27-9"}
 
 @TechReport{yasugi92tr,
   author = 	 "Masahiro Yasugi and Akinori Yonezawa",
