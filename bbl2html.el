@@ -1,0 +1,26 @@
+(defun bbl2html ()
+  (interactive)
+  (goto-char (point-min))
+  (while (re-search-forward (concat "\\(\\\\\\(begin\\|end\\){.*}.*$"
+				    "\\|\\\\newblock\\)") nil t)
+    (delete-region (match-beginning 0)
+		   (match-end 0)))
+
+
+  (goto-char (point-min))
+  (while (re-search-forward "\\\\bibitem{.*?}" nil t)
+    (delete-region (match-beginning 0)
+		   (match-end 0))
+    (insert "<li>"))
+  (goto-char (point-min))
+  (while (re-search-forward "{\\\\em \\([^}]*?\\)}" nil t)
+    (let ((body (match-string 1)))
+      (delete-region (match-beginning 0)
+		     (match-end 0))
+      (insert (concat "<em>" body "</em>"))))
+
+  (goto-char (point-min))
+  (while (re-search-forward "[{}]" nil t)
+    (delete-region (match-beginning 0)
+		   (match-end 0)))
+)
