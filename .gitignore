@@ -26,3 +26,10 @@ _$*
 *.ln
 core
 # CVS default ignores end
+format.aux
+format.bbl
+format.blg
+format.dvi
+format.html
+format.log
+format.txt
