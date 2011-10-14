@@ -1,26 +1,26 @@
 BIBFILES	=	$(wildcard *.bib)
-BASE	= format
-BBLFILE	= $(BASE).bbl
-TXTFILE	= $(BASE).txt
-AUXFILE	= $(BASE).aux
-SCRIPT = $(BASE).sed
-HTMLFILE = $(BASE).html
-HTML_MAKER = txt2html.rb
+CITATIONS	= format
+BBLFILE	= $(CITATIONS).bbl
+TXTFILE	= $(CITATIONS).txt
+AUXFILE	= $(CITATIONS).aux
+CLEANER = cleaner.sed
+HTMLFILE = $(CITATIONS).html
+HTML_MAKER = bbl2html.rb
 
 URLS	= urls.csv
 RUBY = ruby1.9.1
 BIBTEXOPTS = -min-crossrefs=99
 
-$(HTMLFILE):	$(TXTFILE) $(HTML_MAKER) $(URLS)
-	$(RUBY) $(HTML_MAKER) |tee $(HTMLFILE)
+$(HTMLFILE):	$(BBLFILE) $(HTML_MAKER) $(URLS)
+	$(RUBY) $(HTML_MAKER) $(URLS) $(BBLFILE) |tee $(HTMLFILE)
 
-$(TXTFILE):	$(BBLFILE) $(SCRIPT)
-	sed -f $(SCRIPT) $(BBLFILE) > $(TXTFILE).new &&\
-	mv $(TXTFILE).new $(TXTFILE) &&\
-	cat $(TXTFILE)
+#$(TXTFILE):	$(BBLFILE) $(CLEANER)
+#	sed -f $(CLEANER) $(BBLFILE) > $(TXTFILE).new &&\
+#	mv $(TXTFILE).new $(TXTFILE) &&\
+#	cat $(TXTFILE)
 
 $(BBLFILE):	$(AUXFILE) $(BIBFILES)
-	jbibtex $(BIBTEXOPTS) $(BASE)
+	jbibtex $(BIBTEXOPTS) $(CITATIONS)
 
 clean:
 	-rm *.aux *.log $(BBLFILE) $(TXTFILE)
