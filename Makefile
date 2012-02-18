@@ -14,6 +14,9 @@ BIBTEXOPTS = -min-crossrefs=99
 $(HTMLFILE):	$(BBLFILE) $(HTML_MAKER) $(URLS)
 	$(RUBY) $(HTML_MAKER) $(URLS) $(BBLFILE) |tee $(HTMLFILE)
 
+$(TXTFILE):	$(BBLFILE) $(HTML_MAKER) $(URLS)
+	$(RUBY) $(HTML_MAKER) /dev/null $(BBLFILE) |tee $(TXTFILE)
+
 #$(TXTFILE):	$(BBLFILE) $(CLEANER)
 #	sed -f $(CLEANER) $(BBLFILE) > $(TXTFILE).new &&\
 #	mv $(TXTFILE).new $(TXTFILE) &&\
