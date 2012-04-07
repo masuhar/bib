@@ -14,7 +14,6 @@ end
 txt = open(ARGV[1],'r:EUC-JP').read
 
 txt.gsub!(/\\(begin|end){thebibliography}({\d+})?$\n+/,"")
-txt.gsub!(/\\em/,"")
 txt.gsub!(/--/,"-")
 txt.gsub!(/^$\n/,"")
 txt.gsub!(/~/," ")
@@ -44,6 +43,8 @@ end
 
 # pre-formatting for ∂»¿”•Í•π•» in ≤ ∏¶»Òº¬¿” ÛπΩÒ
 def txtprinter(authors,title,rests)
+  # remove italic tag
+  rests.gsub!(/<\/?em>/,"")
   # remove names of editors 
   rests.gsub!(/^.*, editors?, /,"In ")
   # remove "In " from "In Proceedings of ...."
@@ -82,8 +83,13 @@ records = txt.split(/^\\bibitem{.*}$\n/  # split item by \bibtiem{abc12def}
   # split each item by "\newblock " into authors, title, and other parts
   authors, title, rests = item.split(/\\newblock[ \n]/).
   # remove { } and newline in each block 
-  map{ |block| block.gsub(/[{}\n]/,"").gsub(/ +/," ") }
+  map{ |block| block\
+    .gsub(/\n/,"")\
+    .gsub(/{\\em (.*?)}/, '<em>\1</em>')\
+    .gsub(/[{}\n]/,"")\
+    .gsub(/ +/," ") }
   # print it out
-  txtprinter(authors,title,rests)
+#  txtprinter(authors,title,rests)
+  htmlprinter(authors,title,rests)
 }
 
