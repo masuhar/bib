@@ -89,7 +89,7 @@ records = txt.split(/^\\bibitem{.*}$\n/  # split item by \bibtiem{abc12def}
     .gsub(/[{}\n]/,"")\
     .gsub(/ +/," ") }
   # print it out
-#  txtprinter(authors,title,rests)
-  htmlprinter(authors,title,rests)
+  txtprinter(authors,title,rests)
+#  htmlprinter(authors,title,rests)
 }
 

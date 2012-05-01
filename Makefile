@@ -12,11 +12,11 @@ RUBY = ruby1.9.1
 BIBTEXOPTS = -min-crossrefs=99
 
 # output in Kakenhi seika houkokusho
-$(HTMLFILE):	$(BBLFILE) $(HTML_MAKER) $(URLS)
-	$(RUBY) $(HTML_MAKER) $(URLS) $(BBLFILE) |tee $(HTMLFILE)
+#$(HTMLFILE):	$(BBLFILE) $(HTML_MAKER) $(URLS)
+#	$(RUBY) $(HTML_MAKER) $(URLS) $(BBLFILE) |tee $(HTMLFILE)
 
-#$(TXTFILE):	$(BBLFILE) $(HTML_MAKER) $(URLS)
-#	$(RUBY) $(HTML_MAKER) /dev/null $(BBLFILE) |tee $(TXTFILE)
+$(TXTFILE):	$(BBLFILE) $(HTML_MAKER) $(URLS)
+	$(RUBY) $(HTML_MAKER) /dev/null $(BBLFILE) |tee $(TXTFILE)
 
 #$(TXTFILE):	$(BBLFILE) $(CLEANER)
 #	sed -f $(CLEANER) $(BBLFILE) > $(TXTFILE).new &&\
