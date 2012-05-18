@@ -11,12 +11,14 @@ URLS	= urls.csv
 RUBY = ruby1.9.1
 BIBTEXOPTS = -min-crossrefs=99
 
-# output in Kakenhi seika houkokusho
-#$(HTMLFILE):	$(BBLFILE) $(HTML_MAKER) $(URLS)
-#	$(RUBY) $(HTML_MAKER) $(URLS) $(BBLFILE) |tee $(HTMLFILE)
+all:	$(HTMLFILE) $(TXTFILE)
 
+$(HTMLFILE):	$(BBLFILE) $(HTML_MAKER) $(URLS)
+	$(RUBY) $(HTML_MAKER) --html $(URLS) $(BBLFILE) |tee $(HTMLFILE)
+
+# output in Kakenhi seika houkokusho
 $(TXTFILE):	$(BBLFILE) $(HTML_MAKER) $(URLS)
-	$(RUBY) $(HTML_MAKER) /dev/null $(BBLFILE) |tee $(TXTFILE)
+	$(RUBY) $(HTML_MAKER) --txt /dev/null $(BBLFILE) |tee $(TXTFILE)
 
 #$(TXTFILE):	$(BBLFILE) $(CLEANER)
 #	sed -f $(CLEANER) $(BBLFILE) > $(TXTFILE).new &&\

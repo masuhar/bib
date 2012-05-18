@@ -1,6 +1,18 @@
 # encoding: EUC-JP
 require 'csv'
 
+PRINTER = {
+  "--html" => "htmlprinter",
+  "--txt" => "txtprinter"
+}[ARGV.shift]
+
+if !PRINTER
+  STDERR.puts "Usage: ruby bbl2html.rb --html|--txt URL_FILE BBL_FILE"
+  STDERR.puts "\tURL_FILE: a CSV file that maps names to URLs"
+  STDERR.puts "\tBBL_FILE: a .bbl file to be converted"
+  exit 1
+end
+
 map = {}
 
 CSV.open(ARGV[0],'r:SJIS').each do |jname,ename,url|
@@ -78,6 +90,7 @@ def txtprinter(authors,title,rests)
 ITEM
 end
 
+
 records = txt.split(/^\\bibitem{.*}$\n/  # split item by \bibtiem{abc12def}
                     )[1..-1].map{ |item| # discard the first empty item
   # split each item by "\newblock " into authors, title, and other parts
@@ -89,7 +102,6 @@ records = txt.split(/^\\bibitem{.*}$\n/  # split item by \bibtiem{abc12def}
     .gsub(/[{}\n]/,"")\
     .gsub(/ +/," ") }
   # print it out
-  txtprinter(authors,title,rests)
-#  htmlprinter(authors,title,rests)
+  method(PRINTER).call(authors,title,rests)
 }
 
