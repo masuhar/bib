@@ -8,7 +8,8 @@ HTMLFILE = $(CITATIONS).html
 HTML_MAKER = bbl2html.rb
 
 URLS	= urls.csv
-RUBY = ruby1.9.1
+RUBY = /home/masuhara/.rvm/rubies/ruby-1.9.3-p0/bin/ruby
+#RUBY = ruby
 BIBTEXOPTS = -min-crossrefs=99
 
 all:	$(HTMLFILE) $(TXTFILE)
@@ -26,6 +27,8 @@ $(TXTFILE):	$(BBLFILE) $(HTML_MAKER) $(URLS)
 #	cat $(TXTFILE)
 
 $(BBLFILE):	$(AUXFILE) $(BIBFILES)
+	-rm $(AUXFILE)
+	platex $(BBLFILE:%.bbl=%.tex)
 	jbibtex $(BIBTEXOPTS) $(CITATIONS)
 
 clean:
