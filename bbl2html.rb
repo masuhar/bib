@@ -37,6 +37,9 @@ map.each_pair{ |k,url|
 }
 
 def htmlprinter(authors,title,rests)
+  [authors,title,rests].each do |s|
+    s.gsub!(/{?\\'E}?/,"&Eacute;")
+  end
   puts <<ITEM
   <li>#{authors}<br>
   ``#{title}''<br>
