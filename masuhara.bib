@@ -1235,23 +1235,16 @@ Mechanisms in a Single Context-Oriented Language},
   title = 	 {Interfaces for Separate Compilation of Aspect-Oriented Programs with Inter-Type Declarations},
   howpublished = {submitted to OOPSLA'14},
   year = 	 2014,
-  annote = 	 {submitted on March 25, 2014}
+  annote = 	 {submitted on March 25, 2014, not accepted}
 }
 
 @InProceedings{hirschfeld2014jssst,
   author = 	 {Robert Hirschfeld and Hidehiko Masuhara and Atsushi Igarashi and Tim Felgentreff},
   title = 	 {Visibility of Context-oriented Behavior and State in {L}},
-  crossref =  {jssst2014},
+  crossref =  {jssst2014e},
   pages = 	 {PPL2--1},
+  note = 	 {revised version appears in Computer Software journal \cite{hirschfeld2015compsoft}},
   date = 	 {2014-09-08}}
-
-@Misc{hirschfeld2014submitted,
-  author = 	 {Robert Hirschfeld and Hidehiko Masuhara and Atsushi Igarashi and Tim Felgentreff},
-  title = 	 {Visibility of Context-oriented Behavior and State in {L}},
-  month = 	 {sep},
-  year = 	 2014,
-  annote = 	 {revised from hirschfeld2014jssst, submitted to Computer Software}
-}
 
 @inproceedings{aotani2014cop,
  author = {Aotani, Tomoyuki and Kamina, Tetsuo and Masuhara, Hidehiko},
@@ -1272,12 +1265,59 @@ Mechanisms in a Single Context-Oriented Language},
  keywords = {Context-oriented programming, layer activation mechanisms},
 }
 
+@inproceedings{kamina2014cop,
+ author = {Kamina, Tetsuo and Aotani, Tomoyuki and Igarashi, Atsushi},
+ title = {On-Demand Layer Activation for Type-Safe Deactivation},
+ booktitle = {Proceedings of 6th International Workshop on Context-Oriented Programming},
+ series = {COP'14},
+ year = {2014},
+ isbn = {978-1-4503-2861-6},
+ location = {Uppsala, Sweden},
+ pages = {4:1--4:7},
+ articleno = {4},
+ numpages = {7},
+ url = {http://doi.acm.org/10.1145/2637066.2637070},
+ doi = {10.1145/2637066.2637070},
+ acmid = {2637070},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {ContextFJ, Dynamic layer deactivation, Type soundness},
+} 
+
+@Book{concurrentObjectsAndBeyond2014,
+  editor = 	 {Gul Agha} #and# igarashi #and# {Naoki Kobayashi} #and# masuhara #and# {Satoshi Matsuoka} #and# {Etsuya Shibayama} #and # taura,
+  title = 	 {Concurrent Objects and Beyond},
+  publisher = 	 SV,
+  year = 	 2014,
+  volume = 	 8665,
+  series = 	 LNCS,
+  month = 	 sep,
+  annote = 	 {Papers dedicated to Akinori Yonezawa on the Occasion of His 65th Birthday}
+}
+
+@InProceedings{sakurai2014aoasia,
+  author = 	 sakurai #and# masuhara,
+  title = 	 {{Crossver}: a Code Transformation Language for Crosscutting Changes},
+  booktitle = {Proceedings of the 9th International Workshop on Advanced Modularization Techniques (AOAsia/Pacific 2014)},
+  year = 	 2014,
+  month = 	 nov,
+  date = 	 {2014-11-16},
+  location = 	 {Hong Kong}}
+
+@Misc{masuhara2014isp2s2,
+  location = 	 {Kobe},
+  author = 	 masuhara #and# aotani,
+  title = 	 {A Dynamically-typed Language for Prototyping High-Performance Data Parallel Programs},
+  howpublished = {Poster presentation at JST/CREST International Symposium on Post Petascale System Software},
+  month = 	 dec,
+  year = 	 2014}
+
 @InProceedings{kamina2015modularity,
   author = 	 kamina #and# aotani #and# masuhara,
   title = 	 {Generalized Layer Activation Mechanism Through Contexts and Subscribers},
   crossref =  {modularity2015},
-  pages = 	 {.},
-  annote = 	 {25 unique papers submitted total and 12 accepted, so the acceptance percentage was 48\% overall}
+  pages = 	 {14--28},
+  doi = {10.1145/2724525.2724570},
 }
 
 @InProceedings{sakurai2015sac,
@@ -1285,7 +1325,20 @@ Mechanisms in a Single Context-Oriented Language},
   title = 	 {The Omission Finder for Debugging What-Should-Have-Happened Bugs in Object-Oriented Programs},
   crossref =  {sac2015},
   booktitle = {In Proceedings of The 30th ACM/SIGAPP Symposium On Applied Computing (SAC 2015)},
-  pages = 	 {.},
+  pages = 	 {1962--1969},
   annote = 	 {OOPS! Track},
+}
+                  
+@Article{hirschfeld2015compsoft,
+  author = 	 {Robert Hirschfeld and Hidehiko Masuhara and Atsushi Igarashi and Tim Felgentreff},
+  title = 	 {Visibility of Context-oriented Behavior and State in {L}},
+  journal = 	 {Computer Software},
+  year = 	 2015,
+  volume = 	 {.},
+  number = 	 {.},
+  pages = 	 {.},
+  month = 	 {.},
+  note = 	 {revised from \cite{hirschfeld2014jssst}, accepted 2015-04-15},
+  annote = 	 {submitted September 2014}
 }
 
