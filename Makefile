@@ -8,8 +8,8 @@ HTMLFILE = $(CITATIONS).html
 HTML_MAKER = bbl2html.rb
 
 URLS	= urls.csv
-RUBY = /home/masuhara/.rvm/rubies/ruby-1.9.3-p0/bin/ruby
-#RUBY = ruby
+#RUBY = /home/masuhara/.rvm/rubies/ruby-1.9.3-p0/bin/ruby
+RUBY = ruby
 BIBTEXOPTS = -min-crossrefs=99
 
 all:	$(HTMLFILE) $(TXTFILE)
