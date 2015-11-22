@@ -29,6 +29,7 @@ txt.gsub!(/\\(begin|end){thebibliography}({\d+})?$\n+/,"")
 txt.gsub!(/--/,"-")
 txt.gsub!(/^$\n/,"")
 txt.gsub!(/~/," ")
+txt.gsub!(/\\&/,"&")
 
 
 # add links to names
@@ -37,8 +38,10 @@ map.each_pair{ |k,url|
 }
 
 def htmlprinter(authors,title,rests)
+#  raise "there is nil in [#{authors},#{title},#{rests}]" unless
+#    [authors,title,rests].all?{ |s| s }
   [authors,title,rests].each do |s|
-    s.gsub!(/{?\\'E}?/,"&Eacute;")
+    s && s.gsub!(/{?\\'E}?/,"&Eacute;")
   end
   puts <<ITEM
   <li>#{authors}<br>
@@ -58,6 +61,7 @@ end
 
 # pre-formatting for ∂»¿”•Í•π•» in ≤ ∏¶»Òº¬¿” ÛπΩÒ
 def txtprinter(authors,title,rests)
+  rests = rests || ""
   # remove italic tag
   rests.gsub!(/<\/?em>/,"")
   # remove names of editors 
