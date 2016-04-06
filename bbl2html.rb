@@ -28,6 +28,11 @@ txt = open(ARGV[1],'r:EUC-JP').read
 txt.gsub!(/\\(begin|end){thebibliography}({\d+})?$\n+/,"")
 txt.gsub!(/--/,"-")
 txt.gsub!(/^$\n/,"")
+txt.gsub!(/\\'([AEIOUYaeiouy])/,'&\1acute;')
+txt.gsub!(/\\`([AEIOUYaeiouy])/,'&\1grave;')
+txt.gsub!(/\\\^([AEIOUaeiou])/,'&\1circ;')
+txt.gsub!(/\\~([ANOano])/,'&\1tilde;')
+txt.gsub!(/\\"([AEIOUYaeiouy])/,'&\1uml;')
 txt.gsub!(/~/," ")
 txt.gsub!(/\\&/,"&")
 
