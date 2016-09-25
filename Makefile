@@ -6,6 +6,7 @@ AUXFILE	= $(CITATIONS).aux
 CLEANER = cleaner.sed
 HTMLFILE = $(CITATIONS).html
 HTML_MAKER = bbl2html.rb
+BIBTEX = pbibtex
 
 URLS	= urls.csv
 #RUBY = /home/masuhara/.rvm/rubies/ruby-1.9.3-p0/bin/ruby
@@ -29,7 +30,7 @@ $(TXTFILE):	$(BBLFILE) $(HTML_MAKER) $(URLS)
 $(BBLFILE):	$(AUXFILE) $(BIBFILES)
 	-rm $(AUXFILE)
 	platex $(BBLFILE:%.bbl=%.tex)
-	jbibtex $(BIBTEXOPTS) $(CITATIONS)
+	$(BIBTEX) $(BIBTEXOPTS) $(CITATIONS)
 
 clean:
 	-rm *.aux *.log $(BBLFILE) $(TXTFILE)
