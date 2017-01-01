@@ -1,4 +1,4 @@
-# encoding: EUC-JP
+# encoding: euc-jp
 require 'csv'
 
 PRINTER = {
@@ -23,7 +23,8 @@ end
 
 #puts map.inspect
 
-txt = open(ARGV[1],'r:EUC-JP').read
+#txt = open(ARGV[1],'r:EUC-JP').read
+txt = open(ARGV[1],'rb:ISO-2022-JP').read.encode("EUC-JP")
 
 txt.gsub!(/\\(begin|end){thebibliography}({\d+})?$\n+/,"")
 txt.gsub!(/--/,"-")
