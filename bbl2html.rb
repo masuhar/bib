@@ -1,4 +1,4 @@
-# encoding: euc-jp
+# encoding: utf-8
 require 'csv'
 
 PRINTER = {
@@ -17,14 +17,14 @@ map = {}
 
 CSV.open(ARGV[0],'r:SJIS').each do |jname,ename,url|
 #  puts jname,ename,url
-  map[jname.to_s.encode("EUC-JP")] = url if jname && url
-  map[ename.to_s.encode("EUC-JP")] = url if ename && url
+  map[jname.to_s.encode("UTF-8")] = url if jname && url
+  map[ename.to_s.encode("UTF-8")] = url if ename && url
 end
 
 #puts map.inspect
 
-#txt = open(ARGV[1],'r:EUC-JP').read
-txt = open(ARGV[1],'rb:ISO-2022-JP').read.encode("EUC-JP")
+txt = open(ARGV[1],'rb:UTF-8').read 
+
 
 txt.gsub!(/\\(begin|end){thebibliography}({\d+})?$\n+/,"")
 txt.gsub!(/--/,"-")
@@ -65,7 +65,7 @@ class String
   end
 end
 
-# pre-formatting for ¶ÈÀÓ¥ê¥¹¥È in ²Ê¸¦Èñ¼ÂÀÓÊó¹ð½ñ
+# pre-formatting for æ¥­ç¸¾ãƒªã‚¹ãƒˆ in ç§‘ç ”è²»å®Ÿç¸¾å ±å‘Šæ›¸
 def txtprinter(authors,title,rests)
   rests = rests || ""
   # remove italic tag
@@ -91,13 +91,13 @@ def txtprinter(authors,title,rests)
   rests.gsub!(/, .$/,"")
 
   puts <<ITEM
-Ãø¼ÔÌ¾: #{authors.gsub(/, and /,', ').gsub(/.$/,'')}
-ÏÀÊ¸É¸Âê: #{title.gsub(/.$/,'')}
-»¨»ïÌ¾: #{rests}
-ººÆÉ¤ÎÍ­Ìµ: Í­Ìµ
-´¬: #{volnum}
-È¯¹ÔÇ¯: #{ymd}
-¥Ú¡¼¥¸: #{pages}
+è‘—è€…å: #{authors.gsub(/, and /,', ').gsub(/.$/,'')}
+è«–æ–‡æ¨™é¡Œ: #{title.gsub(/.$/,'')}
+é›‘èªŒå: #{rests}
+æŸ»èª­ã®æœ‰ç„¡: æœ‰ç„¡
+å·»: #{volnum}
+ç™ºè¡Œå¹´: #{ymd}
+ãƒšãƒ¼ã‚¸: #{pages}
 
 
 ITEM
