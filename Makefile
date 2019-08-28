@@ -13,7 +13,17 @@ URLS	= urls.csv
 RUBY = ruby
 BIBTEXOPTS = -min-crossrefs=99
 
-all:	$(HTMLFILE) $(TXTFILE)
+# all:	$(HTMLFILE) $(TXTFILE)
+
+# make KEYS=masuhara1992ooplsa one 
+one:
+	@if [ "$(KEYS)" = "" ]; then \
+		echo "usage: make KEYS=key,key,... one";\
+	else \
+		echo '\\nocite{'$(KEYS)'}' > nocite.tex;\
+		$(MAKE) all; \
+		cat format.html; \
+	fi
 
 $(HTMLFILE):	$(BBLFILE) $(HTML_MAKER) $(URLS)
 	$(RUBY) $(HTML_MAKER) --html $(URLS) $(BBLFILE) |tee $(HTMLFILE)
@@ -34,6 +44,8 @@ $(BBLFILE):	$(AUXFILE) $(BIBFILES)
 
 clean:
 	-rm *.aux *.log $(BBLFILE) $(TXTFILE)
+
+format.aux:	format.tex nocite.tex
 
 %.aux:	%.tex
 	platex $<
