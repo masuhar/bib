@@ -13,7 +13,6 @@ URLS	= urls.csv
 RUBY = ruby
 BIBTEXOPTS = -min-crossrefs=99
 
-# all:	$(HTMLFILE) $(TXTFILE)
 
 # make KEYS=masuhara1992ooplsa one 
 one:
@@ -24,6 +23,8 @@ one:
 		$(MAKE) all; \
 		cat format.html; \
 	fi
+
+all:	$(HTMLFILE) $(TXTFILE)
 
 $(HTMLFILE):	$(BBLFILE) $(HTML_MAKER) $(URLS)
 	$(RUBY) $(HTML_MAKER) --html $(URLS) $(BBLFILE) |tee $(HTMLFILE)
