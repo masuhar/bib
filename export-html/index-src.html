@@ -11,6 +11,17 @@
 		<script>
 		  $(document).ready(function(){addLinks("links.csv", "#bibtex2html dl dd", " class='author'");});
 		</script>
+		<script>
+function changeTypeCheckbox(box) {
+  let speed=300;
+  let elements = $(box.name + ", "+box.name+" + dd");
+  if (box.checked) {
+    elements.show(speed);
+  } else {
+    elements.hide(speed);
+  }
+}
+		</script>
 		<link rel="stylesheet" type="text/css" href="bib.css">
 	</head>
 
@@ -35,6 +46,36 @@
 <p align="right"><a href="index-j.html">(written in Japanese)</a></p>
 
 <HR>
+<div id="cp2" style="position:sticky; top: 0px; background-color: white; float: right;">
+  <input type="checkbox" name=".article" checked="1"
+	 onchange='changeTypeCheckbox(this)'
+	 />
+  <label for=".article">Article</label>
+  <input type="checkbox" name=".inproceedings" checked="1"
+	 onchange='changeTypeCheckbox(this)'
+	 />
+  <label for=".inproceedings">In Proceedings</label>
+  <input type="checkbox" name=".misc" checked="1"
+	 onchange='changeTypeCheckbox(this)'
+	 />
+  <label for=".misc">Misc</label>
+  <input type="checkbox" name=".techreport" checked="1"
+	 onchange='changeTypeCheckbox(this)'
+	 />
+  <label for=".techreport">Technical Report</label>
+  <input type="checkbox" name=".proceedings" checked="1"
+	 onchange='changeTypeCheckbox(this)'
+	 />
+  <label for=".proceedings">Proceedings</label>
+  <input type="checkbox" name=".book" checked="1"
+	 onchange='changeTypeCheckbox(this)'
+	 />
+  <label for=".book">Book</label>
+  <input type="checkbox" name=".incollection" checked="1"
+	 onchange='changeTypeCheckbox(this)'
+	 />
+  <label for=".incollection">In Collection</label>
+</div>
 
 <div id="bibtex2html" />
 
