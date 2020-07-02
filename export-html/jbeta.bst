@@ -63,6 +63,7 @@ ENTRY
     institution
     journal
     key
+    location
     month
     note
     number
@@ -951,31 +952,39 @@ FUNCTION {inproceedings}
 
 
       format.pages output
+      location empty$
+      {
+	address empty$
+	  { organization publisher new.sentence.checkb
+
+	    organization output
+
+	    publisher output
+
+	    format.date "year" output.check
+
+	  }
+	  { address output.nonnull
+
+	    format.date "year" output.check
 
 
+	    new.sentence
 
-      address empty$
-	{ organization publisher new.sentence.checkb
+	    organization output
 
-	  organization output
+	    publisher output
 
-	  publisher output
-
-	  format.date "year" output.check
-
-	}
-	{ address output.nonnull
-
-	  format.date "year" output.check
-
-
-	  new.sentence
-
-	  organization output
-
-	  publisher output
-
-	}
+	  }
+	if$ 
+      }
+      {
+	location output
+	organization publisher new.sentence.checkb
+	organization output
+	publisher output
+	format.date "year" output.check
+      }
       if$
     }
     { format.incoll.inproc.crossref output.nonnull
@@ -1044,6 +1053,7 @@ FUNCTION {misc}
   format.title output
   howpublished new.block.checka
   howpublished output
+  location output
   format.date output
 
   new.block
@@ -1076,29 +1086,44 @@ FUNCTION {proceedings}
   format.btitle "title" output.check
   format.bvolume output
   format.number.series output
-  address empty$
-    { editor empty$
-	{ publisher new.sentence.checka }
-	{ organization publisher new.sentence.checkb
-	  organization output
-	}
-      if$
-      publisher output
-      format.date "year" output.check
+  location empty$
+  {
+    address empty$
+      { editor empty$
+	  { publisher new.sentence.checka }
+	  { organization publisher new.sentence.checkb
+	    organization output
+	  }
+	if$
+	publisher output
+	format.date "year" output.check
 
-    }
-    { address output.nonnull
-      format.date "year" output.check
+      }
+      { address output.nonnull
+	format.date "year" output.check
 
 
-      new.sentence
+	new.sentence
 
-      editor empty$
-	'skip$
-	{ organization output }
-      if$
-      publisher output
-    }
+	editor empty$
+	  'skip$
+	  { organization output }
+	if$
+	publisher output
+      }
+    if$
+  }
+  {
+    location output.nonnull
+    editor empty$
+      { publisher new.sentence.checka }
+      { organization publisher new.sentence.checkb
+	organization output
+      }
+    if$
+    publisher output
+    format.date "year" output.check
+  }
   if$
   new.block
   note output
