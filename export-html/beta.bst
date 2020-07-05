@@ -547,10 +547,12 @@ FUNCTION {article}
   crossref missing$
     { journal emphasize "journal" output.check
       format.vol.num.pages output
+      location output
       format.date "year" output.check
     }
     { format.article.crossref output.nonnull
       format.pages output
+      location output
     }
   if$
   new.block
