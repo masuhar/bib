@@ -21,6 +21,12 @@ function changeTypeCheckbox(box) {
     elements.hide(speed);
   }
 }
+
+function l() {
+  $("#cp2 input").each(function(){changeTypeCheckbox(this);});
+}
+window.onload=l;
+
 		</script>
 		<link rel="stylesheet" type="text/css" href="bib.css">
 	</head>
