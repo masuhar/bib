@@ -10,23 +10,7 @@
 		<script src="add-links.js" type="text/javascript"></script>
 		<script type="text/javascript">
 		  $(document).ready(function(){addLinks("links-j.csv", "#bibtex2html dl dd", " class='author'");});
-		</script>
-		<script type="text/javascript">
-function changeTypeCheckbox(box) {
-  let speed=300;
-  let elements = $(box.name + ", "+box.name+" + dd");
-  if (box.checked) {
-    elements.show(speed);
-  } else {
-    elements.hide(speed);
-  }
-}
-
-function l() {
-  $("#cp2 input").each(function(){changeTypeCheckbox(this);});
-}
-window.onload=l;
-
+		  window.onload=resetTypeCheckbox;
 		</script>
 		<link rel="stylesheet" type="text/css" href="bib.css">
 	</head>
@@ -38,34 +22,26 @@ window.onload=l;
 
 <HR/>
 <div id="cp2" style="position:sticky; top: 0px; background-color: white; float: right;">
-  <input type="checkbox" name=".article" checked="1"
-	 onchange='changeTypeCheckbox(this)'
-	 />
-  <label for=".article">Article</label>
-  <input type="checkbox" name=".inproceedings" checked="1"
-	 onchange='changeTypeCheckbox(this)'
-	 />
-  <label for=".inproceedings">In Proceedings</label>
-  <input type="checkbox" name=".misc" checked="1"
-	 onchange='changeTypeCheckbox(this)'
-	 />
-  <label for=".misc">Misc</label>
-  <input type="checkbox" name=".techreport" checked="1"
-	 onchange='changeTypeCheckbox(this)'
-	 />
-  <label for=".techreport">Technical Report</label>
-  <input type="checkbox" name=".proceedings" checked="1"
-	 onchange='changeTypeCheckbox(this)'
-	 />
-  <label for=".proceedings">Proceedings</label>
-  <input type="checkbox" name=".book" checked="1"
-	 onchange='changeTypeCheckbox(this)'
-	 />
-  <label for=".book">Book</label>
-  <input type="checkbox" name=".incollection" checked="1"
-	 onchange='changeTypeCheckbox(this)'
-	 />
-  <label for=".incollection">In Collection</label>
+  <input type="checkbox" name=".article" checked onchange="changeTypeCheckbox(this)">
+  <span class="only" onclick='onlyThisKind(this);'>
+    <label for=".article">Journal articles</label>
+    only
+  </span>
+  <input type="checkbox" name=".inproceedings.incollection" checked onchange="changeTypeCheckbox(this)">
+  <span class="only" onclick='onlyThisKind(this);'>
+    <label for=".inproceedings.incollection">Conference papers</label>
+    only
+  </span>
+  <input type="checkbox" name=".misc.techreport" checked onchange="changeTypeCheckbox(this)">
+  <span class="only" onclick='onlyThisKind(this);'>
+    <label for=".misc.techreport">Miscellaneous papers</label>
+    only
+  </span>
+  <input type="checkbox" name=".proceedings.book" checked onchange="changeTypeCheckbox(this)">
+  <span class="only" onclick='onlyThisKind(this);'>
+    <label for=".proceedings.book">Books and Proceedings</label>
+    only
+  </span>
 </div>
 
 <div id="bibtex2html" />
