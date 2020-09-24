@@ -39,21 +39,9 @@
 <div id="cp2" style="position:sticky; top: 0px; background-color: white; float: right;">
   <div class="filter" name=".article">Journal articles</div>
   <div class="filter" name=".inproceedings.incollection">Conference papers</div>
-  <input type="checkbox" name=".misc.techreport" checked onchange="changeTypeCheckbox(this)">
-  <span class="only" onclick='onlyThisKind(this);'>
-    <label for=".misc.techreport">Miscellaneous papers</label>
-    only
-  </span>
-  <input type="checkbox" name=".proceedings.book" checked onchange="changeTypeCheckbox(this)">
-  <span class="only" onclick='onlyThisKind(this);'>
-    <label for=".proceedings.book">Books and Proceedings</label>
-    only
-  </span>
-  <input type="checkbox" name=".bachelorsthesis.mastersthesis.PhdThesis" checked onchange="changeTypeCheckbox(this)">
-  <span class="only" onclick='onlyThisKind(this);'>
-    <label for=".bachelorsthesis.mastersthesis.PhdThesis">Theses</label>
-    only
-  </span>
+  <div class="filter" name=".misc.techreport">Miscellaneous papers</div>
+  <div class="filter" name=".proceedings.book">Books and Proceedings</div>
+  <div class="filter" name=".bachelorsthesis.mastersthesis.PhdThesis">Theses</div>
 </div>
 
 <div id="bibtex2html" />
