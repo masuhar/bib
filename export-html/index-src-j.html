@@ -10,7 +10,7 @@
 		<script src="add-links.js" type="text/javascript"></script>
 		<script type="text/javascript">
 		  $(document).ready(function(){addLinks("links-j.csv", "#bibtex2html dl dd", " class='author'");});
-		  window.onload=resetTypeCheckbox;
+		  window.onload=initializeButtons;
 		</script>
 		<link rel="stylesheet" type="text/css" href="bib.css">
 	</head>
@@ -21,7 +21,7 @@
 <p align="right"><a href="./index.html">(→ in English)</a></p>
 
 <HR/>
-<div id="cp2" style="position:sticky; top: 0px; background-color: white; float: right;">
+<div id="cp2">
   <div class="filter" name=".article">Journal articles</div>
   <div class="filter" name=".inproceedings.incollection">Conference papers</div>
   <div class="filter" name=".misc.techreport">Miscellaneous papers</div>
