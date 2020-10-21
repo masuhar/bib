@@ -2674,3 +2674,20 @@ pdf = 	 {ismm2019.pdf}
   OPTannote = 	 {}
 }
 
+@InProceedings{kamina2020rebls,
+  author = 	 kamina #and# aotani #and# masuhara,
+  title = 	 {Managing Persistent Signals using Signal Classes},
+  booktitle = {Proceedings of the 7th Workshop on Reactive and Event-based Languages and Systems (REBLS 2020)},
+  year = 	 2020,
+  editor = 	 {Ivan Perez},
+  month = 	 nov,
+  url = 	 {https://2020.splashcon.org/details/rebls-2020-papers/5/Managing-Persistent-Signals-using-Signal-Classes},  
+  publisher = ACM,
+  pdf = 	 {rebls2020.pdf}, 
+  note = 	 {to appear},
+  OPTdoi = 	 {.},
+  abstract = 	 {Persistent signals provide a convenient abstraction for time-varying values with their execution histories by implicitly leaving the management of execution histories to the database system. The current design of persistent signals is very rudimental. For example, they do not provide abstractions for representing complex data structures, and they can only be connected using API methods prepared in advance. To make matters worse, dynamic creation of persistent signals is not allowed. In this paper, we show that these problems can be addressed by introducing a new language mechanism called signal classes. A signal class packages a network of related persistent signals that comprises a complex data structure. A signal class can be instantiated dynamically, and this instance is considered a ``small world,'' where all signals within it are synchronous. We further show that this synchronous world makes it easy to realize persistent signal networks connected by expressions that are not limited to the API methods. This dynamic creation of signal class instances is managed by a simple lifecycle model where both dynamic lifecycle events and persistency are defined.}
+}
+
+
+
