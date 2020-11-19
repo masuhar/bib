@@ -2614,7 +2614,10 @@ pdf = 	 {ismm2019.pdf}
   month = 	 aug,
   year = 	 2020,
   date = 	 {2020-08-28},
-  url = 	 {https://icfp20.sigplan.org/home/scheme-2020}}
+  url = 	 {https://icfp20.sigplan.org/home/scheme-2020},
+  abstract = 	 {Type systems are one of the fundamental things that everyone in the programming languages community must study. In our research group, we run a semester-long type systems seminar every two years, covering essential chapters of the traditional TaPL book. This year, however, we are attempting a different approach, namely teaching type systems through programming in the Turnstile language of Chang et al. Turnstile is a Racket DSL for creating typed programming languages, built under the slogan ``type systems as macros''. More specifically, it allows the user to define typing rules in the familiar, derivation-like syntax, and to reuse Racket's infrastructure for type checking and evaluation.
+
+We report our experience in teaching type systems as macros to an undergraduate student who joined our research group this spring (the second author). In particular, we show how the student used Turnstile to build simple type-and- effect systems, and what difficulties the student had in the course of implementation.}}
 
 2020-08-28
 @Misc{nose2020scheme,
@@ -2624,7 +2627,12 @@ pdf = 	 {ismm2019.pdf}
   month = 	 aug,
   year = 	 2020,
   date = 	 {2020-08-28},
-  url = 	 {https://icfp20.sigplan.org/home/scheme-2020}}
+  url = 	 {https://icfp20.sigplan.org/home/scheme-2020},
+  abstract = 	 {The program design recipe, introduced by Felleisen et al. in their textbook ``How to Design Programs'', is a step-by-step procedure that solves a problem by programming. The design recipe encourages the programmer, after examining the problem statement, to analyze the data, create input-output examples, and develop a template, instead of immediately starting coding. This helps reduce various kinds of errors, such as non-exhaustive conditional expressions and infinite loops.
+
+One problem in programming with the design recipe is the lack of error-checking support for steps other than coding. For instance, in DrRacket, the programmer cannot check the correctness of data definitions or templates, as they are not written as runnable Racket programs.
+
+We propose a programming environment based on the design recipe. The environment covers the whole process of the design recipe, including data analysis and template construction, with an IDE-like user interface. We also create a domain-specific language that allows systematic design of the user interface and error checking algorithms. Although it is only partly implemented at this point, we hope to receive suggestions on the design of our environment, especially from the workshop participants who are teaching with the design recipe.}}
 
 @InProceedings{leger2020cop,
   author = 	 leger #and# masuhara #and# {Ismael Figueroa},
@@ -2638,22 +2646,26 @@ pdf = 	 {ismm2019.pdf}
   pdf = 	 {cop2020.pdf},
   month = 	 jul,
   date = 	 {2020-07-21},
-  url = 	 {https://2020.ecoop.org/home/COP-2020}}
+  url = 	 {https://2020.ecoop.org/home/COP-2020},
+  abstract = 	 {Different activation mechanisms for Context-Oriented Programming (COP) like implicit activations have been proposed, increasing COP opportunities to be applied in real scenarios. However, activation mechanisms and base code definitions are insufficiently decoupled, as conditionals to activate layers require base code variable references. This hinders reuse, evolution, and modular reasoning of COP and base code, and therefore, uses of COP in real scenarios. This paper proposes interfaces, which are shared abstractions to communicate activation mechanisms and base code in a decoupled manner. Using these interfaces, an object can exhibit its internal state and behaviors, and conditionals use them to (de)activate layers. As layers are planned to be (re)used in different applications, developers can use interfaces to overcome the incompatibility between values exposed by a particular base code and values required by a layer. In addition, as a layer is a plain object, it can use an interface to exhibit the conditional evaluation of its activation to other layers to resolve conflicts among activations of layers. We apply this proposal to implicit activations in which evaluations of conditionals implicitly (de)activate layers. Finally, we illustrate the benefits of this proposal through RI-JS, a practical JavaScript library that currently supports interfaces, reactive activations (implementation variant for implicit activations), global and dynamic deployment, enter and exit transition processes, and partial methods.}}
 
 
 @InProceedings{izawa2020dls,
   author = 	 izawa #and# masuhara,
   title = 	 {Amalgamating Different {JIT} Compilations in a Meta-tracing {JIT} Compiler Framework},
-  booktitle = {Proceedings of the 16th Dynamic Language Symposium},
+  booktitle = {Proceedings of the 16th ACM SIGPLAN International Symposium on Dynamic Language (DLS'20)},
+  editor = 	 {Matthew Flatt},
+  acceptanceRatio = 	 {9/14(64\%)},
   year = 	 2020,
   OPTvolume = 	 {TBA},
   OPTnumber = 	 {TBA},
   doi = 	 {10.1145/3426422.3426977},
-  note = 	 {to appear},
-  OPTpages = 	 {TBA},
-  OPTpdf = 	 {TBA},
+  pages = 	 {1--15},
+  pdf = 	 {dls2020.pdf},
   url = 	 {https://conf.researchr.org/home/dls-2020},
-  month = 	 nov}
+  month = 	 nov,
+  abstract = 	 {Most virtual machines employ just-in-time (JIT) compilers to achieve high-performance. Trace-based compilation and method-based compilation are two major compilation strategies in JIT compilers. In general, the former excels in compiling programs with more in-depth method calls and more dynamic branches, while the latter is suitable for a wide range of programs. Some previous studies have suggested that each strategy has its advantages and disadvantages,and there is no clear winner. In this paper, we present a new approach, namely, the meta-hybrid JIT compilation strategy, mixing the two strategies in a meta-tracing JIT compiler. As a prototype, we implemented a simple meta-tracing JIT compiler framework called BacCaml based on the MinCaml compiler by following RPython's architecture. We also report that some programs ran faster by the hybrid compilation in our experiments.}},
+
 
 @InProceedings{masuhara2020live,
   author = 	 masuhara #and# takahashi #and# izawa #and# cong,
@@ -2669,11 +2681,13 @@ pdf = 	 {ismm2019.pdf}
   OPTpages = 	 {},
   month = 	 nov,
   url = 	 {https://2020.splashcon.org/home/live-2020},
+  pdf = 	 {live2020.pdf},
   OPTaddress = 	 {},
   OPTorganization = {},
   OPTpublisher = {},
   note = 	 {to appear},
-  OPTannote = 	 {}
+  OPTannote = 	 {},
+  abstract = 	 {While applications of live programming are expanding to more practical and professional domains, most live programming environments (LPEs) are still developed for a single target language with an original code editor.  We propose an implementation framework for developing LPEs so that we can minimize efforts on implementing an LPE for a different target language and an existing code editor/IDE.  Our idea is to use a meta-JIT language implementation framework (e.g., Graal/Truffle and RPython) and LSP to separate core live programming implementations from language-specific and editor/IDE specific implementations.  This paper takes the Kanon live programming environment as a concrete example and discusses how we can design the framework to accommodate the features of Kanon.  Although the framework design is still underway, the paper presents a sketch of the framework APIs for separating language-specific functions and clarifies the requirements to LSP.}
 }
 
 @InProceedings{kamina2020rebls,
