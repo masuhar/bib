@@ -2667,27 +2667,16 @@ We propose a programming environment based on the design recipe. The environment
   abstract = 	 {Most virtual machines employ just-in-time (JIT) compilers to achieve high-performance. Trace-based compilation and method-based compilation are two major compilation strategies in JIT compilers. In general, the former excels in compiling programs with more in-depth method calls and more dynamic branches, while the latter is suitable for a wide range of programs. Some previous studies have suggested that each strategy has its advantages and disadvantages,and there is no clear winner. In this paper, we present a new approach, namely, the meta-hybrid JIT compilation strategy, mixing the two strategies in a meta-tracing JIT compiler. As a prototype, we implemented a simple meta-tracing JIT compiler framework called BacCaml based on the MinCaml compiler by following RPython's architecture. We also report that some programs ran faster by the hybrid compilation in our experiments.}},
 
 
-@InProceedings{masuhara2020live,
+@Misc{masuhara2020live,
   author = 	 masuhara #and# takahashi #and# izawa #and# cong,
   title = 	 {Toward a Multi-Language and Multi-Environment Framework for Live Programming},
-  OPTcrossref =  {},
-  OPTkey = 	 {},
-  booktitle = {Proceedings of the 2020 Workshop on Live Programming (colocated with SPLASH 2020)},
-  year = 	 2020,
-  editor = 	 {Brian Hempel and Roly Perera},
-  OPTvolume = 	 {},
-  OPTnumber = 	 {},
-  OPTseries = 	 {},
-  OPTpages = 	 {},
+  howpublished = {Talk at the 2020 Workshop on Live Programming (colocated with SPLASH 2020)},
   month = 	 nov,
+  year = 	 2020,
   url = 	 {https://2020.splashcon.org/home/live-2020},
   pdf = 	 {live2020.pdf},
-  OPTaddress = 	 {},
-  OPTorganization = {},
-  OPTpublisher = {},
-  note = 	 {to appear},
-  OPTannote = 	 {},
-  abstract = 	 {While applications of live programming are expanding to more practical and professional domains, most live programming environments (LPEs) are still developed for a single target language with an original code editor.  We propose an implementation framework for developing LPEs so that we can minimize efforts on implementing an LPE for a different target language and an existing code editor/IDE.  Our idea is to use a meta-JIT language implementation framework (e.g., Graal/Truffle and RPython) and LSP to separate core live programming implementations from language-specific and editor/IDE specific implementations.  This paper takes the Kanon live programming environment as a concrete example and discusses how we can design the framework to accommodate the features of Kanon.  Although the framework design is still underway, the paper presents a sketch of the framework APIs for separating language-specific functions and clarifies the requirements to LSP.}
+  abstract = 	 {While applications of live programming are expanding to more practical and professional domains, most live programming environments (LPEs) are still developed for a single target language with an original code editor.  We propose an implementation framework for developing LPEs so that we can minimize efforts on implementing an LPE for a different target language and an existing code editor/IDE.  Our idea is to use a meta-JIT language implementation framework (e.g., Graal/Truffle and RPython) and LSP to separate core live programming implementations from language-specific and editor/IDE specific implementations.  This paper takes the Kanon live programming environment as a concrete example and discusses how we can design the framework to accommodate the features of Kanon.  Although the framework design is still underway, the paper presents a sketch of the framework APIs for separating language-specific functions and clarifies the requirements to LSP.},
+  date = 	 {2020-11-17}
 }
 
 @InProceedings{kamina2020rebls,
