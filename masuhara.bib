@@ -2700,5 +2700,14 @@ We propose a programming environment based on the design recipe. The environment
   abstract = 	 {Persistent signals provide a convenient abstraction for time-varying values with their execution histories by implicitly leaving the management of execution histories to the database system. The current design of persistent signals is very rudimental. For example, they do not provide abstractions for representing complex data structures, and they can only be connected using API methods prepared in advance. To make matters worse, dynamic creation of persistent signals is not allowed. In this paper, we show that these problems can be addressed by introducing a new language mechanism called signal classes. A signal class packages a network of related persistent signals that comprises a complex data structure. A signal class can be instantiated dynamically, and this instance is considered a ``small world,'' where all signals within it are synchronous. We further show that this synchronous world makes it easy to realize persistent signal networks connected by expressions that are not limited to the API methods. This dynamic creation of signal class instances is managed by a simple lifecycle model where both dynamic lifecycle events and persistency are defined.}
 }
 
-
-
+2020-12-02
+@Misc{masuhara2020aplas,
+  author = 	 masuhara,
+  title = 	 {Object Support for GPU Programming: Why and How},
+  howpublished = {Keynote talk at The 18th Asian Symposium on Programming Languages and Systems (APLAS 2020)},
+  month = 	 nov,
+  year = 	 2020,
+  date = 	 {2020-12-02},
+  url = 	 {https://conf.researchr.org/details/aplas-2020/aplas-2020-keynote-talks/2/Object-Support-for-GPU-Programming-Why-and-How},
+  abstract = 	 {General-purpose computing on graphics processing units (GPGPU) is now widely used in many application domains. However, programming for GPGPU is challenging due to its peculiar performance characteristics and still being done either in low-level languages or through libraries (e.g., those for matrix computation and machine learning). This talk discusses the performance challenges of using objects in GPGPU programming from the viewpoint of memory management, and the efficient mechanisms to support objects.}
+}
