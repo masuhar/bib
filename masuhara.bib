@@ -2354,6 +2354,7 @@ month=nov,
   pdf = 	 {morevms2019meta-tracing.pdf},
   year = 	 2019,
   month = 	 apr,
+  abstract = 	 {Meta-interpreter-based just-in-time compiler frameworks provide a convenient way for language designers to implement efficient virtual machines. Those frameworks either employ tracing-based or method- (or partial evaluation) based strategies, which have their own pros and cons. This paper proposes an approach to enable both tracing- and method-based compilation so that the runtime can selectively apply an appropriate strategy to different parts of a program. The proposal basically extends a meta-tracing compiler to method-based compilation by roll backing at conditional branches, trace-splitting at loop entries, and not following at function calls. As a proof-of-concept, we implemented a tiny meta-tracing compiler in MinCaml by following the RPython's architecture and extended it to support both tracing- and method-based compilation.},
 }
 
 2019-04-02
@@ -2372,6 +2373,11 @@ month=nov,
   pdf = 	 {morevms2019shell.pdf},
   year = 	 2019,
   month = 	 apr,
+  abstract = 	 {Shell scripting languages such as bash are designed to integrate with an OS, which mainly involves managing processes with implicit input and output streams. They also attempt to do this in a compact way that could be reasonably typed on a command-line interface.
+
+However, existing shell languages are not sufficient to serve as general-purpose languages---values are not observable except in raw streams of bytes, and they lack modern language features such as lexical scope and higher-order functions.
+
+By way of a new programming language, Magritte, we propose a general-purpose programming language with semantics similar to bash. In this paper, we discuss the early design of such a system, in which the primary unit of composition, like bash, is processes with input and output channels, which can be read from or written to at any time, and which can be chained together via a pipe operator. We also explore concurrency semantics for such a language.}
 }
 
 (Student only)
@@ -2428,7 +2434,14 @@ month=nov,
   keywords = 	 {JavaScript, Kanon},
   year = 	 2019,
   location = 	 {Genova, Italy},
-  url = 	 {https://2019.programming-conference.org/details/programming-2019-Demos/8/Programming-Experiences-with-a-Live-Programming-Environment-for-Data-Structures}
+  url = 	 {https://2019.programming-conference.org/details/programming-2019-Demos/8/Programming-Experiences-with-a-Live-Programming-Environment-for-Data-Structures},
+  abstract = 	 {This demonstration presents a live programming environment for data structures called Kanon \cite{oka2018onward},\href{https://prg-titech.github.io/Kanon/}{*}. The goal of the environment is to support professional programmers when they develop new data structures and operations thereof. The key feature for data structures is its automatic visualization of objects that are created in a program execution.
+
+We first overviews the environment through a coding session of a small data structure. The environment assumes a program is written in a test-driven style, and displays objects as a node-link diagram. We introduce the notion of visualization contexts, which the program state stopped at the cursor position, and used for navigating the visualization.
+
+We then discusses the features that support liveness and data-structures. The jump-to-construction mechanism navigates the programmer from a visual element to a code fragment that made the element. Our proposed graph layout algorithm automatically analyzes the object structure and places nodes so as to help the programmers to recognize the relations between objects. An on-the-fly test case generation mechanism enables top-down programming by letting the programmers handcraft an expected result upon a call to an unimplemented function.
+
+Lastly, we discuss several issues for future research. Programming complicated data structures require customized visualization so that the programmer can see the objects at different levels of abstraction. In order not to distract the programmers' focus, it is crucial to handle errors appropriately especially in an environment where program code can be erroneous in the middle of editing. Our user experiment discovered some programming mistakes that can only be observed with the live programming environment, which might be an effect of live programming on the way of programming.}
 }
 
 2019-06-23
@@ -2449,7 +2462,14 @@ pages = {14--26},
   date = 	 {2019-06-23},
   keywords = 	 {CUDA, Ikra, DynaSOAr, C++},
   organization = ACM,
-pdf = 	 {ismm2019.pdf}
+pdf = 	 {ismm2019.pdf},
+  abstract = 	 {Memory fragmentation is a widely studied problem of dynamic memory allocators. It is well known that fragmentation can lead to premature out-of-memory errors and poor cache performance.
+
+With the recent emergence of dynamic memory allocators for SIMD accelerators, memory fragmentation is becoming an increasingly important problem on such architectures. Nevertheless, it has received little attention so far. Memory-bound applications on SIMD architectures such as GPUs can experience an additional slowdown due to less efficient vector load/store instructions.
+
+We propose CompactGpu, an incremental, fully-parallel, in-place memory defragmentation system for GPUs. CompactGpu is an extension to the DynaSOAr dynamic memory allocator and defragments the heap in a fully parallel fashion by merging partly occupied memory blocks. We developed several implementation techniques for memory defragmentation that are efficient on SIMD/GPU architectures, such as finding defragmentation block candidates and fast pointer rewriting based on bitmaps.
+
+Benchmarks indicate that our implementation is very fast with typically higher performance gains than compaction overheads. It can also decrease the overall memory usage.}
 },
 
 
