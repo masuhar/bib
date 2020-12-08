@@ -2202,7 +2202,12 @@ month=nov,
   doi = 	 {https://doi.org/10.22152/programming-journal.org/2018/2/6},
   date = 	 {2018-03-29},
   submitted = 	 {2017-08-04},
-  note = 	 {Article no.6}}
+  note = 	 {Article no.6},
+  abstract = 	 {Programming languages and platforms improve over time, sometimes resulting in new language features that offer many benefits. However, despite these benefits, developers may not always be willing to adopt them in their projects for various reasons. In this paper, we describe an empirical study where we assess the adoption of a particular new language feature. Studying how developers use (or do not use) new language features is important in programming language research and engineering because it gives designers insight into the usability of the language to create meaning programs in that language. This knowledge, in turn, can drive future innovations in the area. Here, we explore Java 8 default methods, which allow interfaces to contain (instance) method implementations.
+
+Default methods can ease interface evolution, make certain ubiquitous design patterns redundant, and improve both modularity and maintainability. A focus of this work is to discover, through a scientific approach and a novel technique, situations where developers found these constructs useful and where they did not, and the reasons for each. Although several studies center around assessing new language features, to the best of our knowledge, this kind of construct has not been previously considered.
+
+Despite their benefits, we found that developers did not adopt default methods in all situations. Our study consisted of submitting pull requests introducing the language feature to 19 real-world, open source Java projects without altering original program semantics. This novel assessment technique is proactive in that the adoption was driven by an automatic refactoring approach rather than waiting for developers to discover and integrate the feature themselves. In this way, we set forth best practices and patterns of using the language feature effectively earlier rather than later and are able to possibly guide (near) future language evolution. We foresee this technique to be useful in assessing other new language features, design patterns, and other programming idioms.}}
 
 2018-06-19
 @inproceedings{springer2018array,
@@ -2221,7 +2226,10 @@ month=nov,
   biburl    = {https://dblp.org/rec/bib/conf/pldi/SpringerSM18},
   bibsource = {dblp computer science bibliography, https://dblp.org},
   location = 	 {Philadelphia, Pennsylvania, USA},
-  keywords = 	 {Ikra, CUDA, C++}
+  keywords = 	 {Ikra, CUDA, C++},
+  abstract = 	 {Previous work has shown how the well-studied and SIMD-friendly Structure of Arrays (SOA) data layout strategy can speed up applications in high-performance computing compared to a traditional Array of Structures (AOS) data layout. However, a standard SOA layout cannot handle structures with inner arrays; such structures appear frequently in graph-based applications and object-oriented designs with associations of high multiplicity.
+
+This work extends the SOA data layout to structures with array-typed fields. We present different techniques for in-lining (embedding) inner arrays into an AOS or SOA layout, as well as the design and implementation of an embedded C++/CUDA DSL that lets programmers write such layouts in a notation close to standard C++. We evaluate several layout strategies with a traffic flow simulation, an important real-world application in transport planning.}
 }
 
 2018-07-16
@@ -2244,6 +2252,16 @@ month=nov,
  publisher = {ACM},
  address = {New York, NY, USA},
  keywords = {Coeffects, Context-Oriented Programming, Contexts},
+  abstract = 	 {Two or more incompatible versions of a library are sometimes
+needed in one software artifact, which is so-called dependency hell.
+One likely faces the problem if he or she uses two or more libraries
+that depend on the same library. In this paper, we propose versioned
+values to solve the problem. They allow us to have multiple versions
+of functions in a binary file. This gets rid of requiring two or more
+incompatible binaries. We develop a calculus $\lambda_{VL}$  to discuss type
+safety in the case where definitions are available only in specific
+versions, which is a common and important nature of versioned
+programs.},
 }
 
 2018-08-29
@@ -2255,7 +2273,8 @@ month=nov,
   pages = 	 {No.~5-S},
   date = 	 {2018-08-29},
     keywords = 	 {Smalltalk},
-  review = 	 {false}}
+  review = 	 {false},
+  abstract = 	 {Cross-cutting concerns are an inherent property of the implementation of non-trivial software systems. Their study led to the development of advanced modularity constructs, usually supported by meta-level frameworks and programming language constructs, to improve comprehensibility. Because of their invasive nature, systems need to be refactored or rewritten to take advantage of these constructs. However, practical considerations such as organizational or economical constraints often do not allow for such reengineering efforts, leaving those systems without explicit representations of their cross-cutting concerns. We propose a lightweight, non-invasive approach to explicate and document cross-cutting, multi-party concerns called Crosscutting Commentary, or Commentary for short. Our proposal is based on the observation that comments are co-located with the individual semantic units they are about and with that scattered and tangled in the absence of advanced modularity constructs for crosscutting concerns and the assumption that well-crafted, informal explanations of system properties (their intents and the mechanisms they provide) improve comprehensibility. Commentaries are to help communicate narratives about system properties that involve multiple participants, both co-located in a single module or crosscutting several of them, and allow for navigating to, from, and between them to explore the implementation artifacts involved. Commentary was inspired by layers introduced with Context-oriented Programming to associate and manage partial definitions of system elements. While layers contribute to system comprehension during development and software composition at run-time, Commentary focuses on narratives for system exploration. We present our first attempt to provide Commentaries in Squeak/Smalltalk. We explain implementation details and discuss several application scenarios considering the documentation of basic mechanisms of this programming and runtime environment.}}
 
 2018-11-05
 @Misc{oka2018plateu,
@@ -2289,7 +2308,8 @@ month=nov,
   keywords = 	 {Kanon, JavaScript},
  address = {New York, NY, USA},
  keywords = {Live programming, data structures, object graph},
-  pdf = 	 {onward2018.pdf},}
+  pdf = 	 {onward2018.pdf},
+  abstract = 	 {Live programming is an activity in which the programmer edits code while observing the result of the program. It has been exercised mainly for pedagogical and artistic purposes, where outputs of a program are not straightforwardly imagined. While most live programming environments so far target programs that explicitly generate visual or acoustic outputs, we believe that live programming is also useful for data structure programming, where the programmer often has a hard time to grasp a behavior of programs. However, it is not clear what features a live programming environment should provide for such kind of programs. In this paper, we present a design of live programming environment for data structure programming, identify the problems of synchronization and mental map preservation, and propose solutions based on a calling-context sensitive identification technique. We implemented a live programming environment called Kanon, and tested with 13 programmers.},}
 
 
 
@@ -2314,6 +2334,7 @@ month=nov,
   month = 	 nov,
   keywords = 	 {Android},
   location = 	 {Lake Buena Vista, Florida, USA},
+  abstract = 	 {Mobile applications regularly interact with their noisy and ever-changing physical environment. The fundamentally uncertain nature of such interactions leads to significant challenges in energy optimization, a crucial goal of software engineering on mobile devices. This paper presents Aeneas, a novel energy optimization framework for Android in the presence of uncertainty. Aeneas provides a minimalistic programming model where acceptable program behavioral settings are abstracted as knobs and application-specific optimization goals  such as meeting an energy budget  are crystallized as rewards, both of which are directly programmable. At its heart, Aeneas is endowed with a stochastic optimizer to adaptively and intelligently select the reward-optimal knob setting through a form of reinforcement learning. We evaluate Aeneas on mobile GPS applications built over Google LocationService API. Through an in-field case study that covers approximately 6500 miles and 150 hours of driving as well as 20 hours of biking and hiking, we find that Aeneas can effectively and resiliently meet programmer-specified energy budgets in uncertain physical environments where individual GPS readings undergo significant fluctuation. Compared with non-stochastic approaches such as profile-guided optimization, Aeneas produces significantly more stable results across runs.},
 }
 
 2019-01-17
@@ -2328,7 +2349,8 @@ month=nov,
   keywords = 	 {Margitte, Ruby},
   pdf = 	 {pro2018-4-5.pdf},
   url = 	 {http://id.nii.ac.jp/1001/00198113/},
-  location = 	 {Fukuyama, Japan}}
+  location = 	 {Fukuyama, Japan},
+  abstract = 	 {Shell languages such as bash are designed to integrate with an OS, which mainly involves managing processes with implicit input and output streams. They also attempt to do this in a compact way that could be reasonably typed on a command-line interface. However, existing shell languages are not sufficient to serve as general-purpose languages - values are not observable except in raw streams of bytes, and they lack modern language features such as lexical scope and higher-order functions. By way of a new programming language, Magritte, we propose a general-purpose programming language with semantics similar to bash. In this presentation, we discuss the early design of such a system, in which the primary unit of composition, like bash, is processes with asynchronous inputs and outputs, which can be read from or written to at any time, and which can be chained together via a pipe operator. We also explore concurrency semantics for such a language. We explore the implementation and design challenges that come with such a model, and also show that this model is able to easily create and compose concurrent algorithms.}}
 
 2019-03-06
 @InProceedings{oka2019ppl,
@@ -2337,7 +2359,8 @@ month=nov,
   title = 	 {On Defining Recursive Functions in Live Data Structure Programming},
   crossref =     {ppl2019},
   url = 	 {https://jssst-ppl.org/workshop/2019/},
-  keywords = 	 {Kanon, JavaScript}}
+  keywords = 	 {Kanon, JavaScript},
+  abstract = 	 {Kanon is a live programming environment that automatically visualizes data structures created by the program being edited. Though its visualization is useful for the programmer to think about the next code fragment to be written, it becomes useless when defining recursive functions. This paper proposes an extended feature of Kanon that lets the programmer manually build an expected structure. The expected structure not only makes the visualization useful again, but also serves as a test case. This paper also discusses the usefulness of the extended feature through case studies.}}
 
 2019-04-02
 @InProceedings{izawa2019morevms,
