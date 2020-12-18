@@ -1912,7 +1912,8 @@ Automated Software Engineering (ASE 2015)},
   month = 	 feb,
   annote = 	 {Accepted 2016-09-13, Published 2017-01-25},
   keywords = 	 {Squeak, Smalltalk},
-  doi = 	 {10.11309/jssst.34.1_103}
+  doi = 	 {10.11309/jssst.34.1_103},
+  abstract = 	 {Development teams benefit from version control systems, which manage shared access to code repositories and persist entire project histories for analysis or recovery. Such systems will be efficient if developers commit coherent and complete change sets. These best practices, however, are difficult to follow because multiple activities often interleave without notice and existing tools impede unraveling changes before committing them. We propose an interactive, graphical tool, called Thresher, that employs adaptable scripts to support developers to group and commit changes---especially for fine-granular change tracking where numerous changes are logged even in short programming sessions. We implemented our tool in Squeak/Smalltalk and derived a foundation of scripts from five refactoring sessions. We evaluated those scripts' precision and recall, which indicate a reduced manual effort because developers can focus on project-specific adjustments. Having such an interactive approach, they can easily intervene to accurately reconstruct activities and thus follow best practices.}
 }
 
 2016-10-26
@@ -1929,7 +1930,8 @@ Automated Software Engineering (ASE 2015)},
   doi={10.2197/ipsjjip.25.296},
   annote = 	 {Revised version of \cite{springer2016pro}, received 2016-07-08, accepted 2016-10-26},
   note = 	 {Also published in IPSJ Transactions on Programming.},
-  keywords = 	 {Squeak, Smalltalk}
+  keywords = 	 {Squeak, Smalltalk},
+  abstract = 	 {Open classes are frequently used in programming languages such as Ruby and Smalltalk to add or change methods of a class that is defined in the same component or in a different one. They are typically used for bug fixing, multi-dimensional separation of concerns, or to modularly add new operations to an existing class. However, they suffer from modularity issues if globally visible: Other components using the same classes are then affected by their modifications. This work presents Extension Classes, a hierarchical approach for dynamically scoping such modifications in Ruby, built on top of ideas from Context-oriented Programming (COP). Our mechanism organizes modifications in classes and allows programmers to define their scope according to a class nesting hierarchy and based on whether programmers regard an affected class as a black box or not. Moreover, Extension Classes support modularizing modifications as mixins, such that they can be reused in other components.}
 }
 
 2016-11-21
@@ -1998,6 +2000,7 @@ Automated Software Engineering (ASE 2015)},
  publisher = {ACM},
  keywords = {Live programming, data structures, object graph, Kanon, JavaScript},
   date = 	 {2017-04-04},
+  abstract = 	 {When we write a program that manipulates data structures, we often draw and manipulate a visual image of the structures in our mind. In order to immediately connect those mental images with the data objects created by the program, we propose a live programming environment, called Kanon, specialized for data structure programming. It automatically executes a program being edited, and draws objects and their mutual references as a node-link diagram. In order to visualize information relevant to the programmer's concern, it offers two visualization modes based on the cursor position in the editor. It also offers two interactive mechanisms that relate elements in the program to elements on the diagram, and vice versa. The implementation includes a novel technique for mental map preservation of visual diagrams.},
 }
 
 2017-05-24
@@ -2021,6 +2024,7 @@ Automated Software Engineering (ASE 2015)},
  publisher = {IEEE Press},
  address = {Piscataway, NJ, USA},
  keywords = {Java, default methods, interfaces, refactoring},
+  abstract = 	 {Java 8 default methods, which allow interfaces to contain (instance) method implementations, are useful for the skeletal implementation software design pattern. However, it is not easy to transform existing software to exploit default methods as it requires analyzing complex type hierarchies, resolving multiple implementation inheritance issues, reconciling differences between class and interface methods, and analyzing tie-breakers (dispatch precedence) with overriding class methods to preserve type-correctness and confirm semantics preservation. In this paper, we present an efficient, fully-automated, type constraint-based refactoring approach that assists developers in taking advantage of enhanced interfaces for their legacy Java software. The approach features an extensive rule set that covers various corner-cases where default methods cannot be used. To demonstrate applicability, we implemented our approach as an Eclipse plug-in and applied it to 19 real-world Java projects, as well as submitted pull requests to popular GitHub repositories. The indication is that it is useful in migrating skeletal implementation methods to interfaces as default methods, sheds light onto the pattern's usage, and provides insight to language designers on how this new construct applies to existing software.},
 } 
 
 2017-06-18
@@ -2042,7 +2046,10 @@ Automated Software Engineering (ASE 2015)},
  publisher = {ACM},
  address = {New York, NY, USA},
  keywords = {CUDA, GPGPU, Ruby, kernel fusion, Ikra},
- date = {2017-06-18}
+ date = {2017-06-18},
+  abstract = 	 {Nowadays, GPU accelerators are widely used in areas with large data-parallel computations such as scientific computations or neural networks. Programmers can either write code in low-level CUDA/OpenCL code or use a GPU extension for a high-level programming language for better productivity. Most extensions focus on statically-typed languages, but many programmers prefer dynamically-typed languages due to their simplicity and flexibility.
+
+This paper shows how programmers can write high-level modular code in Ikra, a Ruby extension for array-based GPU computing. Programmers can compose GPU programs of multiple reusable parallel sections, which are subsequently fused into a small number of GPU kernels. We propose a seamless syntax for separating code regions that extensively use dynamic language features from those that are compiled for efficient execution. Moreover, we propose symbolic execution and a program analysis for kernel fusion to achieve performance that is close to hand-written CUDA code.}
 } 
 
 2017-06-19
@@ -2066,6 +2073,9 @@ Automated Software Engineering (ASE 2015)},
  address = {New York, NY, USA},
  keywords = {Dart, Java, compiler, source code generation},
  date = {2017-06-19},
+  abstract = 	 {We present the design and implementation of dart2java, an experimental Dart to Java compiler. It is implemented in Dart and currently supports many but not all Dart language constructs. dart2java is a playground to evaluate performance implications of running Dart code on the JVM and to investigate if it is possible to write Dart code in a largely Java-dominated environment.
+
+This paper describes the architecture of dart2java, performance optimizations such as non-nullability of primitive types and generic specialization (and their implications), as well as ideas for language interoperability, i.e., calling Java code from Dart and vice versa.},
 }
 
 2017-06-20
@@ -2080,6 +2090,8 @@ Automated Software Engineering (ASE 2015)},
   month = 	 jun,
  keywords = {implicit layer activation, reactive values, transition processes},
   year = 	 2017,
+  abstract = 	 {There are context-dependent behaviors that are active only when
+a certain condition holds, and that require a certain transition process before activation. We propose a layer-activation mechanism of context-oriented programming languages for such context-dependent behaviors. Our mechanism supports the implicit layer activation (as opposed to the event-based layer activation) in a sense that a condition of activation is written as a conditional expression over reactive values (e.g., values obtained from sensors). In addition, it is push-based in a sense that it executes the transition process immediately after the condition becomes valid (as opposed to the mechanisms that defer the transition process until the first execution of a context-dependent behavior). In this paper, we present how this mechanism works in an extension of ServalCJ with push-based reactive values, and identify open issues raised by this proposal.},
 }
 
 2017-06-26
@@ -2093,14 +2105,16 @@ Automated Software Engineering (ASE 2015)},
     note = "accepted 2017-06-26",
   month = 	 dec,
     issn = "0167-6423",
-    doi = "https://doi.org/10.1016/j.scico.2017.06.011",
+    doi = "10.1016/j.scico.2017.06.011",
     url = "http://www.sciencedirect.com/science/article/pii/S0167642317301326",
     author = "Raffi Khatchadourian and Awais Rashid "#and# masuhara #and# watanabe,
   pdf = 	 {scp2017.pdf},
     keywords = "Software development environments",
     keywords = "Software maintenance",
     keywords = "Software tools ",
-  keywords = 	 {AspectJ}
+  keywords = 	 {AspectJ},
+  abstract = 	 {Pointcut fragility is a well-documented problem in Aspect-Oriented Programming; changes to the base-code can lead to join points incorrectly falling in or out of the scope of pointcuts. Deciding which pointcuts have broken due to base-code changes is a daunting venture, especially in large and complex systems. We present an automated approach that recommends pointcuts that are likely to require modification due to a particular base- code change, as well as ones that do not. Our hypothesis is that join points selected by a pointcut exhibit common structural characteristics. Patterns describing such commonality are used to recommend pointcuts that have potentially broken with a degree of confidence as the developer is typing. The approach is implemented as an extension to the popular Mylyn Eclipse IDE plug-in, which maintains focused contexts of entities relevant to the task at hand using a Degree of Interest (DOI) model. We show that it is accurate in revealing broken pointcuts by applying it to multiple versions of several open source projects and evaluating the quality of the recommendations produced against actual modifications. We found that our tool made broken pointcuts 2.14 times more interesting in the DOI model than unbroken ones, with a p-value under 0.1, indicating a significant difference in final DOI value between the two kinds of pointcuts (i.e., broken and unbroken).
+}
 }
 
 2017-08-09
@@ -2116,8 +2130,9 @@ Automated Software Engineering (ASE 2015)},
   pages = 	 {48--53},
   month = 	 jan,
   annote = 	 {presented as IPSJ PRO 2017-1-(3), also appears in IPSJ Trans. PRO},
-  doi = 	 {https://doi.org/10.2197/ipsjjip.26.48},
-  note = 	 {Accepted on 2017-08-09.  \href{http://id.nii.ac.jp/1001/00184819}{A preprint is also archived as IPSJ Transaction on Programming, 10(6), December 2017}}
+  doi = 	 {10.2197/ipsjjip.26.48},
+  note = 	 {Accepted on 2017-08-09.  \href{http://id.nii.ac.jp/1001/00184819}{A preprint is also archived as IPSJ Transaction on Programming, 10(6), December 2017}},
+  abstract = 	 {This paper supplements the evaluation of libraries for parallel computing in Haskell by Matsumoto and Matsuzaki. The previous work implemented an image processing program by using two different libraries and compared expressiveness and parallel execution performance. In particular, it found that a parallel execution of the Accelerate program on a GPU is slower than the execution of the handwritten CUDA-C program by a factor of more than 70. We analyzed the execution of the Accelerate program and identified that the major sources of the overhead are in the process of the syntax tree before execution of a GPU kernel. Since the program realizes repeated execution by constructing a large syntax tree whose size is proportional to the number of repetitions, we rewrote this part by using a while-construct, which significantly reduces the overhead as it runs half as fast as the CUDA-C program. We also discuss language design alternatives for avoiding this type of overhead.}
 }
 
 2017-09-21
@@ -2146,7 +2161,8 @@ doi={10.1109/ASE.2017.8115716},
 ISSN={},
 month=nov,
   date = 	 {2017-11-01},
-  location = 	 {University of Illinois at Urbana-Champaign},}
+  location = 	 {University of Illinois at Urbana-Champaign},
+  abstract = 	 {Enabling interfaces to declare (instance) method implementations, Java 8 default methods can be used as a substitute for the ubiquitous skeletal implementation software design pattern. Performing this transformation on legacy software manually, though, may be non-trivial. The refactoring requires analyzing complex type hierarchies, resolving multiple implementation inheritance issues, reconciling differences between class and interface methods, and analyzing tie-breakers (dispatch precedence) with overriding class methods. All of this is necessary to preserve type-correctness and confirm semantics preservation. We demonstrate an automated refactoring tool called MIGRATE SKELETAL IMPLEMENTATION TO INTERFACE for transforming legacy Java code to use the new default construct. The tool, implemented as an Eclipse plug-in, is driven by an efficient, fully-automated, type constraint-based refactoring approach. It features an extensive rule set covering various corner-cases where default methods cannot be used. The resulting code is semantically equivalent to the original, more succinct, easier to comprehend, less complex, and exhibits increased modularity. A demonstration can be found at http://youtu.be/YZHIy0yePh8.},}
 
 2018-01-21
 @Article{kamina2018scp,
@@ -2163,6 +2179,7 @@ month=nov,
   doi = 	 {https://doi.org/10.1016/j.scico.2018.01.006},
   month = 	 may,
   url = 	 {https://www.sciencedirect.com/science/article/pii/S0167642318300236},
+  abstract = 	 {Context-oriented programming (COP) enhances the modularity of context-dependent behavior in context-aware systems, as it provides modules to implement context- dependent behavior (layers) and composes them dynamically in a disciplined manner (layer activation). We propose a COP language that enables layers to define base methods, while the layers can be asynchronously activated and deactivated. Base methods in layers enhance modularity because they extend the interface of classes without modifying original class definitions. However, calling such a method defined in a layer is problematic as the layer may be inactive when the method is called. We address this problem by introducing a method lookup mechanism that uses the static scope of method invocation for COP; i.e., in addition to currently activated layers, the layer where the method invocation is written, as well as the layers on which that layer depends, are searched during method lookup. We formalize this mechanism as a small calculus referred to as ContextFJ a and prove its type soundness. We implement this mechanism in ServalCJ, a COP language that supports asynchronous, as well as synchronous, layer activation.},
 }
 
 2018-02-24
@@ -2187,6 +2204,7 @@ month=nov,
  publisher = {ACM},
  address = {New York, NY, USA},
  keywords = {C++, CUDA, Object-Oriented Programming, SIMD, Structure of Arrays, Template Metaprogramming},
+  abstract = 	 {Structure of Arrays (SOA) is a well-studied data layout technique for SIMD architectures. Previous work has shown that it can speed up applications in high-performance computing by several factors compared to a traditional Array of Structures (AOS) layout. However, most programmers are used to AOS-style programming, which is more readable and easier to maintain. We present Ikra-Cpp, an embedded DSL for object-oriented programming in C++/CUDA. Ikra-Cpp's notation is very close to standard AOS-style C++ code, but data is layouted as SOA. This gives programmers the performance benefit of SOA and the expressiveness of AOS-style object-oriented programming at the same time. Ikra-Cpp is well integrated with C++ and lets programmers use C++ notation and syntax for classes, elds, member functions, constructors and instance creation.},
   }
 
 2018-03-29
