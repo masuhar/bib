@@ -1719,6 +1719,7 @@ Automated Software Engineering (ASE 2015)},
   doi = 	 {http://doi.org/10.2197/ipsjjip.24.132},
   note = 	 {\href{http://prg.is.titech.ac.jp/news/izumi-asakura-receives-award/}{IPSJ Computer Science Research Award for Young Scientists} and \href{http://prg.is.titech.ac.jp/news/ipsj-outstanding-paper-award/}{IPSJ Outstanding Paper Award}},
   annote = 	 {extended from \cite{asakura2015-ipsj-pro}, accepted: 2015-07-28},
+  abstract = 	 {We design a concurrent separation logic for GPGPU, namely GPUCSL, and prove its soundness by using Coq. GPUCSL is based on a CSL proposed by Blom et al., which is for automatic verification of GPGPU kernels, but employs different inference rules because the rules in Blom's CSL are not standard. For example, Blom's CSL does not have a frame rule. Our CSL is a simple extension of the original CSL, and it is more suitable as a basis of advanced properties proposed for other studies on CSLs. Our soundness proof is based on Vafeiadis' method, which is for a CSL with a fork-join concurrency model. The proof reveals two problems in Blom's approach in terms of soundness and extensibility. First, their assumption that thread ID independence of a kernel implies barrier divergence freedom does not hold. Second, it is not easy to extend their proof to other CSLs with a frame rule. Although our CSL covers only a subset of CUDA, our preliminary experiment shows that it is useful and expressive enough to verify a simple kernel with barriers.},
 }
 
 @InProceedings{springer2016modularity,
@@ -1728,7 +1729,10 @@ Automated Software Engineering (ASE 2015)},
   pdf = 	 {modularity2016.pdf},
   annote = 	 {Modularity Visions Track},
   pages = 	 {118--129},
-  doi = 	 {10.1145/2889443.2889457}}
+  doi = 	 {10.1145/2889443.2889457},
+  abstract = 	 {We present Matriona, a module system for Squeak, a Smalltalk dialect. It supports class nesting and parameterization and is based on a hierarchical name lookup mechanism. Matriona solves a range of modularity issues in Squeak. Instead of a flat class organization, it provides a hierarchical namespace, that avoids name clashes and allows for shorter local names. Furthermore, it provides a way to share behavior among classes and modules using mixins and class hierarchy inheritance (a form of inheritance that subclasses an entire class family), respectively. Finally, it allows modules to be externally configurable, which is a form of dependency management decoupling a module from the actual implementation of its dependencies.
+
+Matriona is implemented on top of Squeak by introducing a new keyword for run-time name lookups through a reflective mechanism, without modifying the underlying virtual machine. We evaluate Matriona with a series of small applications and will demonstrate how its features can benefit modularity when porting a simple application written in plain Squeak to Matriona.}}
 
 @Misc{springer2016-ppl-poster,
   author = 	 springer #and# masuhara,
@@ -1751,6 +1755,7 @@ Automated Software Engineering (ASE 2015)},
   pages = 	 {73--78},
   keywords = 	 {AspectJ},
   doi = 	 {10.1145/2892664.2892674},
+  abstract = 	 {We propose an advice mechanism called Chop&Graft for non-local flow control. It offers a novel chop pointcut that lets a piece of advice terminate the current execution, and graft and retry operators that resume and restart the terminated executions. By using pointcuts for specifying the region of termination, the mechanism is more robust and more concise than the traditional exception handling mechanisms that rely on names or exception classes. The paper presents the design of the mechanism along with the sketches of two implementations using delimited continuations or threads and exceptions.},
 }
 
 @InProceedings{khatchadourian2016lamod,
@@ -1759,7 +1764,8 @@ Automated Software Engineering (ASE 2015)},
   doi = 	 {10.1145/2892664.2892681},
   pdf = 	 {lamod2016-refactoring.pdf},
   crossref =  {lamod2016},
-  pages = 	 {104--106},}
+  pages = 	 {104--106},
+  abstract = 	 {The skeletal implementation pattern is a software design pattern consisting of defining an abstract class that provides a partial interface implementation. However, since Java allows only single class inheritance, if implementers decide to extend a skeletal implementation, they will not be allowed to extend any other class. Also, discovering the skeletal implementation may require a global analysis. Java 8 enhanced interfaces alleviate these problems by allowing interfaces to contain (default) method implementations, which implementers inherit. Java classes are then free to extend a different class, and a separate abstract class is no longer needed; developers considering implementing an interface need only examine the interface itself. We argue that both these benefits improve software modularity, and discuss our ongoing work in developing an automated refactoring tool that would assist developers in taking advantage of the enhanced interface feature for their legacy Java software.},}
 
 @InProceedings{kiriyama2016lamod,
   author = 	 kiriyama #and# aotani #and# masuhara,
@@ -1767,7 +1773,8 @@ Automated Software Engineering (ASE 2015)},
   title = 	 {A Lightweight Optimization Technique for Data Types {\`a} la Carte},
   pdf = 	 {lamod2016-alacarte.pdf},
   pages = 	 {86--90},
-  doi = 	 {10.1145/2892664.2892677}}
+  doi = 	 {10.1145/2892664.2892677},
+  abstract = 	 {Data types a la carte (DTC) is a technique for adding new variants to data types modularly. A drawback of DTC compared with simple variant types, which are commonly used to define data types in functional programming languages, is runtime inefficiency caused by the destruction of these values. In this paper, we propose a lightweight optimization technique for functions that destruct the values of DTC data types. It makes their execution as efficient as their non-DTC counterparts by just (1) deriving non-extensible algebraic data types isomorphic to extensible data types defined in DTC fashion and (2) using them within the type annotations that specify concrete data types using the composition operator given in DTC. The approach is based on an insight on the functions: the functions never depend on any concrete data types but merely constrain them. We implemented functions that take an extensible data type defined in DTC fashion and derive an isomorphic non-extensible algebraic data type using Template Haskell. Our experimental results show that DTC functions using our approach run as efficiently as their non-DTC counterparts and avoid performance slow down even if the data types are extended multiple times.}}
 
 @InProceedings{springer2016lassy,
   author = 	 springer #and# masuhara #and# hirschfeld,
@@ -1776,6 +1783,7 @@ Automated Software Engineering (ASE 2015)},
   pages = 	 {107--112},
   doi = 	 {10.1145/2892664.2892682},
   pdf = 	 {lassy2016.pdf},
+  abstract = 	 {Class extensions are frequently used in programming languages such as Ruby and Smalltalk to add or change methods of a class that is defined in the same application or in a different one. They suffer from modularity issues if globally visible: Other applications using the same classes are then affected by the modifications. This paper presents a hierarchical approach for dynamically scoping class extensions in dynamically-typed, class-based programming languages supporting class nesting. Our mechanism allows programmers to define the scope of class extensions and to reuse class extensions in other programs. Class extensions can be scoped according to a nested class hierarchy or based on whether programmers regard a potentially affected class as a black box or not. Class extensions are organized in layers, where multiple layers targeting the same class can be active at the same time.},
 }
 
 @InProceedings{kamina2016mass,
@@ -1784,7 +1792,8 @@ Automated Software Engineering (ASE 2015)},
   crossref =  {mass2016},
   doi = 	 {10.1145/2892664.2892689},
   pdf = 	 {mass2016.pdf},
-  pages = 	 {158--159}}
+  pages = 	 {158--159},
+  abstract = 	 {Recent progress on sensor technologies poses challenges on software development such as more interaction with physical environment and context-awareness. This trend makes it difficult to decide the boundaries between changing module interactions. In this paper, we propose a concept of fluent module interactions where we characterize the module interactions in three dimensions, i.e., definition, duration, and scope. Module interactions in any of those dimensions can change dynamically. We also propose a possible extension of existing programming language with fluent module interactions based on context-oriented programming (COP). Then, we derive a future research roadmap for realizing fluent module interactions that covers a wide range of research fields including theory, implementation, engineering, and applications.}}
 
 2016-04-25
 @Article{felgentreff2016jip,
@@ -1803,7 +1812,8 @@ Automated Software Engineering (ASE 2015)},
   note = 	 {A preprint is also archived as IPSJ Transaction on Programming, 9(4), September 2016},
   annote = 	 {accepted: 2016-04-25},
   keywords = 	 {Squeak, Smalltalk},
-  doi = 	 {10.2197/ipsjjip.24.917}
+  doi = 	 {10.2197/ipsjjip.24.917},
+  abstract = 	 {Logic puzzles such as Sudoku are described by a set of properties that a valid solution must have. Constraints are a useful technique to describe and solve for such properties. However, constraints are less suited to express imperative interactions in a user interface for logic puzzles, a domain that is more readily expressed in the object-oriented paradigm. Object constraint programming provides a design to integrate constraints with dynamic, object- oriented programming languages. It allows developers to encode multi-way constraints over objects using existing, object-oriented abstractions. These constraints are automatically maintained at run-time. In this paper we present an application of this design to logic puzzles in the Squeak/Smalltalk programming environment, as well as an extension of the design and the formal semantics of Babelsberg to allow declaring constraints using the imperative collection API provided in Squeak. We argue that our implementation facilitates creating applications that use imperative construction of user interfaces and mutable program state as well as constraint satisfaction techniques for different parts of the system. The main advantage of our approach is that it moves the burden to maintain constraints from the developer to the runtime environment, while keeping the development experience close to the purely object-oriented approach.}
 }
 
 2016-06-08
@@ -1848,6 +1858,9 @@ Automated Software Engineering (ASE 2015)},
  address = {New York, NY, USA},
  keywords = {CUDA, GPGPU, Ruby, Object-Oriented Programming},
   pdf = 	 {array2016.pdf},
+  abstract = 	 {This paper presents implementation and optimization techniques to support objects in Ikra, an array-based parallel extension to Ruby with dynamic compilation. The high-level goal of Ikra is to allow developers to exploit GPU-based high-performance computing without paying much attention to intricate details of the underlying GPU infrastructure and CUDA.
+
+Ikra supports dynamically-typed object-oriented programming in Ruby and performs a number of optimizations. It supports parallel operations (e.g., map, each) on arrays of polymorphic objects, allowing polymorphic method calls inside a kernel by compiling them to conditional branches. To reduce branch divergence, Ikra shuffles thread assignments to base array elements based on runtime types of elements. To facilitate memory coalescing, Ikra stores objects in a structure-of-arrays (SoA) representation (columnar object layout). To eliminate intermediate data in global memory, Ikra merges cascaded parallel sections into one kernel using symbolic execution.},
 } 
                   
 2016-07-19
@@ -1870,6 +1883,7 @@ Automated Software Engineering (ASE 2015)},
  publisher = {ACM},
  address = {New York, NY, USA},
  keywords = {Context-Oriented Programming, Decorator, Design Patterns, Layers, Observer, Visitor, Squeak, Smalltalk},
+  abstract = 	 {This paper analyzes and presents alternative implementations of three well-known Gang of Four design patterns: Decorator, Observer, and Visitor. These implementations are more than mere refactorings and take advantage of a variant of context-oriented programming that unifies classes and layers to overcome shortcomings in a conventional, object-oriented implementation.},
 } 
 
 2016-07-19
