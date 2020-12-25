@@ -1584,7 +1584,8 @@ Misc{toyama2014oopsla,
   pages = 	 {149--158},
   month = 	 aug,
   note = 	 {revised from \cite{hirschfeld2014jssst}, accepted 2015-04-15},
-  annote = 	 {submitted September 2014}
+  annote = 	 {submitted September 2014},
+  abstract = 	 {One of the properties of context-oriented programming languages is the composition of partial module definitions. While in most such language extensions the state and behavior introduced by partial definitions are treated equally at the module level, we propose a refinement of that approach to allow for both public and restricted visibility of methods and local and shared visibility of fields in our experimental language L. Furthermore, we propose a new lookup mechanism to reduce the risk of name captures.}
 }
 
 @Proceedings{array2015,
@@ -1684,7 +1685,8 @@ Automated Software Engineering (ASE 2015)},
   pdf = 	 {ase2015.pdf},
   month = 	 nov,
   date = 	 {2015-11-09 .. 2015-11-13},
-  keywords = 	 {AspectJ}
+  keywords = 	 {AspectJ},
+  abstract = 	 {Pointcut fragility is a well-documented problem in Aspect-Oriented Programming; changes to the base-code can lead to join points incorrectly falling in or out of the scope of pointcuts. Deciding which pointcuts have broken due to base-code changes is a daunting venture, especially in large and complex systems. We present an automated approach that recommends pointcuts that are likely to require modification due to a particular base-code change, as well as ones that do not. Our hypothesis is that join points selected by a pointcut exhibit common structural characteristics. Patterns describing such commonality are used to recommend pointcuts that have potentially broken to the developer. The approach is implemented as an extension to the popular Mylyn Eclipse IDE plug-in, which maintains focused contexts of entities relevant to the task at hand using a Degree of Interest (DOI) model.}
 }
 
 2015-11-07
@@ -1702,7 +1704,8 @@ Automated Software Engineering (ASE 2015)},
   annote = 	 {accetped on 2015-11-07},
   note = 	 {extendend from \cite{kamina2015modularity}},
   OPTurl = 	 {http://link.springer.com/chapter/10.1007/978-3-319-46969-0_4},
-  doi = 	 {10.1007/978-3-319-46969-0_4}
+  doi = 	 {10.1007/978-3-319-46969-0_4},
+  abstract = 	 {Context-oriented programming (COP) languages modularize context-dependent behaviors in multiple classes into layers. These languages have layer activation mechanisms so that the behaviors in layers take effect on a particular unit of computation during a particular period of time. Existing COP languages have different layer activation mechanisms, and each of them has its own advantages. However, since these mechanisms interfere with each other in terms of extent (time duration) and scope (a set of units of computations) of activation, combining them into a single language is not trivial. We propose a generalized layer activation mechanism based on contexts and subscribers to implement the different activation mechanisms in existing COP languages in a single language called ServalCJ. We formalize the operational semantics of ServalCJ as a small calculus and prove priority preservation, i.e., ensuring that layer prioritization, which resolves the interference between layers, is preserved during computation. To prove this property, we give a formal definition of layer priority that is general so that we can discuss the priorities of layers in other COP calculi and implementations. We implement a ServalCJ compiler, and demonstrate its effectiveness through several example applications.}
 }
 
 
