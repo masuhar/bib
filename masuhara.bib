@@ -1299,7 +1299,10 @@ Reflection, AOP and Meta-Data for Software Evolution (RAM-SE'12)},
   month = 	 apr,
   note = 	 {Presented as \cite{perscheid2011jssst}.  Also appears in \href{https://doi.org/10.11185/imt.7.1377}{Journal of Information and Media Technologies, Vol.7, No.4, pp.1370--1376, 2012}.
 },
-  OPTurl = {http://japanlinkcenter.org/DN/JST.JSTAGE/jssst/29.3_188}
+  OPTurl = {http://japanlinkcenter.org/DN/JST.JSTAGE/jssst/29.3_188},
+  abstract = 	 {Debugging failing test cases, particularly the search for failure causes, is often a laborious and time-consuming activity. With the help of spectrum-based fault localization developers are able to reduce the potentially large search space by detecting anomalies in tested program entities. However, such anomalies do not necessarily indicate defects and so developers still have to analyze numerous candidates one by one until they find the failure cause. This procedure is inefficient since it does not take into account how suspicious entities relate to each other, whether another developer is better qualified for debugging this failure, or how erroneous behavior comes to be. 
+
+We present test-driven fault navigation as an interconnected debugging guide that integrates spectrum-based anomalies and failure causes. By analyzing failure-reproducing test cases, we reveal suspicious system parts, developers most qualified for addressing localized faults, and erroneous behavior in the execution history. The Paths tool suite realizes our approach: PathMap supports a breadth first search for narrowing down failure causes and recommends developers for help; PathFinder is a lightweight back-in-time debugger that classifies failing test behavior for easily following infection chains back to defects. The evaluation of our approach illustrates the improvements for debugging test cases, the high accuracy of recommended developers, and the fast response times of our corresponding tool suite.}
 }
 
 @Misc{masuhara2012cob,
@@ -1326,6 +1329,7 @@ Reflection, AOP and Meta-Data for Software Evolution (RAM-SE'12)},
   date = 	 {2012-10-22},
   location = 	 {Tucson, AZ, USA},
   keywords = 	 {ContextFJ},
+  abstract = 	 {Dynamic layer composition is one of the key features in context-oriented programming (COP), an approach to improving modularity of behavioral variations that depend on the dynamic context of the execution environment. It allows a layer---a set of new or overriding methods that can belong to several classes---to be added to or removed from existing objects in a disciplined way. We develop a type system for dynamic layer composition, which may change the interfaces of objects at run time, based on a variant of ContextFJ, a core calculus for COP, and prove its soundness.},
 }
 
 @Article{kamina2013ipsj-trpro,
@@ -1349,7 +1353,8 @@ Reflection, AOP and Meta-Data for Software Evolution (RAM-SE'12)},
   title = 	 {A Core Calculus of Composite Layers},
   doi = 	 {10.1145/2451598.2451601},
   crossref =  {foal2013},
-  pages = 	 {7--12}
+  pages = 	 {7--12},
+  abstract = 	 {Composite layers in context-oriented programming (COP) are the abstraction that localizes conditions about when the specified layer becomes active. A composite layer changes the behavior of the system by implicit layer activation triggered by explicit activation of contexts. Existing studies on formalization of COP languages do not cover such an activation mechanism. This paper formalizes composite layers to clarify the operational semantics of implicit layer activation. Based on this formalization, we prove that the translation of composite layers into the existing COP language is sound, which ensures the correctness of the existing implementation of composite layers.}
 }
 
 (Student only)
@@ -1370,7 +1375,8 @@ Reflection, AOP and Meta-Data for Software Evolution (RAM-SE'12)},
   crossref =  {cop2013},
   pages = 	 {Article No.~2},
   doi = 	 {10.1145/2489793.2489795},
-  year = 	 2013
+  year = 	 2013,
+  abstract = 	 {With the increase of research interest in context-oriented programming (COP), several COP languages with different characteristics have been proposed. Although they share common language features to modularize context-dependent variations of behavior, they take quite different ways to realize them. Because of such differences, each language cannot solely cover all use cases of implementing context-dependent behavioral variations. In this paper, we propose a new COP language Javanese that unifies several COP mechanisms into general linguistic constructs. Specifically, it provides context declarations to identify context and its specification of the range of execution sequences where this context is active, activate declarations to define the relation between contexts and layers, and context group declarations that modularize these declarations and specify the set of instances where they are applied. This paper describes design of Javanese and an implementation strategy.}
 }
 
 @InProceedings{hirschfeld2013cop,
@@ -1382,7 +1388,8 @@ Reflection, AOP and Meta-Data for Software Evolution (RAM-SE'12)},
   pages = 	 {Article No.~4},
   year = 	 2013,
   doi = 	 {10.1145/2489793.2489797},
-  day = 	 {2013-07-02}
+  day = 	 {2013-07-02},
+  abstract = 	 {Most if not all extensions to object-oriented languages that allow for context-oriented programming (COP) are asymmetric in the sense that they assume a base implementation of a system to be composed into classes and a set of layers to provide behavioral variations applied to those classes at run-time. We propose L as an experimental language to further explore the design space for COP languages. In this position paper we talk about first steps towards the unification of classes and layers and with that the removal of the asymmetry in composition mechanisms of contemporary COP implementations.}
 }
 
 @Misc{toyama2013pro,
@@ -1404,7 +1411,8 @@ Reflection, AOP and Meta-Data for Software Evolution (RAM-SE'12)},
   month = 	 aug,
   year = 	 2013,
   note = 	 {Kitakyushu, Japan},
-  day = 	 {2013-08-02}}
+  day = 	 {2013-08-02},
+  abstract = 	 {Context-oriented programming (COP) languages provide layers as an abstraction mechanism for modularizing context-dependent behavioral variations. While existing COP languages offer layers in addition to other constructs like classes asymetrically, we propose an experimental language called L that removes such asymmetry. The design of L started from ContextFJ, our minimalistic COP language, with extensions for state and refinement. This proposal presents one such refinement mechanism as a first step towards a small yet practical COP kernel.}}
 
 @InProceedings{kamina2013rem,
   author = 	 kamina #and# aotani #and# masuhara,
@@ -1413,10 +1421,12 @@ Reflection, AOP and Meta-Data for Software Evolution (RAM-SE'12)},
   booktitle = {Proceedings of the Workshop on Reactivity, Events and Modularity (REM 2013), colocated with OOPSLA'13},
   day = 	 {2013-10-28},
   year = 	 2013,
-  pdf = 	 {rem20130.pdf},
+  pdf = 	 {rem2013.pdf},
   slides = 	 {rem2013-slides.pdf},
   month = 	 oct,
-  location = 	 {Indianapolis, IN, USA}}
+  location = 	 {Indianapolis, IN, USA},
+  abstract = 	 {There are several challenges in development of context-aware
+systems. First, while contexts are abstract from the viewpoint of behavior that depends on them, we need to elicit more concrete level of contexts that are sensed by complex context sensing technologies. Second, there are complicated relations between contexts and behavioral variations. Several variations may depend on multiple contexts, and several behavioral variations crosscut across several requirements. Third, contexts and context-dependent behavior reactively change with respect to external/internal events, and these changes also crosscut across several requirements. Finally, these complexities in requirements make it difficult to modularly map requirements to the implementation. This paper proposes a model of context-dependent requirements and shows the modular mapping from the model to the implementation in the existing COP language EventCJ. The model represents the following facts: (1) abstract contexts, context-dependent use cases, and groups of related use cases called layers; (2) concrete level of contexts, context-related external entities, and their correspondence to the abstract contexts; and (3) events that trigger changes of the contexts and thus switch the variations of behavior. We show that all such facts are injectively translated into the program written in EventCJ.}}
 
 @InProceedings{aotani2014foal,
   pdf = 	 {foal2014.pdf},
@@ -1425,7 +1435,8 @@ Reflection, AOP and Meta-Data for Software Evolution (RAM-SE'12)},
 Mechanisms in a Single Context-Oriented Language},
   crossref =  {foal2014},
   pages = 	 {3--6},
-  doi = 	 {10.1145/2588548.2588552}}
+  doi = 	 {10.1145/2588548.2588552},
+  abstract = 	 {We propose LamFJ, a calculus for expressing various layer activation mechanisms in context-oriented programming languages. LamFJ extends FeatherweightJava with context holders, which are the abstraction of dynamic layer activation. By encoding programs with different layer activation mechanisms into a program manipulating context holders, LamFJ serves as a foundation to reason about interactions between different mechanisms. This paper presents a sketch of the context holders and encodings of existing layer activation mechanisms.}}
 
 @InProceedings{kamina2014mv,
   pdf = 	 {modularity2014.pdf},
@@ -1436,7 +1447,11 @@ Mechanisms in a Single Context-Oriented Language},
   doi = 	 {10.1145/2577080.2579816},
   annote = 	 {Track on Modularity Visions},
   pages = 	 {85--98},
-  annote = 	 {21/60 -- 35 percent acceptance}}
+  annote = 	 {21/60 -- 35 percent acceptance},
+  abstract = 	 {There are a number of constructs to implement context-dependent
+behavior, such as conditional branches using if statements, method dispatching in object-oriented programming (such as the state design pattern), dynamic deployment of aspects in aspect-oriented programming, and layers in context-oriented programming (COP). Uses of those constructs significantly affect the modularity of the obtained implementation. While there are a number of cases where COP improves modularity, it is not clear when we should use COP in general.
+
+This paper presents a preliminary study on our software development methodology, the context-oriented software engineering (COSE), which is a use-case-driven software development methodology that guides us to a specification of context-dependent requirements and design. We provide a way to map the requirements and design formed by COSE to the implementation in our COP language ServalCJ. We applied COSE to two applications in order to assess its feasibility. We also identify key linguistic constructs that make COSE effective by examining existing COP languages. These feasibility studies and examination raise a number of interesting open issues. We finally show our future research roadmap to address those issues.}}
 
                   
 @InProceedings{murakami2014rsse,
@@ -1447,7 +1462,8 @@ Mechanisms in a Single Context-Oriented Language},
   annote = 	 {submitted on February 1, 2014, accepted},
   doi = 	 {10.1145/2593822.2593828},
   pages = 	 {28--29},
-  keywords = 	 {Selene, Mylyn, Eclipse}}
+  keywords = 	 {Selene, Mylyn, Eclipse},
+  abstract = 	 {Code recommendation systems predict and present what the user is likely to write next by using the user's editing context, namely textual and semantic information about the programs being edited in a programming editor. Most existing systems however use information merely around the cursor position---i.e., the class/method definition at the cursor position---as the editing context. By including the code related to the current method/class, like the callers and callees of the method, recommendation could become more appropriate. We propose to use the user's editing activity for identifying code relevant to the current method/class. Specifically, we use a modified degree-of-interest model in the Mylyn task management tool, and incorporated the model in our repository-based code recommendation system, Selene. This paper reports the design of the system and the results of our initial experiments.}}
 
 
 Misc{toyama2014oopsla,
@@ -1488,6 +1504,9 @@ Misc{toyama2014oopsla,
  publisher = {ACM},
  address = {New York, NY, USA},
  keywords = {Context-Oriented Programming, Layer Activation Mechanisms},
+  abstract = 	 {Different context-oriented programming languages try to capture contexts with respect to different things, including a computation, an object, and a device that executes a program, by providing different layer activation mechanisms. When we want to exploit all of those different kinds of contexts at the same time, it is not clear how the effects of those contexts should be combined.
+                  
+We develop LamFJ, a calculus for expressing various layer activation mechanisms. It replaces the with and without expressions in ContextFJ with four expressions that fire context change events, which models changes of each context. LamFJ is not only powerful enough to express multiple layer activation mechanisms but also clearly defines combined effects of those mechanisms. In addition to the supported layer activation mechanisms in the paper, namely imperative activation, per-object activation and dynamic scoping, we aim at supporting other mechanisms like reactive and structural activation with small extensions.},
 }
 
 @inproceedings{kamina2014cop,
@@ -1510,6 +1529,9 @@ Misc{toyama2014oopsla,
  publisher = {ACM},
  address = {New York, NY, USA},
  keywords = {ContextFJ, Dynamic layer deactivation, Type soundness},
+  abstract = 	 {Dynamic layer deactivation in context-oriented programming (COP) allows a layer to be dynamically disabled in the running application in a disciplined way. Deactivating a layer may lead to an error if there is another layer which has been activated but depends on the deactivated layer in the sense that the latter calls a method that exists only in the former. A type system or static analysis might be able to check the absence of such depending layers at each deactivation point but it would not be very easy, especially in the open-world setting.
+
+We argue that the on-demand activation, which implicitly activates all layers on which currently activated layer depends, addresses this problem. In this mechanism, the precedent layer deactivation is canceled when the depending layer requires the implementation of the deactivated layer. This means that this mechanism can ensure that all method calls succeed without performing the checks of absent depending layers, which simplifies the type system. We formalize this idea as an extension of ContextFJ, a COP extension of Featherweight Java, and prove its type soundness.},
 } 
 
 @Book{concurrentObjectsAndBeyond2014,
@@ -1536,7 +1558,8 @@ Misc{toyama2014oopsla,
   month = 	 nov,
   date = 	 {2014-11-16},
   location = 	 {Hong Kong},
-  keywords = 	 {Java}}
+  keywords = 	 {Java},
+  abstract = 	 {Software evolution sometimes requires changes of module interfaces, which in turn cause crosscutting changes, or changes of module clients that are spreading over a program. Such changes on the client-side can be too complicated to be automatically achieved by text replacement and refactoring tools. We propose a code transformation language, called Crossver, for consistently updating code fragments in a program. Crossver offers a source-level pattern sublanguage to express complicated transformation conditions. The patterns are robust against variety among clients thanks to the dataflow-based pattern matcher. In the paper, we overview the design and core semantics of Crossver.}}
 
 @Misc{masuhara2014isp2s2,
   location = 	 {Kobe},
@@ -1557,6 +1580,7 @@ Misc{toyama2014oopsla,
   crossref =  {modularity2015},
   pages = 	 {14--28},
   doi = {10.1145/2724525.2724570},
+  abstract = 	 {Context-oriented programming (COP) languages modularize context-dependent behaviors in multiple classes into layers. These languages have layer activation mechanisms so that the behaviors in layers take effect on a particular unit of computation during a particular period of time. Existing COP languages have different layer activation mechanisms, and each of them has its own advantages. However, because these mechanisms interfere with each other in terms of extent (time duration) and scope (a set of units of computations) of activation, it is not trivial to combine them into a single language. We propose a generalized layer activation mechanism based on contexts and subscribers to implement the different activation mechanisms in existing COP languages in a single COP language called ServalCJ. Contexts specify the extent of activation through temporal logic terms, and subscribers specify the scope of activation through operators provided by the language. We implement a compiler of ServalCJ, and demonstrate its expressiveness by writing a couple of application programs.},
 }
 
 @InProceedings{sakurai2015sac,
@@ -1570,6 +1594,7 @@ Misc{toyama2014oopsla,
   annote = 	 {OOPS! Track},
   date = 	 {2015-04-13 .. 2015-04-17},
   keywords = 	 {Java, Back-in-time debugger, Omniscent debugging, Traced-based debugger},
+  abstract = 	 {Trace-based debuggers help a debugging process by displaying a history of executed operations with their parameters in a run of a program. However, those debuggers are unable to provide any clues when a program does not perform operations that ought to occur. This paper proposes a novel feature called the omission finder for trace-based debuggers. This feature correlates points-to analysis results with an execution history to show operations that could have been but actually were not performed on a specified instance if the program behaved differently. We implemented the omission finder on top of an existing trace-based debugger, and confirmed reduction of the number of debugging steps with an omission bug in a real-world program. Our user-study also showed reduction of debugging times with programs containing omission bugs.},
 }
                   
 @Article{hirschfeld2015compsoft,
