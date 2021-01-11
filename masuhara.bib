@@ -831,7 +831,9 @@ Workshop (FOAL 2006) at AOSD 2006},
   title = 	 "Test-based Pointcuts: A Robust Pointcut Mechanism Based on Unit Test Cases for Software Evolution",
   crossref = 	 "late2007",
   keywords = 	 {AspectJ},
-  pdf = 	 {late2007.pdf}
+  pdf = 	 {late2007.pdf},
+  abstract = 	 {This paper proposes test-based pointcuts, a new aspect-oriented
+programming language construct that uses unit test cases as interface of crosscutting concerns. A test-based pointcut primarily specifies a set of test cases associated to a program. At execution time, it matches the join points that have the same execution history to the one of the specified test cases. The test-based approach improves pointcut definitions in two respects. First, test-based pointcuts are less fragile with respect to program changes because rather than directly relying on type and operation names in a program, they indirectly specify join points through unit test cases, which are easier to be kept up-to-date. Second, test-based pointcuts can discriminate execution histories without requiring to specify detailed execution steps, as they use test cases as abstractions of execution histories. With the abstractions, the second respect contributes to the first respect. We designed and implemented the test-based pointcuts as an extension to AspectJ, and confirmed, through an case study, test-based pointcuts are more robust against evolution when used for a practical application program.}
 }
 
 @Misc{masuhara2007aplas-poster,
@@ -863,7 +865,8 @@ Workshop (FOAL 2006) at AOSD 2006},
   crossref = 	 "aosd2008",
   pages = {96--107},
   doi= {10.1145/1353482.1353494},
-  keywords = 	 {AspectJ}
+  keywords = 	 {AspectJ},
+  abstract = 	 {We propose test-based pointcuts, a novel pointcut mechanism for AspectJ-like aspect-oriented programming languages. The idea behind the test-based pointcuts is to specify join points through unit test cases associated with the target program. The test-based pointcuts improve robustness and precision of pointcut languages. The test-based pointcuts are more robust against software evolution because they do not directly rely on identifier names in a target program. The test-based pointcuts are more precise because they can distinguish fine grained execution histories including conditional branches by comparing the runtime execution histories with recorded for ones of the unit test cases. This paper presents design and implementation of the test-based pointcuts as an extension of an AspectJ compiler. We evaluated robustness and runtime efficiency of test-based pointcuts through case studies that applied test-based pointcuts to several versions of practical application programs.}
 }
 
 @Misc{aotani2008aosd-poster,
@@ -884,7 +887,8 @@ Workshop (FOAL 2006) at AOSD 2006},
   month =	 jul,
   url =	 {https://web.archive.org/web/20080723204002/http://gateway.comp.lancs.ac.uk/computing/aosd-europe//adi08},
   pdf = 	 {adi2008.pdf},
-  keywords = 	 {AspectJ}
+  keywords = 	 {AspectJ},
+  abstract = 	 {Statically typed AOP languages restrict application of around advice only to the join points that have conforming types. Though the restriction guarantees type safety, it can prohibit application of advice that is useful, yet does not cause runtime type errors. To this problem, we present a novel weaving mechanism, called the type relaxed weaving, that allows such advice applications while preserving type safety. This paper discusses language design issues to support the type relaxed weaving in AOP languages.}
 }
 
 @Misc{masuhara2008ramse,
@@ -997,6 +1001,7 @@ Misc{marletta2009ramse,
   crossref =  {jssst2009},
   pages = 	 {2D-1},
   month = 	 sep # { 16},
+  abstract = 	 {Context-oriented programming (COP) allows for the modularization of context-dependent behavioral variations. So far, COP has been implemented for dynamically-typed languages such as Lisp, Smalltalk, Python, and Ruby relying on reflection mechanisms, and for the statically-typed programming language Java based on a library and a pre-processor. ContextJ is our COP implementation for Java. It properly integrates COP's layer concept into the Java type system. ContextJ is compiler-based. As confirmed by a benchmark and a case study, it provides both better performance and higher-level abstraction mechanisms than its Java-based predecessors. In this paper, we present the ContextJ language and explain its constructs and semantics. Further, we give an overview of the implementation of our compiler and discuss run-time benchmarks.},
   }
 
 @InProceedings{aotani2009aoasia,
@@ -1020,7 +1025,8 @@ Misc{marletta2009ramse,
   acceptanceRatio = {29% (18/62)},
   month = 	 mar # { 18},
   keywords = 	 {AspectJ},
-  OPTnote = 	 {extended version http://www.graco.c.u-tokyo.ac.jp/ppp/index.php?plugin=attach&refer=Projects%2Ftyperelaxedweaving.ja&openfile=trw-full.pdf}
+  OPTnote = 	 {extended version http://www.graco.c.u-tokyo.ac.jp/ppp/index.php?plugin=attach&refer=Projects%2Ftyperelaxedweaving.ja&openfile=trw-full.pdf},
+  abstract = 	 {Statically typed aspect-oriented programming languages restrict application of around advice only to the join points that have conforming types. Though the restriction guarantees type safety, it can prohibit application of advice that is useful, yet does not cause runtime type errors. To this problem, we present a novel weaving mechanism, called the type relaxed weaving, that allows such advice applications while preserving type safety. We formalized the mechanism, and implemented as an AspectJ compatible compiler, called RelaxAJ.}
 }
 
 @InProceedings{fanyang2010acp4is,
@@ -1036,7 +1042,8 @@ Misc{marletta2009ramse,
   month = 	 mar # { 16},
   pdf = 	 {acp4is2010.pdf},
 
-  url = 	 {http://publishup.uni-potsdam.de/opus4-ubp/files/3946/tbhpi33.pdf}}
+  url = 	 {http://publishup.uni-potsdam.de/opus4-ubp/files/3946/tbhpi33.pdf},
+  abstract = 	 {Enforcing security policies to distributed systems is difficult, in particular, when a system contains untrusted components. We designed AspectKE*, a distributed AOP language based on a tuple space, to tackle this issue. In AspectKE*, aspects can enforce access control policies that depend on future behavior of running processes. One of the key language features is the predicates and functions that extract results of static program analysis, which are useful for defining security aspects that have to know about future behavior of a program. AspectKE* also provides a novel variable binding mechanism for pointcuts, so that pointcuts can uniformly specify join points based on both static and dynamic information about the program. Our implementation strategy performs fundamental static analysis at load-time, so as to retain runtime overheads minimal. We implemented a compiler for AspectKE*, and demonstrate usefulness of AspectKE* through a security aspect for a distributed chat system.}}
 
 
 @Misc{yang2010aosd-demo,
@@ -1055,7 +1062,8 @@ Misc{marletta2009ramse,
   crossref =  {foal2010},
   url = 	 {http://www.cs.ucf.edu/~leavens/FOAL/index-2010.shtml},
   pages = 	 {1--4},
-  keywords = 	 {AspectJ}}
+  keywords = 	 {AspectJ},
+  abstract = 	 {A sketch of StrongRelaxAJ is presented. StrongRelaxAJ is an extension to AspectJ with a type system for around advice that integrates the ones in RelaxAJ and StrongAspectJ. In other words, StrongRelaxAJ employs the type-relaxed weaving mechanism in RelaxAJ for better adaptability of around advice, and supports type variables and explicit signatures of proceed for better expressiveness without relying on dangerous and annoying dynamic casting on the return values from proceed.}}
 
 @InProceedings{appeltauer2010sc,
   author = 	 appeltauer #AND# hirschfeld #AND# masuhara #AND#  haupt #AND# kawauchi,
@@ -1073,7 +1081,8 @@ Misc{marletta2009ramse,
   month = 	 jul #{ 1-2},
   acceptanceRatio = {10/33 (30%)},
   publisher = SV,
-  keywords = 	 {Java, ContextJ},},
+  keywords = 	 {Java, ContextJ},
+  abstract = 	 {Context-oriented programming (COP) introduces dedicated abstractions for the modularization and dynamic composition of crosscutting context-specific functionality. While existing COP languages offer constructs for control-flow specific composition, they do not yet consider the explicit representation of event-specific context-dependent behavior, for which we observe two distinguishing properties: First, context can affect several control flows. Second, events can establish new contexts asynchronously. In this paper, we propose new language constructs for event-specific composition and explicit context representation and introduce their implementation in JCop, our COP extension to Java.},},
 
 
 
@@ -1088,7 +1097,8 @@ Misc{marletta2009ramse,
   editor = 	 {Pascal Costanza},
   address = 	 {Maribor, Solovenia},
   month = 	 jun,
-  day = "22"
+  day = "22",
+  abstract = 	 {This paper proposes a new programming language EventCJ. Its design stems from our observation that, in many context-aware applications, context changes are triggered by external events. Thus, in addition to the current COP language mechanisms, namely the one to activate/deactivate layers in accordance with a flow of control in programs, and the one to dispatch method calls to partial methods on active layers, we propose a mechanism to declaratively switch contexts of the receiver of events. EventCJ can declare events that trigger context transitions, and context transition rules that define how each instance's context changes when it receives a specific event. After the transition, the instance acquires the context dependent behaviors provided by the activated context. Each event is declared in an AspectJ-like pointcut that specifies where the event is fired in the join points of the system. EventCJ separates the specification of when each context is activated and deactivated that may crosscut whole program in the existing COP languages. Furthermore, the declarative nature of the context transition rules help validation of some properties that the contexts should satisfy}
 }
 
 @Article{appeltauer2011compsoft,
@@ -1102,7 +1112,8 @@ Misc{marletta2009ramse,
   number = 	 1,
   pages = 	 {272--292},
   month = 	 jan,
-  note = 	 {Presented as \cite{appeltauer2009jssst}. \href{https://www.jssst.or.jp/award/detail/ronbunsho_list.html}{JSSST Best Paper Award.}}}
+  note = 	 {Presented as \cite{appeltauer2009jssst}. \href{https://www.jssst.or.jp/award/detail/ronbunsho_list.html}{JSSST Best Paper Award.}},
+  abstract = 	 {The development of context-aware systems requires dynamic adaptation that challenges state-of-the-art programming language support. Context-oriented programming (COP) provides dedicated abstractions for first-class representation of context-dependent behavior. So far, COP has been implemented for dynamically-typed languages such as Lisp, Smalltalk, Python, Ruby, and JavaScript relying on reflection mechanisms, and for the statically-typed programming language Java based on libraries and pre-processors. ContextJ is our compiler-based COP implementation for Java that properly integrates COP's layer concept into the Java type system. In this paper, we introduce ContextJ's language constructs, semantics, and implementation. We present a case-study of a ContextJ-based desktop application.}}
 
 @InProceedings{kamina2011aosd,
   pdf = 	 {aosd2011.pdf},
@@ -1110,7 +1121,8 @@ Misc{marletta2009ramse,
   title = 	 {{EventCJ}: A Context-Oriented Programming Language with Declarative Event-based Context Transition},
   doi = 	 {10.1145/1960275.1960305},
   crossref =  {aosd2011},
-  pages = 	 {253--264}}
+  pages = 	 {253--264},
+  abstract = 	 {This paper proposes EventCJ, a context-oriented programming (COP) language that can modularly control layer activation based on user-defined events. In addition to defining context-specific behaviors by using existing COP constructs, the EventCJ programmer declares events to specify when and on which instance layer switching should happen, and layer transition rules to specify which layers should be activated/deactivated upon events. These constructs enable controlling layer activation on a per-instance basis, separately from a base program. We also demonstrate an approach to verify safety properties of layer transitions by using a model checker. With these advantages, EventCJ enables more modular descriptions of context-aware programs, especially when layer switching is triggered in many places of a program, or by activities external to the base program. We implemented a prototype EventCJ compiler with Eclipse IDE support.}}
 
                   
 @InProceedings{aotani2011foal,
@@ -1121,7 +1133,8 @@ type-relaxed weaving},
   pages = 	 {13--17},
   doi = 	 {10.1145/1960510.1960516},
   url = {foal2011-trw.pdf},
-  keywords = 	 {AspectJ}
+  keywords = 	 {AspectJ},
+  abstract = 	 {This paper introduces our ongoing study on type safety of the type relaxed weaving mechanism in the presence of two Java 5 features, namely covariant return types and generics. We point out additional conditions that are necessary to ensure type safety, which can be checked by a slightly modified type checking rules for the type relaxed weaving.}
 }
 
 @InProceedings{hirschfeld2011foal,
@@ -1130,7 +1143,8 @@ type-relaxed weaving},
   crossref = 	 {foal2011},
   doi = 	 {10.1145/1960510.1960515},
   pages = 	 {25--29},
-  pdf = {foal2011-contextfj.pdf}
+  pdf = {foal2011-contextfj.pdf},
+  abstract = 	 {We develop a minimal core calculus called ContextFJ to model language mechanisms for context-oriented programming (COP). Unlike other formal models of COP, ContextFJ has a direct operational semantics that can serve as a precise description of the core of COP languages. We also discuss a simple type system that helps to prevent undefined methods from being accessed via proceed.}
 }
 
 @InProceedings{watanabe2011suite,
@@ -1144,7 +1158,8 @@ type-relaxed weaving},
   location = 	 {Waikiki, Honolulu, Hawaii, USA},
   day = 	 28,
   keywords = 	 {Selene, Eclipse},
-  doi = 	 {10.1145/1985429.1985434}
+  doi = 	 {10.1145/1985429.1985434},
+  abstract = 	 {We present Selene, a source code recommendation tool based on an associative search engine. It spontaneously searches and displays example programs while the developer is editing a program text. By using an associative search engine, it can search a repository of two million example programs within a few seconds. This paper discusses issues that are revealed by our ongoing implementation of Selene, in particular those of performance, similarity measures and user interface.}
 }
 
 
@@ -1162,6 +1177,7 @@ type-relaxed weaving},
   month = 	 jun # { 6-8},
   doi = 	 {10.1007/978-3-642-21464-6_14},
   acceptanceRatio = {40% (14/35)},
+  abstract = 	 {Enforcing security policies to distributed systems is difficult, in particular, to a system containing untrusted components. We designed AspectKE*, an aspect-oriented programming language based on distributed tuple spaces to tackle this issue. One of the key features in AspectKE* is the program analysis predicates and functions that provide information on future behavior of a program. With a dual value evaluation mechanism that handles results of static analysis and runtime values at the same time, those functions and predicates enable the users to specify security policies in a uniform manner. Our two-staged implementation strategy gathers fundamental static analysis information at load-time, so as to avoid performing all analysis at runtime. We built a compiler for AspectKE*, and successfully implemented security aspects for a distributed chat system and an electronic healthcare record workflow system.},
 }
 
 @InProceedings{aotani2011cop,
@@ -1174,7 +1190,8 @@ type-relaxed weaving},
   year = 	 2011,
   month = 	 jul,
   location = 	 {Lancaster, UK},
-  doi = 	 {10.1145/2068736.2068737}
+  doi = 	 {10.1145/2068736.2068737},
+  abstract = 	 {We propose Featherweight EventCJ, which is a small calculus for context-oriented languages with event-based per-instance layer controls like EventCJ. It extends ContextFJ with stores, labels and transitions for modeling the per-instance layer management, events and declarative layer transition rules, respectively.}
 }
 
 @InProceedings{perscheid2011jssst,
@@ -1185,7 +1202,10 @@ type-relaxed weaving},
   pdf = 	 {jssst2011-perscheid.pdf},
   pages = 	 {3E-3},
   date = 	 {2011-09-27},
-  note = 	 {Published as \cite{perscheid2012compsoft}}}
+  note = 	 {Published as \cite{perscheid2012compsoft}},
+  abstract = 	 {Debugging activities, particularly those for searching for failure causes, are often laborious and time-consuming. Techniques such as spectrum-based fault localization or back-in-time debugging help programmers to reduce development cost. However, such approaches are often limited to a single point of view, ignoring the need for combined perspectives.
+
+We present test-driven fault navigation as an interconnected guide to failure causes. Based on failure-reproducing unit tests, we introduce a novel systematic top-down debugging process with corresponding tool support. With spectrum-based fault localization, we offer navigation to suspicious system parts and erroneous behavior in the execution history and rank developers most qualified for addressing the faults localized. Our evaluation illustrates the practicability of this approach, its high accuracy of developer recommendation, and the fast response times of its corresponding tool suite}}
 
 MISC{kamina2011coomp,
   author = 	 kamina #AND# aotani #AND# masuhara #AND# tamai,
@@ -1216,7 +1236,8 @@ Misc{kamina2012icse,
   year = 	 2012,
   doi = 	 {10.1145/2161996.2162003},
   month = 	 mar,
-  keywords = 	 {AspectJ}
+  keywords = 	 {AspectJ},
+  abstract = 	 {We propose a per-type instantiation mechanism for generic aspects. Though AspectJ supports generic aspects, which declare type parameters, we cannot declare aspects that are parametrized over both field types and return types of applied join points without manually concretizing the type parameters. Our mechanism creates an instance of a generic aspect for each type of the applied join points.}
 }
 
 
