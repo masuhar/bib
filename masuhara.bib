@@ -433,7 +433,8 @@ InProceedings{masuhara99obpdc,
   pdf = 	 {ngc2001.pdf},
   month =	 nov,
   note =	 "Extended from \cite{masuhara2001pado2}.",
-  keywords = 	 {Java, Bytecode, Just-in-time, partial evaluation}
+  keywords = 	 {Java, Bytecode, Just-in-time, partial evaluation},
+  abstract = 	 {This paper proposes a run-time bytecode specialization (BCS) technique that analyzes programs and generates specialized programs at run-time in an intermediate language. By using an intermediate language for code generation, a back-end system can optimize the specialized programs after specialization. The system uses Java virtual machine language (JVML) as the intermediate language, which allows the system to easily achieve practical portability and to use existing sophisticated just-in-time (JIT) compilers as its back-end. The binding-time analysis algorithm is based on a type system, and covers a non-object-oriented subset of JVML. The specializer generates programs on a per-instruction basis, and can perform method inlining at run-time. Our performance measurements show that a non-trivial application program specialized at run-time by BCS runs approximately 3--4 times faster than the unspecialized one. Despite the large overhead of JIT compilation of specialized code, we observed that the overall performance of the application can be improved.}
 }
 
 Article{affeldt2001jssst,
@@ -479,7 +480,8 @@ Misc{imai2001oopsla-ptdoomws,
   series =	 "Technical Report TR{\#}02--06, Department of Computer Science, Iowa State University",
   pdf = 	 {foal2002.pdf},
   month =	 apr,
-  keywords = 	 {AspectJ, Scheme, Aspect sandbox}
+  keywords = 	 {AspectJ, Scheme, Aspect sandbox},
+  abstract = 	 {This paper presents a semantics-based compilation framework for an aspect-oriented programming language based on its operational semantics model. Using partial evaluation, the framework can explain several issues in compilation processes, including how to find places in program text to insert aspect code and how to remove unnecessary run-time checks. It also illustrates optimization of calling-context sensitive pointcuts (cflow), implemented in real compilers.}
 }
 
 @Misc{kiczales2002aosd-tutorial,
@@ -510,7 +512,8 @@ Misc{imai2001oopsla-ptdoomws,
   publisher =    {ACM Press},
   address =	 {Aizu, Japan},
   month =	 sep,
-  keywords = 	 {Java, just-in-time compiler}
+  keywords = 	 {Java, just-in-time compiler},
+  abstract = 	 {This paper describes a run-time specialization system for the Java language. One of the main difficulties of supporting the full Java language resides in a sound yet effective management of references to objects. This is because the specialization process may share references with the running application that executes the residual code, and because side-effects through those references by the specialization process could easily break the semantics of the running application. To cope with these difficulties, we elaborate requirements that ensure sound run-time specialization. Based on them, we design and implement a run-time specialization system for the Java language, which exhibits, for instance, approximately 20-25\% speed-up factor for a ray-tracing application.}
 }
 
 @Misc{aspectsandbox,
@@ -541,7 +544,8 @@ Misc{imai2001oopsla-ptdoomws,
   address =	 "Darmstadt, Germany",
   month =	 jul,
   acceptanceRatio = "18/88 (20%)",
-  keywords = 	 {AspectJ, Aspect sandbox, Scheme}
+  keywords = 	 {AspectJ, Aspect sandbox, Scheme},
+  abstract = 	 {Modeling four aspect-oriented programming mechanisms shows the way in which each supports modular crosscutting. Comparing the models produces a clear three part characterization of what is required to support crosscutting structure: a common frame of reference that two (or more) programs can use to connect with each other and each provide their semantic contribution.}
 }
 
 Misc{masuhara2002draft2,
@@ -564,7 +568,8 @@ Misc{masuhara2002draft2,
   series =	 LNCS,
   annote =	 {http://link.springer.de/link/service/series/0558/tocs/t2622.htm},
   acceptanceRatio = {21/83 (25%)},
-  keywords = 	 {AspectJ, Aspect sandbox, Scheme}
+  keywords = 	 {AspectJ, Aspect sandbox, Scheme},
+  abstract = 	 {This paper presents a semantics-based compilation model for an aspect-oriented programming language based on its operational semantics. Using partial evaluation, the model can explain several issues in compilation processes, including how to find places in program text to insert aspect code and how to remove unnecessary run-time checks. It also illustrates optimization of calling-context sensitive pointcuts (cflow), implemented in real compilers.}
 }
 
 Misc{masuhara2003submitted,
@@ -591,7 +596,8 @@ Misc{masuhara2003submitted,
   address =	 {Beijing, China},
   month =	 nov,
   acceptanceRatio = {24/76 (32%)},
-  keywords = 	 {AspectJ, dflow}
+  keywords = 	 {AspectJ, dflow},
+  abstract = 	 {A dataflow-based pointcut is proposed for aspect-oriented programming (AOP) languages. The pointcut specifies where aspects should be applied based on the origins of values. It is designed to be compatible with the other kinds of pointcuts in existing AOP languages. Primary application fields of the pointcut are the aspects in which flow of information is important, such as security. This paper presents the design of the pointcut with a web-application example, and its prototype implementation.}
 }
 
 @InProceedings{sakurai2004aosd,
@@ -604,7 +610,8 @@ Misc{masuhara2003submitted,
   month =	 mar, 
   acceptanceRatio = {18% (15/83)},
   keywords = 	 {AspectJ},
-  pdf = 	 {aosd2004.pdf}
+  pdf = 	 {aosd2004.pdf},
+  abstract = 	 {We propose a linguistic mechanism for AspectJ-like languages that concisely associates aspect instances to object groups. The mechanism, which supports association aspects, extends the per-object aspects in AspectJ by allowing an aspect instance to be associated to a group of objects, and by providing a new pointcut primitive to specify aspect instances as execution contexts of advice. With association aspects, we can straightforwardly implement crosscutting concerns that have stateful behavior related to a particular group of objects. The new pointcut primitive can more flexibly specify aspect instances when compared against previous implicit mechanisms. The comparison of execution times between the programs with association aspects and the ones with regular AspectJ aspects revealed that the association aspects exhibited almost equivalent for the medium-sized configurations.}
 }
 
 @InProceedings{kawauchi2004aosdsec,
@@ -616,7 +623,8 @@ Misc{masuhara2003submitted,
   address =	 "Lancaster, UK",
   month =	 mar,
   url =	 "https://web.archive.org/web/20050906081308/http://www.aosd.net:80/workshops/aosdsec/2004/",
-  keywords = 	 {AspectJ, dflow}
+  keywords = 	 {AspectJ, dflow},
+  abstract = 	 {Some security concerns, such as secrecy and integrity, are sensitive to flow of information in a program execution. We proposed a new pointcut to aspect-oriented programming (AOP) languages in order to easily implement such security concerns as aspects. The pointcut identifies join points based on the origins of values, and can be used with the other kinds of pointcuts in existing AOP languages. This paper presents an example how the pointcut can be applied to an integrity concern in a web-application.}
 }
 
 @InProceedings{ubayashi2004ramse,
@@ -629,6 +637,7 @@ Misc{masuhara2003submitted,
   address =	 {Oslo, Norway},
   month =	 Jun,
   url =	 {https://dblp.org/db/conf/ecoop/ramse2004},
+  abstract = 	 {Mechanisms in AOP (aspect-oriented programming) can be characterized by a JPM (join point model). AOP is effective in unanticipated software evolution because crosscutting concerns can be added or removed without making invasive modifications on original programs. However, the effectiveness would be restricted if new crosscutting concerns cannot be described with existing JPMs. Mechanisms for extending JPMs are needed in order to address the problem. In this paper, an implementation framework for extending JPMs is proposed. Using the framework, we can introduce new kinds of JPMs or extend existing JPMs in the process of software evolution.},
 }
 
 @InProceedings{kamio2004wnasc,
@@ -643,7 +652,8 @@ Misc{masuhara2003submitted,
   editor =	 "Tetsuo Tamai",
   address =	 "Tokyo",
   month =	 sep,
-  keywords = 	 {ASpectJ}
+  keywords = 	 {ASpectJ},
+  abstract = 	 {We present a value profiler for object-oriented programs that counts frequencies parameters to method calls. It is aimed at identifying methods that can be optimized by program specialization techniques. By adding timestamps to objects, the profiler accurately tests equality over mutable objects on a per-method basis. Our experiments with a 64602 lines of Java program showed that the profile report can reduce effort at manually finding the target methods of optimization, which speeded the overall execution time up more than 10\%.}
 }
 
 @InProceedings{tatsuzawa2005foal,
@@ -653,7 +663,8 @@ Misc{masuhara2003submitted,
   pdf = 	 {foal2005.pdf},
   note =	 {An extended version appears as \cite{masuhara2005icfp}.},
   pages =        {39--50},
-  keywords = 	 {OCaml}
+  keywords = 	 {OCaml},
+  abstract = 	 {We propose an aspect-oriented programming (AOP) language called Aspectual Caml based on a strongly-typed functional language Objective Caml. Aspectual Caml offers two AOP mechanisms, namely the pointcut and advice mechanism and the type extension mechanism, which gives similar functionality to the inter-type declarations in AspectJ. Those mechanisms are not simple adaptation of the similar mechanisms in existing AOP languages, but re-designed for common programming styles in functional languages such as type inference, polymorphic types, and curried functions. We implemented a prototype compiler of the language and used the language for separating crosscutting concerns in application programs, including separating a type system from a compiler of a simple language.}
 }
 
 @InProceedings{aotani2005splat,
@@ -661,7 +672,8 @@ Misc{masuhara2003submitted,
   title = 	 {Compiling Conditional Pointcuts for User-Level Semantic Pointcuts},
   pdf = 	 {splat2005.pdf},
   crossref =	 {splat2005},
-  keywords = 	 {SCoPE, AspectJ}
+  keywords = 	 {SCoPE, AspectJ},
+  abstract = 	 {We propose a compilation framework that compiles conditional pointcuts (i.e., if pointcuts) in AspectJ for allowing the programmer to define expressive pointcuts without runtime overheads. The framework automatically finds conditional pointcuts that are static with respect to join point shadows, evaluates them at compile-time, and generates compiled code that performs no runtime tests for those pointcuts. By writing conditions that examine static properties of a program, the programmer can simulate many semantic pointcuts within current AspectJ's semantics yet without runtime overheads. Our compiler implementation identifies static conditional pointcuts by using a technique similar to the binding-time analysis in partial evaluation, and employs double-compilation scheme to guarantee the same behavior to the code generated by the existing AspectJ compilers. Our experiments confirmed that the compiler is capable of compiling several semantic pointcuts, such as the ones testing class membership (e.g., has and hasfield), testing join point location (e.g., withinstaticinitialization), matching by using regular expressions, and checking high-level coding rules (e.g., the Law of Demeter).}
 }
 
 @InProceedings{yamazaki2005wtaop,
@@ -676,7 +688,8 @@ Misc{masuhara2003submitted,
   address =	 "Chicago, IL",
   month =	 mar,
   OPTurl =	 "http://www.sic.shibaura-it.ac.jp/~m105108/aspect/WTAOP/paper.pdf",
-  keywords = 	 {AspectJ}
+  keywords = 	 {AspectJ},
+  abstract = 	 {Unit testing of aspects can verify aspects implementations of aspects against their specification. Current technique for unit testing of aspects requires to weave the aspect definition into a target program, which thus makes it difficult to write comprehensive test cases and to avoid interference from other aspects. In this paper, we propose a framework for unit testing aspects without weaving. Our framework generates testing methods from an aspect definition so that test cases can directly verify properties of aspects such as the advice behavior and pointcut matching.}
 }
 
 @InProceedings{masuhara2005icfp,
@@ -689,7 +702,8 @@ Misc{masuhara2003submitted,
   crossref =  {icfp2005},
   pages =	 {320--330},
   acceptanceRatio = {33% (26/78)},
-  keywords = 	 {OCaml}
+  keywords = 	 {OCaml},
+  abstract = 	 {We propose an aspect-oriented programming (AOP) language called Aspectual Caml based on a strongly-typed functional language Objective Caml with two AOP mechanisms similar to those in AspectJ language. This paper describes the design and implementation issues of those AOP mechanisms that give us insights into the interaction between AOP features and common features in strongly-typed functional languages such as type inference, polymorphic types and curried functions. We implemented a prototype compiler of the language and used the language for separating crosscutting concerns in application programs, including for separating descriptions of a type system from compiler descriptions.}
 }
 
 @InProceedings{ubayashi2005ase,
@@ -710,7 +724,8 @@ Misc{masuhara2003submitted,
   OPTorganization = {IEEE/ACM},
   OPTpublisher = {},
   OPTannote = 	 {},
-  acceptanceRatio = {9.6% (28/291) for full papers}
+  acceptanceRatio = {9.6% (28/291) for full papers},
+  abstract = 	 {We present a parameterized interpreter for modeling aspect-oriented mechanisms. The interpreter takes several param- eters to cover different AOP mechanisms found in AspectJ, Hyper/J, and Demeter. The interpreter helps our understanding of the AOP mechanisms in two ways. First, its core part represents the common mechanical structure shared by different AOP mechanisms. Second, by reconstructing the existing AOP mechanisms and using parameters to configure the interpreter, we can illustrate the differences and similarities of those mechanisms clearly. This will also be helpful in rapid-prototyping a new AOP mechanism or a reflective AOP system that supports different mechanisms.}
 
 }
 
@@ -741,7 +756,8 @@ for making aspects more reusable",
   volume =	 {3880/2006},
   note =	 {Extended from \cite{sakurai2004aosd}.},
   doi =          {10.1007/11687061_8},
-  keywords = 	 {AspectJ}
+  keywords = 	 {AspectJ},
+  abstract = 	 {This paper describes the design and implementation of association aspects, which are a linguistic mechanism for the AspectJ language that concisely associates aspect instances to object groups by extending the per-object aspects in AspectJ. This mechanism allows an aspect instance to be associated to a group of objects, and by providing a new pointcut primitive to specify aspect instances as execution context of advice. With association aspects, we can straightforwardly implement crosscutting concerns that have stateful behavior related to a particular group of objects. The new pointcut primitive can more flexibly specify aspect instances when compared against previous implicit mechanisms. We implemented a compiler for association aspects by modifying the AspectJ compiler, which reduces the size of data structures for keeping associations. Our benchmark tests confirm that the overheads of association aspects are reasonably small when compared against functionally equivalent aspects in pure AspectJ that manually manage associations. The expressiveness of association aspects is demonstrated through development of an integrated development environment with and without association aspects.}
 }
 
 @Misc{masuhara2005asian-aosd,
@@ -768,7 +784,8 @@ Workshop (FOAL 2006) at AOSD 2006},
   series =	 {Technical Report, Department of Computer Science, Iowa State University},
   month =	 mar,
   acceptanceRatio = {47% (7/15) for long+short papers},
-  keywords = 	 {AspectJ}
+  keywords = 	 {AspectJ},
+  abstract = 	 {In AspectJ-like languages, there are several different kinds of advice declarations, which are specified by using advice modifiers such as before and after returning. This makes semantics of advice complicated and also makes advice declarations less reusable since advice modifiers are not param- eterized unlike pointcuts. We propose a simpler join point model and an experimental AOP language called PitJ. The proposed join point model has only one kind of advice, but has finer grained join points. Even though we unified different kinds of advice into one, the resulted language is sufficiently expressive to cover typical advice usages in AspectJ, and has improved advice reusability by allowing pointcuts, rather than advice modifiers, to specify when advice body runs. Along with the language design, this paper gives a formalization of the join point model in a continuation-passing style (CPS).}
 }
 
 @misc{hanemann2006diku-ist,
@@ -792,7 +809,8 @@ Workshop (FOAL 2006) at AOSD 2006},
   series =	 "Technical Report COMP-001-2006, Lancaster University Computing Department",
   pages =	 "53--61",
   month =	 jul,
-  keywords = 	 {AspectJ}
+  keywords = 	 {AspectJ},
+  abstract = 	 {This paper discusses issues on interactions of aspects with expressive pointcuts. Since expressive pointcuts specify join points based on the results of program analysis, they should be carefully designed in order to analyze effects of aspects and their precedence correctly. We show examples in which aspects with expressive pointcuts interact, and point out the required properties to those pointcuts for correct aspect interaction. We also briefly present our approach to satisfy those properties in our SCoPE compiler, which supports expressive pointcuts within AspectJ language.}
 }
 
 @InProceedings{masuhara2006aplas,
@@ -804,7 +822,8 @@ Workshop (FOAL 2006) at AOSD 2006},
   doi = 	 "10.1007/11924661_8",
   OPTurl = "10.1007/11924661_8",
   acceptanceRatio = {31% (22/70)},
-  keywords = 	 {AspectJ, continuation} 
+  keywords = 	 {AspectJ, continuation},
+  abstract = 	 {We propose a new join point model for aspect-oriented programming (AOP) languages. In most AOP languages including AspectJ, a join point is a time interval of an action in execution. While those languages are widely accepted, they have problems in aspects reusability, and awkwardness when designing advanced features such as tracematches. Our proposed join point model, namely the point-in-time join point model redefines join points as the moments both at the beginning and end of actions. Those finer-grained join points enable us to design AOP languages with better reusability and flexibility of aspects. In this paper, we designed an AspectJ-like language based on the point-in-time model. We also give a denotational semantics of a simplified language in a continuation passing style, and demonstrate that we can straightforwardly model advanced language features such as exception handling and cflow pointcuts.} 
 }
 
 @InProceedings{aotani2007aosd,
@@ -814,6 +833,7 @@ Workshop (FOAL 2006) at AOSD 2006},
   crossref = 	 "aosd2007",
   pages =	 "161--172",
   doi = "10.1145/1218563.1218582",
+  abstract = 	 {This paper proposes an approach called SCoPE, which supports user-defined analysis-based pointcuts in aspect-oriented programming (AOP) languages. The advantage of our approach is better integration with existing AOP languages than previous approaches. Instead of extending the language, SCoPE allows the programmer to write a pointcut that analyzes a program by using a conditional (if) pointcut with introspective reflection libraries. A compilation scheme automatically eliminates runtime tests for such a pointcut. The approach also makes effects of aspects visible to the analysis, which is essential for determining proper aspect interactions. We implemented a SCoPE compiler for the AspectJ language on top of the AspectBench compiler using a backpatching technique. The implementation efficiently finds analysis-based pointcuts, and generates woven code without runtime tests for those pointcuts. Our benchmark tests with JHotDraw and other programs showed that SCoPE compiles programs with less than 1\% compile-time overhead, and generates a program that is as efficient as an equivalent program that uses merely static pointcuts.},
 }
 
 @InProceedings{aotani2007foal,
@@ -823,7 +843,8 @@ Workshop (FOAL 2006) at AOSD 2006},
   url = 	 {http://www.eecs.ucf.edu/~leavens/FOAL/index-2007.shtml},
   crossref = 	 "foal2007",
   pages =	 "23--26",
-  keywords = 	 {AspectJ}
+  keywords = 	 {AspectJ},
+  abstract = 	 {Pointcuts in the current AspectJ family of languages are loosely checked because the languages allow compositions of pointcuts that never match any join points, which developers are unlikely to intend, for example, \verb|set(* *)&&get(* *)|. We formalize the problem by defining well-formedness of pointcuts and design a novel type system for assuring well-formedness. The type of pointcuts is encoded by using record, union and the bottom types.}
 }
 
 @InProceedings{sakurai2007late,
