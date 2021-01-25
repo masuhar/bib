@@ -398,7 +398,8 @@ InProceedings{masuhara99obpdc,
   acceptanceRatio = "14/30 (47%)",
   note = 	 {An extended version appears as \cite{masuhara2001ngc}.},
   keywords = 	 {Java, bytecode, partial evaluation},
-  pdf = 	 {pado2.pdf}
+  pdf = 	 {pado2.pdf},
+  abstract = 	 {This paper proposes a run-time bytecode specialization (BCS) technique that analyzes programs and generates specialized programs at run-time in an intermediate language. By using an intermediate language for code generation, a back-end system can optimize the specialized programs after specialization. As the intermediate language, the system uses Java virtual machine language (JVML), which allows the system to easily achieve practical portability and to use sophisticated just-in-time compilers as its back-end. The binding-time analysis algorithm, which is based on a type system, covers a non-object-oriented subset of JVML. A specializer, which generates programs on a per-instruction basis, can perform method inlining at run-time. The performance measurement showed that a non-trivial application program specialized at run-time by BCS runs approximately 3--4 times faster than the unspecialized one. Despite the large amount of overheads at JIT compilation of specialized code, we observed that the overall performance of the application can be improved.}
 }
 
 @InCollection{masuhara2001fmbook,
