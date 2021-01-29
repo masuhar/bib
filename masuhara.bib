@@ -28,7 +28,8 @@
   doi = 	 {10.1145/141937.141948},
   serialNo =	 "16-6",
   acceptanceRatio = "31/250 (12%)",
-  keywords = 	 {ABCL/R}
+  keywords = 	 {ABCL/R},
+  abstract = 	 {Computational reflection is beneficial in concurrent computing in offering a linguistic mechanism for incorporating user-specific policies . New challenges are (1) how to implement them, and (2) how to do so efficiently. We present efficient implementation schemes for object-oriented concurrent reflective languages using our language ABCL/R2 as an example. The schemes include: efficient lazy creation of metaobjects/meta-groups, partial compilation of scripts (methods), dynamic progression, self-reification, and light-weight objects, all appropriately integrated so that the user-level semantics remain consistent with the meta-circular definition so that the full power of reflection is retained, while achieving practical efficiency. ABCL/R2 exhibits two orders of magnitude speed improvement over its predecessor, ABCL/R, and in fact compares favorably to the ABCL/1 compiler and also C + Sun LWP, neither supporting reflection.}
 }
 
 @InProceedings{masuhara93rw,
@@ -52,7 +53,8 @@
   school = 	 ISGSUTokyo,
   year = 	 1994,
   keywords = 	 {ABCL/R},
-  note = 	 {Supervisor: Akinori Yonezawa}
+  note = 	 {Supervisor: Akinori Yonezawa},
+  abstract = 	 {Recent progress in implementations of object-oriented concurrent programming languages on highly-parallel processors makes it feasible to construct large-scale parallel applications having complicated structures. Such applications can not exhibit good performance without dynamic resource management (e.g., load-balancing and object scheduling) tailored to the characteristics of the applications and/or machine architectures. Since dynamic resource management systems are usually intertwined with the language implementation, modification/extension of the management systems requires complicated programming in the low-level language. Reflective systems can provide abstractions to modify/extend the implementation-level facilities within the application-level language. This study proposes a reflective architecture of an object-oriented concurrent language for highly-parallel processors to provide resource management systems for parallel applications. To make our architecture practical, much attention is payed on balancing the trade-offs between extensibility and efficiency; we examine the requirements for realistic applications by developing resource management systems for search problems and N -body simulation, and design the architecture based on the requirements. The architecture is evaluated by experiments through a prototype system running on a parallel computer.}
 }
 
 @InProceedings{masuhara94wooc,
@@ -97,7 +99,8 @@
   pdf = 	 {oopsla1995.pdf},
   pages =        "300--315",
   acceptanceRatio = "28/155",
-  keywords = 	 {ABCL/R}
+  keywords = 	 {ABCL/R},
+  abstract = 	 {Meta-level programmability is beneficial for parallel/distributed object-oriented computing to improve performance, etc. The major problem, however, is interpretation overhead due to meta-circular interpretation. To solve this problem, we propose a compilation framework for object-oriented concurrent reflective languages using partial evaluation. Since traditional partial evaluators do not allow us to directly deal with meta-circular interpreters written with concurrent objects, we devised techniques such as pre-/post-processing, a new proposed preaction extension to partial evaluation in order to handle side-effects, etc. Benchmarks of a prototype compiler for our language ABCL/R3 indicate that (1) the meta-level interpretation is essentially `compiled away,' and (2) meta-level optimizations in a parallel application, running on a Fujitsu MPP AP1000, exhibits only 10--30\% overhead compared to the hand-crafted source-level optimization in a non-reflective language.}
 }
 
 @InProceedings{masuhara95imsa,
@@ -133,7 +136,8 @@
   crossref = 	 "reflection96",
   pdf = 	 {reflection1996.pdf},
   pages =	 "79--91",
-  keywords = 	 {ABCL/R}
+  keywords = 	 {ABCL/R},
+  abstract = 	 {To provide various parallel language constructs, extensible languages based on reflection are attractive for both implementors and users. This paper describes our proposed meta-level architecture of a concurrent object-oriented language ABCL/R3, which has the following characteristics: (1) language customization through meta-interpreters and meta-objects, (2) delegation and inheritance mechanisms facilitating modular and re-usable meta-level programming, and (3) the reflective annotations and meta-level arguments realizing separation of base- and meta-level programs. We also show that several meta-level programs that provide common parallel programming strategies, such as object replication and latency hiding, are easily implemented.}
 }
 
 @TechReport{asai96techrep,
@@ -159,7 +163,8 @@
 		  with Side-effects",
   pages =	 "12--21",
   serialNo =	 "6-12",
-  keywords = 	 {Black, Scheme}
+  keywords = 	 {Black, Scheme},
+  abstract = 	 {We present a framework of an online partial evaluator for a call-by-vahre A-calculus with destructiveupdatesof data structures. It properly and correctly specializes expressions that contain side-effects, while preserving pointer equality, which is an important property for programs using updates. Our partial evaluator uses a side-effect analysis to extract immutable data structures and then performs an online specialization using preactions. Once mutable and immutable data structures are separated, partial evaluation is done in such a way that accesses to immutable ones are performed at specialization time, while accesses to mutable ones are residualized. For the correct residualization of side-effecting operations, preactions are used to solve various issues, including code elimination, code duplication, and execution order preservation. The preaction mechanism also enables us to reduce expressions that were residualized when the conventional let-expression approach of Similix was used. The resulting partial evaluator is simple enough to prove its correctness. Based on the framework, we have constructed a partial evaluator for Scheme, which is powerful enough to specialize fairly complicated programs with side-effects, such as an interpreter.}
 }
 
 @InProceedings{masuhara97imsa,
@@ -215,7 +220,8 @@ Misc{masuhara97draft,
   crossref = 	 "ecoop98",
   pages =	 "418--439",
   acceptanceRatio = "24/124 (19%)",
-  keywords = 	 {ABCL/R}
+  keywords = 	 {ABCL/R},
+  abstract = 	 {Customizable meta-objects are a powerful abstraction for extending language features and implementation mechanisms, but interpretive execution suffers from severe performance penalty. Some of this penalty can be reduced by applying partial evaluation to meta-interpreters, but partial evaluation of meta-objects in existing concurrent object-oriented languages is ineffective. This paper proposes a new meta-object design for our reflective language ABCL/R3. It yields meta-objects that can be optimized effectively using partial evaluation. The crux of the design is the separation of state-related operations from other operations, and this separation is accomplished by using reader/writer methods in our concurrent object-oriented language called Schematic. Our benchmark trials show that non-trivial programs with partially evaluated meta-objects run more than six times faster than ones that are interpreted by meta-objects. In addition, a partially evaluated program that uses a customized meta-object runs as efficiently as a program that is manually rewritten so as to have the same functionality without using meta-objects.}
 }
 
 @InProceedings{sugita98oopsla-rw,
@@ -255,7 +261,10 @@ Misc{masuhara97draft,
   OPTserialNo =  "",
   OPTannote = 	 "",
   keywords = 	 {ABCL/R},
-  note = 	 {Supervisor: Akinori Yonezawa}
+  note = 	 {Supervisor: Akinori Yonezawa},
+  abstract = 	 {Parallel and distributed programs often have hardware/problem specific optimizations for improving quality of the program such as efficiency and robustness. Those optimizations, unfortunately, degrade portability and re-usability as they are intertwined with the original algorithm description. Reflective languages, which provide the application programmer extensible and abstract implementation of the language, can describe such optimizations as extensions to the language. The separation of optimization descriptions gains portability and re-usability of both application programs and optimizations. However, the interpretive execution model of reflective languages imposes a large amount of performance overhead, which sometimes outweighs benefits of optimizations. Previous reflective languages prohibit some of operations being modified via reflection, so as to reduce the amount of interpretation overhead. The imperfection of this approach is that it still leaves a considerable amount of overhead, and it yields less flexible, unclear reflective architecture. 
+
+This dissertation investigates design and compilation framework of meta-interpreters and meta-objects in an object-oriented concurrent language ABCL/R3. By using partial evaluation to compile reflective programs, ABCL/R3 achieves flexible and lucid reflective architecture and efficient execution at the same time. We design full-fledged meta-interpreters by examining several concurrent programming examples. A newly proposed delegation mechanism enables to define modular and scope controlled extensions to meta-interpreters. We design meta-objects by exploiting the notion of reader/writer methods in a concurrent object-oriented language Schematic, so that they can be effectively partially evaluated. The compilation frameworks of meta-interpreters and meta-objects basically translate concurrent object definitions into a sequential program, then apply partial evaluator for a sequential language, and generates a program in a (non-reflective) concurrent object-oriented language, in which base-level and meta-level objects are collapsed to single level objects. The effciency of generated programs is demonstrated by several benchmark programs, in which our compiler exhibits performance close to non-reflective languages.}
 }
 
 
@@ -277,7 +286,8 @@ Misc{masuhara97draft,
   publisher = SV,
   address = 	 "Amsterdam, The Netherlands",
   month = 	 apr,
-  acceptanceRatio = "26/67 (39%)"
+  acceptanceRatio = "26/67 (39%)",
+  abstract = 	 {A scheme has been developed that enables a Java program to be migrated across computers while preserving its execution state, such as the values of local variables and the dynamic extents of try-and-catch blocks. This scheme provides the programmer with flexible control of migration, including transparent migration. It is based on source-code-level transformation. The translator takes as input code a Java program written in a Java language extended with language constructs for migration, and outputs pure Java source code that uses JavaRMI. The translated code can run on any Java interpreter and can be compiled by any just-in-time compiler. We have measured some execution performance for several application programs, and found that the translated programs are only about 20\% slower than the original programs. Because migration is completely controlled by using only three language constructs added to the Java language (go , undock and migratory), the programmer can write programs to be migrated easily and succinctly. Our system is available in the public domain.}
 }
 
 InProceedings{masuhara99obpdc,
@@ -325,7 +335,12 @@ InProceedings{masuhara99obpdc,
   pages =	 "83--102",
   address =	 "Waseda University, Tokyo, Japan",
   month =	 nov,
-  keywords = 	 {Java, bytecode, partial evaluation}
+  keywords = 	 {Java, bytecode, partial evaluation},
+  abstract = 	 {Run-time specialization (RTS) techniques efficiently generate specialized programs with respect to run-time values. They construct compiled native-code fragments called templates at compile-time, and generate a specialized program by merely copying the templates. The generated programs are less efficient than those generated by static partial evaluation techniques because the RTS techniques prevent many optimizations.
+
+The proposed bytecode specialization (BCS) technique is used to generate programs in a bytecode language and then translate the generated bytecode into native code by using a just-in-time (JIT) compiler. Its advantages are (1) efficient specialization processes that are similar to those of RTS techniques, (2) efficient specialized programs thanks to optimizations by the JIT compilers, and (3) that it is independent of the source-to-bytecode and the bytecode-to-native compilers thanks to a binding-time analysis algorithm that directly handles bytecode programs.
+
+Thus far, a BCS system has been implemented for a Java virtual machine subset. Micro-benchmarking showed that BCS with JIT compilation generates specialized programs that run more than 3-times faster than ones generated by traditional RTS techniques and that this specialization process takes less than one second.}
 }
 
 @InProceedings{yamauchi2000rm,
@@ -373,6 +388,7 @@ InProceedings{masuhara99obpdc,
   pdf = 	 {ispse2000.pdf},
   pages =	 "128--137",
   month = 	 nov,
+  abstract = 	 {In reflective languages, application programs can customize a language system that executes the application programs. Our premise is that this customizability of reflective languages can be a basic mechanisms of software evolution. In this paper, we present a simple architecture of a reflective language that can dynamically select meta-interpreters, and a dynamic compilation scheme by using run-time specialization (RTS) techniques, which could also be useful to dynamically optimize systems with mechanisms of dynamic software evolution. Our prototype system showed that dynamically compiled reflective programs run more than four times faster than the interpreted ones, and that compilation processes are fast enough to be invoked at runtime. Compared to statically compiled programs, however, dynamically compiled ones yet have 20-30\% overheads. We also discuss this problem.},
 }
 
 @InProceedings{oiwa2001ppl,
