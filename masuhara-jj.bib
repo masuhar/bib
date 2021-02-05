@@ -641,6 +641,7 @@
   author = 	 jsakurai # AND # jmasuhara ,
   yomi = 	 sakurai  # AND # masuhara ,
   title = 	 "アスペクト指向プログラミングにおけるテストに基づいたポイントカットの提案",
+  pdf = 	 {compsoft2007.pdf},
   journal = 	 CompSoft,
   year = 	 2007,
   volume = 	 24,
@@ -648,6 +649,7 @@
   pages = 	 "141--152",
   month = 	 sep,
   note = 	 "\cite{sakurai2006jssst}の改訂版",
+  abstract = 	 {本研究はアスペクト指向プログラミング(AOP)の新たなポイントカット機構として，テストに基づいたポイントカットを提案する．AOP言語はアスペクトを適用する時点を指示しなければならない．既存のAOP言語のポイントカットは，アスペクトが適用されるプログラム中の型名やメソッド名により指示を行うため，プログラムの些細な変更に応じてアスペクトの変更が必要であった．テストに基づいたポイントカットでは，テストを通じて間接的にアスペクトが適用される時点を指示する．そのため，プログラムの変更時にテストも修正される前提の下では，ポイントカット記述の変更が必要なくなる．またテストに基づいたポイントカットは，テストごとに異なる実行履歴を利用して，プログラムの実行時の実行履歴に依存したアスペクトの適用を指示することができる．そのため，適用するプログラムの特定の分岐などの時点を詳細に指示する必要がなくなり，簡潔な記述を得ることができる．実際にいくつかの事例に対してテストに基づいたポイントカットを利用し，ほとんどの場合に既存のAspectJによる記述よりも変更に強く簡潔な記述が可能であることを確認した． },
 }
 
 @inproceedings{watanabe2007ppl,
@@ -736,8 +738,11 @@
   volume = 	 26,
   note = 	 {\cite{aotani2007jssst}の改訂版},
   number = 	 2,
+  pdf = 	 {compsoft2009.pdf},
   pages = 	 {170--182},
-  month = 	 may}
+  month = 	 may,
+  abstract = 	 {AspectJをはじめとする多くのアスペクト指向プログラミング言語では，ポイントカット定義を誤った結果，アドバイスが実行されなかったり，想定と異なるジョインポイントの上で実行されることがある．本稿では型システムによってこれら問題の解決を目指す．この型システムはポイントカット内の矛盾と複数のポイントカットの間の矛盾の両方を発見する点が特徴である．本稿では型定義と型規則を示し，いくつかの基本的な誤りを発見できることを確認した．}},
+
 
  @Misc{masuhara2008ruby-kaigi,
   author = 	 jmasuhara,
@@ -763,6 +768,7 @@
   month = 	 mar,
   organization = SIGPPL,
   acceptanceRatio = {9/16 (full paper)},
+  abstract = 	 {AspectJ をはじめとする多くのアスペクト指向言語では, 型安全性のため around アドバイスを同じ型の式にしか適用できない. そのため, 例えばラッパーオブジェクトを挿入したり, 無名クラスのインスタンスを置き換えたりするような around アドバイスが記述できない. そこで我々は, 異なる型の値を返すアドバイスを許す型緩和織込機構を提案する. この機構は, アドバイスが置き換える値がどのような静的型で使われているかを局所的に解析し, アドバイスにはそれ以下の型の値に置き換えることを許す. これによって, 型安全性を保ちつつ前述のようなアドバイスが適用可能になる. 本研究では, AspectJ に対して解析のための規則を定義し, その規則に基づく織込機構を組み込んだ処理系を, 既存の AspectJ コンパイラを拡張することで作成した.},
 }
 
 
@@ -800,7 +806,8 @@
   pages = 	 {1--17},
   month = 	 jun,
   note = 	 {2011年度 情報処理学会論文誌プログラミング 優秀論文賞},
-  annote = 	 {accepted on 24 March 2010}}
+  annote = 	 {accepted on 24 March 2010},
+  abstract = 	 {現状のデバッグはプログラムの不正な動作を理解するために多くの時間とコストを必要とする．本研究は実行トレースを使った新たな欠陥の発見手法を提案することでデバッグの効率化を図り，トレースに基づく Java のためのデバッガである Traceglasses として実装する． Traceglasses は，プログラムの実行中のイベントを記録したトレースの対話的な表示と検索が可能で，利用者がプログラムの動作を遡って欠陥を発見することを支援する． Traceglasses は，トレースをメソッド呼び出し関係により木構造に変換し，ブレークポイントデバッガに見られるようなステップ操作を行わずに，トレースの表示を行う．また，指定されたオブジェクトに対する操作のみを抽出したトレースを表示できる．これらの特徴により，利用者は，実行順に並んだ膨大なトレースに対して局所的および大域的に，必要な部分だけを理解し，効率良く欠陥を発見できる． Traceglasses の実装は，木構造を持つ膨大なトレースを効率良く探索し表示するために，専用のデータ構造を構築する．本発表では， Traceglasses の実装により実際のテキスト整形プログラムの欠陥をプログラムの出力から遡り発見する事例を説明し，提案した欠陥の発見手法と実装について実用上の有用性を示す．}}
 
 
 @InProceedings{touyama2010jssst,
@@ -843,6 +850,7 @@
   year = 	 2011,
   location = 	 {東京女子大学},
   month = 	 sep,
+  abstract = 	 {近年，実行時文脈に依存した実行を行うシステムへの要求が高まっており，文脈指向プログラミング（Context-Oriented Programming: COP）が提案されている．本研究は，ユースケースから， COP 言語の一つである EventCJ へと変換する手法について提案する．本手法により，特定の文脈で実行されるユースケースや，文脈がいつどのように変化するかに関する仕様を，設計や実装を通して分離したままシステムの開発を行うことが可能になる．},
 }
 
 @InProceedings{aotani2011jssst,
@@ -852,7 +860,8 @@
   title = 	 {オブジェクト毎の層遷移を宣言的に記述できる文脈指向言語{EventCJ}},
   crossref =  {jssst2011},
   pages = 	 {4A-4},
-  date = 	 {2011-09-28}}
+  date = 	 {2011-09-28},
+  abstract = 	 {文脈指向言語 EventCJ を提案する。文脈指向プログラミングは文脈に依存する振る舞いを部分メソッドで定義し、それらをまとめた層として文脈をモジュール化するプログラミング手法である。文脈の変化は層の活性状態を実行時に変更することで実現する。 EventCJ は Java を拡張した文脈指向言語で、 ContextJ をはじめとする既存の文脈指向言語と同様に、部分メソッドと層を持つ。またイベントと活性層の遷移規則を持ち、オブジェクト毎の層の活性状態の変更を宣言的に記述できる特徴がある。本論文では EventCJ の言語設計を説明し、 Featherweight Java を拡張した小さな計算体系 Featherweight EventCJ を定義して、 EventCJ の意味論を与える。}}
 
 @InProceedings{nishiguchi2011jssst,
   author = 	 jnishiguchi #AND# jmasuhara,
@@ -861,7 +870,8 @@
   title = 	 {{GPU}汎用計算を配列イテレータとして記述する{Ruby}言語処理系の提案},
   crossref =  {jssst2011},
   pages = 	 {1D-2},
-  date = 	 {2011-09-27}}
+  date = 	 {2011-09-27},
+  abstract = 	 {本研究は GPU 汎用計算記述のための Ruby 言語処理系 Ikra を提案する． Ikra は GPU のメモリに実体がある配列を Ruby の 1 クラスとして提供し，配列に対する map や inject のなどのイテレータを GPU 上で並列実行する．処理系はイテレータに対するブロック引数の Ruby コードを CUDA のカーネル関数へとあらかじめ変換しておき，イテレータ呼出時に CPU/GPU 間のデータ転送を行った後に CUDA コードを実行する．簡単な計算プログラムのプロトタイプ処理系による計算部分 ( カーネル ) の実行速度は，同等の CUDA プログラムの 0.9〜1 倍， Ruby インタプリタによる実行の 2000〜8000 倍であった．}}
 
 @Misc{murakami2012ppl-poster,
   author = 	 jmurakami #AND# jmasuhara,
@@ -886,7 +896,8 @@
   month = 	 jun,
   year = 	 2012,
   day = 	 {2012-06-21},
-  note = 	 {英語版が情報処理学会論文誌:プログラミング6(1)1--8に採録\cite{kamina2013ipsj-trpro}}}
+  note = 	 {英語版が情報処理学会論文誌:プログラミング6(1)1--8に採録\cite{kamina2013ipsj-trpro}},
+  abstract = 	 {多くの文脈指向言語は，文脈依存の振舞の集まりを層と呼ばれる単位にまとめ，実行時文脈に応じてそれらを動的に活性化／非活性化するための言語機構を持つ．しかし振舞は一つの文脈に依存するとは限らず，特定の文脈の組み合わせでのみ実行される振舞が存在する．そのため，従来の文脈指向言語では，いつ，どの層を活性化させるかに関する指定が複雑になり，文脈に関する複数の関心事が層活性を行うコード中に混在してしまう．本論文では，新たに合成層の機構を提案し，それによってこれらの問題が解決されることを示す．合成層は他の層の活性状態に依存した層で，他の層の名前を基礎項（活性のときに真）とした論理式を宣言する．合成層は，その論理式が真であるとき，またそのときのみに活性となる．そして，文脈指向言語の一つである EventCJ に合成層を導入し，ツイッタクライアントとプログラムエディタの二つの事例研究を通して合成層の有効性を検証する．結果，合成層を用いた場合では，合成層を用いない場合と比較して層活性のコードが単純になり，層活性を行うコード中に文脈に関する複数の関心事が混ざり合わないことが分かった．また，合成層を持つEventCJ の実現方法を提案する．}}
 
 @Misc{aotani2012pro,
   pdf = 	 {aotani2012pro.pdf},
@@ -896,7 +907,8 @@
   howpublished = IPSJ-PRO-PRE # {89} # IPSJ-PRO-POST # {2012-1-(4)},
   month = 	 jun,
   year = 	 2012,
-  day = 	 {2012-06-21}}
+  day = 	 {2012-06-21},
+  abstract = 	 {Context-oriented programming (COP) languages help programmers to modularize behavioral variations that depend on contexts such execution environments and internal states of the program. The programmer specifies when and which variations get activated explicitly. This paper addresses the following two issues in context-oriented programs. First, it is hard to check whether each variation is activated according to the specification of the program. Second, programs written in COP languages are generally not eﬃcient from the view point of runtime performance, because there is an overhead to check whether each variation is activated at runtime. All these issues fall into the problem to find a sound order of activation with respect to the specification of the program. As a foundation to address the problem, this paper proposes a type-based analysis to check whether or not the program activates each behavioral variation correctly, i.e., the inferred order is a subset of the one described in the specification. The analysis is based on the resource usage analysis proposed by Igarashi and Kobayashi. It models a value that records a set of active variations as a resource, and an operation that activates a variation as use.}}
 
 @Misc{masuhara2012tsukuba-talk,
   author = 	 jmasuhara,
@@ -921,7 +933,8 @@
   pages = 	 {130--147},
   month = 	 jul,
   doi = 	 {10.11309/jssst.30.3_130},
-  annote = 	 {accepted on February 17, 2013}
+  annote = 	 {accepted on February 17, 2013},
+  abstract = 	 {文脈指向言語EventCJを提案する．文脈指向プログラミングは文脈に依存する振舞を部分メソッドで定義し，それらをまとめた層として文脈をモジュール化するプログラミング手法である．文脈の変化は層の活性状態を実行時に変更することで実現する．EventCJはJavaを拡張した文脈指向言語で，層という単位で振舞を文脈ごとにモジュール化する．またEventCJはイベント宣言と活性層の遷移規則を持つ．これらの機構によって，オブジェクトごとの層の活性制御の宣言的な指定と，呼出し文脈を跨った層の活性制御が可能となった．本稿ではEventCJの言語設計を説明し，ContextFJを拡張した計算体系Featherweight EventCJを定義して，EventCJの意味論を与える．またAspectJプログラムへの変換によるコンパイル方法と最適化手法のアイデアを示す． }
 }
 
 @Misc{kamina2013ppl-poster,
@@ -951,7 +964,8 @@
   title = 	 {関心度に基づいたソースコード推薦システム},
   crossref =  {jssst2013},
   note = 	 {(萌芽2-4)1--10},
-  date = 	 {2013-09-11}}
+  date = 	 {2013-09-11},
+  abstract = 	 {コード推薦システムの多くは，開発者が編集中の行の周辺行に類似したプログラムを大規模コードリポジトリから検索し，開発者が次に書くと予測されるコードとして類似部分の後続行を提示する．検索の際に周辺行だけでなくその背景情報---これから記述しようとしている内容やそれが使われている場所---も用いればより精度の高い予測が出来ると予想されるが，そのような情報をコードから抽出することは容易でない．そこで我々は，統合開発環境の編集操作履歴からコードの背景情報を抽出し，それを背景情報として用いた検索を行うコード推薦システムを提案する．システムは既存のコード推薦システムSelene を拡張し，コード編集操作履歴から開発者が最近に閲覧・編集したコード中の単語を抽出し，それらを重み付けして編集中の行の周辺行の単語情報と共に検索コード推薦を行う．単語重みは，複数の開発者の開発記録を基に機械学習し決定する．}}
 
 
                   
@@ -1015,7 +1029,8 @@
   pages = 	 {2014-1-(3)},
   month = 	 jun,
   date = 	 {2014-06-20},
-  annote = 	 {発表のみ}
+  annote = 	 {発表のみ},
+  abstract = 	 {OCamlプログラム中からシェルコマンドを型安全に実行するための領域特化言語OCommandを提案する．OCommandはコマンドの仕様である，出力行の各欄の型とコマンドオプションによって起きる変化の記述を受け取り，コマンド起動関数とコマンドオプションを表す値定義を持つOCamlモジュールを生成する．生成された起動関数は，複数のオプション値を受け取りコマンドを実行し，オプションに応じてコマンド出力行をパースして型付きのフィールドからなるレコードを返す．出力行レコードにおけるフィールドの型や存在の変化を静的に検査するため，一般化代数的データ型を用いた．Camlp4を用いて実現した処理系を用いて，これまでにlsやpsなどのコマンドを扱えることを確めている．}
 }
 
 
@@ -1042,7 +1057,8 @@
   title = 	 {{Pyrlang}: {RPython}を用いた高性能{Erlang} {BEAM}仮想マシン},
   crossref = 	 {ppl2015},
   date = 	 {2015-03-04},
-  note = 	 {ポスター発表}}
+  note = 	 {ポスター発表},
+  abstract = 	 {我々はPyrlangというErlangのBEAMバイトコードインタープリタを開発している。このインタープリタは、PyPy言語処理系のために開発されたRPythonで記述しているため、JITヒント関数を挿入するだけで、RPythonに内蔵されたmeta-tracing just-in-time (JIT) コンパイラによる機械語生成が行われる。小さなベンチマークプログラムに対しては、既存のBEAMインタープリタより1.5倍の高速化を達成している。本ポスターでは、meta-tracing JIT コンパイルがどの程度容易に行えるかを報告する。}}
 
 @Misc{asakura2015-ppl-poster,
   author = 	 jasakura #and# jmasuhara #and# jaotani,
@@ -1050,7 +1066,8 @@
   title = 	 {{GPGPU}カーネル検証のための分離論理の{Coq}による形式化},
   crossref = 	 {ppl2015},
   date = 	 {2015-03-05},
-  note = 	 {ポスター発表}}
+  note = 	 {ポスター発表},
+  abstract = 	 {本研究の目標はGPGPUのための並行分離論理(CSL)をCoqで形式化することである．BlomらはGPGPUカーネルを検証するためのバリア付きCSLと，barrier divergenceが起こらないための十分条件(lock-step safety)を提案し，証明の概略を与えた．また，Vafeiadisはバリアの無いCSLの健全性の簡潔な証明を提案した．本研究ではCoqを用いてBlomらのバリア付きCSLを再形式化し，健全性をVafeiadisの証明法を応用して示す．またlock-step safetyの健全性の証明を，任意の2スレッド間のnon-interferenceを示すことで与える．}}
 
 @Misc{fujita2015-ppl-poster,
   author = 	 jfujita     #and# jmasuhara #and# jaotani,
@@ -1058,7 +1075,8 @@
   title = 	 {例外処理を分離する{Chop\&Graft}アドバイス機構の提案},
   crossref = 	 {ppl2015},
   date = 	 {2015-03-05},
-  note = 	 {ポスター発表}}
+  note = 	 {ポスター発表},
+  abstract = 	 {処理の中断や再開といった大域的な実行制御を伴う例外処理をアスペクト指向言語を用いて分離する場合、複数のアドバイス定義をthrow-catchによって接続するような複雑なものとなる。我々は大域的な実行制御を可能にするChop&Graftアドバイス機構を提案する。このアドバイスはプログラム2つの結合点を指定し、1つの結合点からもう1つの結合点までの実行を疑関数として制御できるため、実行の中断や再開といった処理を簡潔に記述できる。本ポスターでは機構の定義と、AspectSchemeと限定継続を用いた実現、AspectJ とスレッドを用いた実現方針の検討を紹介する。}}
 
 @Misc{imai2015-ppl-poster,
   author = 	 jimaitomoki #and# jmasuhara #and# jaotani,
@@ -1066,7 +1084,8 @@
   title = 	 {ライブプログラミングにユニットテストを統合する機能の提案},
   crossref = 	 {ppl2015},
   date = 	 {2015-03-05},
-  note = 	 {ポスター発表}}
+  note = 	 {ポスター発表},
+  abstract = 	 {ライブプログラミングは，プログラムを記述している最中にその実行結果や，実行履歴の情報が随時表示されるため，試行錯誤や誤りの早期発見に優れている．しかしプログラムの正しさは表示結果を目視で確認するだけなので，本格的なソフトウェア開発で用いられているようなユニットテストを作成することは二度手間となってしまっていた． そこで本研究はライブプログラミング言語 Shiranui にユニットテストを統合するための機能を提案する．正しさが確認できた結果や，確認のための計算中に出現した(関数オブジェクトを含む)値からのテストケース作成を支援する機能によってこれまでよりも容易かつ細かな単位でテストを行えることを可能にする．本発表では，提案機能を実装したプロトタイプのデモを行う．}}
 
 @Misc{kiriyama2015-ppl-poster,
   author = 	 jkiriyama #and# jaotani #and# jmasuhara,
@@ -1074,7 +1093,8 @@
   title = 	 {{Haskell}のモジュラリティと効率の両立のためのコンパイル時データ合成},
   crossref = 	 {ppl2015},
   date = 	 {2015-03-05},
-  note = 	 {ポスター発表}}
+  note = 	 {ポスター発表},
+  abstract = 	 {Data Types a la Carte(以下DTCと略す)は，HaskellにおけるThe Expression Problemの解決の1つである．DTCでは，多重定義された関数を使って関数を多重定義しているため，プログラムの実行効率が悪い．本研究ではDTCに基づいて記述されたプログラムを，多重定義ではない関数を用いる同等のプログラムに変換することで実行効率を改善する．マイクロベンチマークで比較した結果，変換後のプログラムの実行時間はDTCで書かれたプログラムの実行時間の約33\%であった．}}
 
 @Article{asakura2015ipsj-pro,
   author = 	 jasakura #and# jmasuhara #and# jaotani,
@@ -1112,7 +1132,8 @@
   title = 	 {{GPGPU}向けデータ並列コードテンプレートの形式検証},
   month = 	 mar,
   year = 	 2016,
-  crossref =  {ppl2016}}
+  crossref =  {ppl2016},
+  abstract = 	 {GPGPU向けデータ並列DSL (GPUDSL) はmapやreduceといったよく知られた並列スケルトンを用いて高性能なGPGPUプログラムを容易に記述するための言語である．GPUDSLのコンパイラは処理する配列の型などでパラメタライズされたGPGPUコード (コードテンプレート) を用いてコード生成を行うが，そのようなコード生成の正しさを保証することは容易ではない．その要因として (i) GPGPUの並列実行モデルや，(ii) テンプレートの引数に対して生成コードや生成コードの満たすべき仕様が変化する点が挙げられる．本研究ではコードテンプレートをGPGPUコードを生成するCoqの関数としてモデル化し，その正しさをGPGPU向け並行分離論理を用いてCoq上で検証する手法を提案する．さらにこの手法の適用例としてmapやreduceスケルトンに対応するコードテンプレートの検証も示す．}}
 
 
 @Misc{okugawa2016-ppl-poster,
@@ -1120,21 +1141,24 @@
   yomi = 	  okugawa #and#  aotani #and#  masuhara,
   title = 	 {{Featherweight Java}の{Meta-Theory a la Carte}を利用した拡張可能な形式化フレームワーク},
   crossref = 	 {ppl2016},
-  note = 	 {ポスター発表}}
+  note = 	 {ポスター発表},
+  abstract = 	 {本研究ではFeatherweight Java(以降FJと略す)のCoqにおける拡張可能な形式化に取り組む．FJはクラスのあるオブジェクト指向言語を形式化した小さな計算体系であり，例えばFetherweight Generic Javaのような拡張が存在する．これらの拡張をCoqなどの定理証明支援系で形式化する際，FJからの差分として形式化できるのが望ましい．本研究ではthe expression problemの型クラスを用いた解決法であるdatatypes a la carteに基づいた，Delawareらによる発表可能な形式化のための枠組みmeta-theory a la carte(MTC)を応用する．発表では構文と操作的意味，型付け規則のMTCに基づく形式的定義を紹介する．}}
 
 @Misc{huang2016-ppl-poster,
   author = 	 jhuang #and# jmasuhara #and# jaotani,
   yomi = 	  huang #and#  masuhara #and#  aotani,
   title = 	 {{RPython}を用いた{Erlang}仮想機械{Pyrlang}における{JIT}コンパイル方針の改良},
   crossref = 	 {ppl2016},
-  note = 	 {ポスター発表}}
+  note = 	 {ポスター発表},
+  abstract = 	 {我々はPyrlangというErlang仮想機械を開発している。この仮想機械は、言語処理系開発向けのRPythonで記述されたインタープリタにJITヒント関数を挿入することで、RPythonに内蔵されたmeta-tracing just-in-time (JIT) コンパイラが機械語生成を行う。本研究ではこの仮想機械に、Erlang言語に特化したhot spot検出方針とメモリオーバーヘッドの削減方法を追加した。これによって既存のインタープリタ方式仮想機械より2.03倍、静的コンパイラより1.13倍の高速化を達成した。ポスターではPyrlangの仕組みとErlang向けの最適化手法を報告する。 }}
 
 @Misc{watanabe2016-ppl-poster,
   author = 	 jwatanabekeita #and# jmasuhara #and# jaotani,
   yomi = 	  watanabekeita #and#  masuhara #and#  aotani,
   title = 	 {多次元的文脈指向言語{Korz}のメソッドディスパッチの改善},
   crossref = 	 {ppl2016},
-  note = 	 {ポスター発表}}
+  note = 	 {ポスター発表},
+  abstract = 	 {本研究では文脈指向言語Korzの表現力の改善を行う。文脈指向プログラミングとは、文脈に依存した振る舞いを分離して記述するプログラミング手法である。 Korzは他の文脈指向言語と異なり多次元的文脈システムを備えている。表現力に関する予備的な調査として、既存の文脈指向言語で書かれたプログラムをKorzで再記述した。その結果Korzではメソッドディスパッチの非決定性や、文脈の変更なしでより一般的なメソッドを呼び出せないことから、記述できない場合があることを確認した。そこで本研究は、新しいメソッドディスパッチの仕組み、軸の優先順位、call-next-methodを提案する。さらにCommonLisp上のインタープリタとしてKorz処理系を作り、改善案を実装することでその有用性を確認した。}}
 
 @Article{imai2016pro,
   pdf = 	 {pro-2016-3-7.pdf},
@@ -1147,7 +1171,8 @@
   pages = 	 {2016-3-(7)},
   month = 	 oct,
   date = 	 {2016-10-27},
-  review = 	 {false}}
+  review = 	 {false},
+  abstract = 	 {ライブプログラミング環境はプログラム中の式をコード編集中に実行し，即座にその結果を表示する．この即時のフィードバックにより，プログラマは一時な式をプログラム中に書き，引数や定義を変更することで試行錯誤的なプログラミングを容易に行える．我々は試行錯誤的なプログラミング過程とテスト駆動開発の類似性に注目し，ライブプログラミングのためのユニットテスト機能を提案する．この機能は，(1)一時的な式とユニットテストケースを簡単な相互変換し，(2)実行途中に得られた値を式に変換し，ユニットテストの期待値として利用可能にする．我々はこのテスト機能をShiranuiライブプログラミング環境中に作成した．本発表では，このテスト機能の設計とインタプリタによる実現方式を紹介する．}}
 
 @Article{oka2017ipsj-pro,
   author = 	 joka #and# jmasuhara #and# jaotani,
@@ -1159,7 +1184,8 @@
   month = 	 mar,
   location = 	 {東京大学},
   date = 	 {2017-03-03},
-  review = 	 {false}
+  review = 	 {false},
+  abstract = 	 {ライブプログラミング環境はプログラムを編集すると即座にプログラムを実行し，その結果を出力する．これまで，画像や音を出力するプログラムに対して特に有効だと考えられていた．一方，データ構造の定義や操作を行う際，プログラマはオブジェクト間の参照関係を思い浮かべながらプログラムを書くことが多い．そこで我々は，データ構造のためのライブプログラミング環境Kanonを提案する．具体的には，プログラムが編集されるたびに，プログラムを実行し，その途中で生成されたオブジェクトおよび参照関係（以下，グラフ構造と呼ぶ）を図表現として可視化する．プログラマによる試行錯誤を容易にするため，以下のような機能を設計・実現した．(1)カーソル位置に連動して実行途中のグラフ構造やその変化を表示する機能，特に複数回実行された命令上にカーソルがある場合は，個別の状態を表示したり，すべての回で起きた変化をいっせいに表示したりする機能，(2)図表現上のオブジェクトや参照関係をクリックすることで，それらが作られたときのグラフ構造を表示し，コード位置を教えてくれる機能，(3)プログラムの編集によってグラフ構造が変化した際にも，図表現の概形を保つ機能である．JavaScript言語を対象に，Kanonの処理系をKhan Academyのlive-editorを拡張して作成した．}
 }
 
 @Article{kani2017ipsj-pro,
@@ -1172,7 +1198,8 @@
   month = 	 mar,
   location = 	 {東京大学},
   date = 	 {2017-03-04},
-  review = 	 {false}
+  review = 	 {false},
+  abstract = 	 {GPGPUとはGPUを汎用計算のために用いる技術であり，高い並列性によって大規模な計算を高速に行うことができる．しかし，GPGPUプログラミングは一般的なプログラミングよりも記述が複雑であり正しさを確信することが難しい．たとえば，共有メモリを用いたブロッキング最適化におけるメモリアドレスの計算式が複雑になることや，非同期的に実行されるスレッド間でメモリ競合が起きないことの確認などである．このような難しさに対してGPGPUプログラミングを支援するためのプログラム合成器が考案されている．しかし，これらの合成器はバリア同期や共有メモリがない単純な実行モデルを採用しているため，高度な最適化がなされたプログラムを扱うことができなかった．そこで我々はバリア同期と共有メモリを備えたよりCUDAに近い意味論を持ったプログラム合成器Kani-CUDAを提案する．Kani-CUDAは既存のGPGPUプログラム合成器SynthCLをもとに設計されているが，その実行方式はSynthCLがインタリーブ実行であるのに対し，Kani-CUDAではバリア同期を扱うためにロックステップ実行を採用している．応用例として熱拡散ステンシル計算に共有メモリ最適化を施したプログラムにおいて，配列の添え字計算式やバリア同期命令の配置の合成を達成した．}
 }
 
 @Misc{asakura2017ppl-poster,
@@ -1335,7 +1362,8 @@
   yomi   = 	  kani #and#  masuhara #and#  aotani,
   author = 	 jkani #and# jmasuhara #and# jaotani,
   title = 	 {プロファイル型プログラム合成による{GPGPU}プログラムの半自動最適化},
-  crossref =  {ppl2019}}
+  crossref =  {ppl2019},
+  abstract = 	 {GPGPU プログラムの最適化の一つに共有メモリを用いるものがある。この最適化ではメモリアクセス式を複雑な条件式や添え字式を使って書き換える必要があるが、その書き換えをプログラム合成器を使って行う研究がある。ユーザは最適化したい式を指定するだけで最適化できる一方で、合成器が汎用的であるため、小さな数値計算プログラムの最適化でも数分以上の時間を要していた。我々は共有メモリ最適化に特化した合成器を提案する。最適化前のプログラムの実行時情報を収集し、共有メモリアクセス式が満たすべき制約を生成することで、より小さな合成問題に帰着させる。それを独自に作成したソルバに解かせることで合成を完了する。これにより従来手法よりも10 倍以上の高速化を達成し、より現実的なプログラムに対しても適用可能となった。}}
 
 2019-03-06
 @misc{tanabe2019ppl-poster,
@@ -1357,6 +1385,7 @@
   location = 	 {名古屋大学},
   note = 	 {},
   date = 	 {2017-06-06},
+  abstract = 	 {全称型と存在型はプログラミング言語研究において重要な役割を占めている．全称型は多相関数の型の表現方法として，存在型はモジュールやオブジェクトの表現方法として広く用いられており，これらはともに多くのプログラミング言語の理論的基礎である．量化型のある型システムには型変数が現れるため，型規則に型変数のスコープに起因する制約が入る．他の言語要素を追加する際に，この制約が各言語要素由来の制約と複雑に絡むため，量化型を既存言語に導入するのは難しい．この問題を解決するため，我々はF-productを提案する．F-productはコエフェクト計算lRPCFに基づく，総称型と存在型を持つ計算体系である．本研究では我々は型変数のスコープをコエフェクトで表すことで，量化型に起因する困難さを回避した．これにより，型変数のスコープと他の言語特有の制約を独立に扱うことが可能になり，量化型と他の言語要素を混ぜ合わせることが容易になる．事例研究としてコエフェクトで表される性質の1つである線形性をF-productに導入した．この型システムは互いのコエフェクトが干渉しないように構成でき，自然な型付けが可能である．},
   
 }
 @Article{masuhara2019compsoft,
@@ -1429,5 +1458,6 @@
   pdf = 	 {ipsj-trans-pro-2020.pdf},
   published = 	 {2020-06-17},
   pages = 	 {1--12},
+  abstract = 	 {LIFT ILはGPGPUプログラムのための配列指向の中間言語である．LIFT コンパイラは高級言語プログラムをOpenCLプログラムに変換する際に，中間言語であるLIFT IL上でハードウェア依存の最適化を行う．一方，LIFT ILには動的に長さが決まる配列を表現できないという問題がある．なぜならばLIFT ILは静的に型付けされる関数型言語で，配列の長さをシンボルとして推論する依存型システムを備えており，静的にすべての配列長のシンボルが決定しているからである．本論文では，LIFT ILを存在型で拡張することで動的長配列を扱う方法を提案する．その際，型から配列長を隠蔽・展開する操作を適切な場所に挿入する必要があるが，それらの自動挿入方法を提案する．この提案に基づいて，LIFT ILのコンパイラを作成し，そのうえでフィルター関数を実装した．さらに，Project Euler問題集を用いて，拡張したLIFT ILコンパイラで動的長配列を扱うプログラムが記述・コンパイル・実行できることを確かめた．},
   
 }
