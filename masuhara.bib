@@ -2900,3 +2900,22 @@ We propose a programming environment based on the design recipe. The environment
   date = 	 {2021-03-09},
   url = 	 {https://jssst-ppl.org/workshop/2021/},
 }
+
+2021-03-09
+@Misc{izawa2021ppl-poster,
+  author = 	 izawa #and# masuhara #and# cong,
+  title = 	 {An Interpreter Design for Supporting Different {JIT} Compilations in {RPython} Framework},
+  crossref = 	 {ppl2021},
+  note = 	 {Poster Presentation},
+  abstract = 	 {Most modern programming languages, such as Java, JavaScript, and PHP, have a
+just-in-time (JIT) compiler for achieving their fast runtime.
+Method-based compilation and trace-based compilation are two major compilation
+strategies, and they have their advantages and disadvantages. To incorporate the
+benefits of both, we proposed a meta-hybrid JIT compiler framework and its
+proof-of-concept implementation called BacCaml. It can generate a virtual machine
+with a JIT compiler that can use the two strategies from an interpreter definition.
+As a next step, we move on to a more practical framework to show that the meta-hybrid
+JIT compilation is useful for many languages. This presentation presents a sprouting
+idea for supporting the two strategies in a meta-tracing JIT compiler. This approach
+does not extend the compiler itself but designs an interpreter to enable the two
+compilation strategies in RPython.}}
