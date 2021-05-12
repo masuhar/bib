@@ -2954,3 +2954,15 @@ compilation strategies in RPython.}}
 In this paper, we show that these problems are derived from more fundamental one: no language mechanism is provided to group related persistent signals. To address this problem, we propose a new language mechanism signal classes. A signal class packages a network of related persistent signals that comprises a complex data structure. A signal class defines the scope of synchronization, making it possible to flexibly create persistent signal networks by methods not limited to the use of pre-defined API methods. Furthermore, a signal class can be instantiated, and this instance forms a unit of lifecycle management, which enables the dynamic creation of persistent signals. We formalize signal classes as a small core language where the computation is deliberately defined to interact with the underlying database system using relational algebra. Based on this formalization, we prove the language,F"(Bs glitch freedom. This formalization also clarifies the initialization problem regarding the underlying database relations, and we formulate its type soundness by introducing an additional check of program well-formedness. This mechanism is implemented as a compiler and a runtime library that is based on a time-series database. The usefulness of the language is demonstrated through the vehicle tracking simulator and viewer case study. We also conducted a performance evaluation that confirms the feasibility of this application scenario.}
 }
 
+@Article{tanabe2022programming,
+  author = 	 tanabe #and# luthfan #and# aotani #and# masuhara,
+  title = 	 {A Functional Programming Language with Versions},
+  journal = 	 programming-journal,
+  year = 	 2022,
+  volume = 	 6,
+  number = 	 1,
+  OPTpages = 	 {.},
+  OPTmonth = 	 {.},
+  OPTabstract = 	 {While modern software development heavily uses versioned packages, programming languages rarely support the concept of versions in their semantics, which makes software update more bulky and unsafe. This paper proposes a programming language that intrinsically supports versions. The main goals are to design core language features to support multiple versions in one program and establish a proper notion of type safety with those features. The proposed a core calculus, called Lambda VL, has versioned values, each of which can contain different values under different versions. We show the construction of the type system as an extension of coeffect calculus by mapping versions to computational resources. The type system guarantees the existence of a valid combinations of versions for a program. The calculus enables programming languages to use multiple versions of a package within a program. It will serve as a basis for designing advanced language features like module systems and semantic versioning.},
+  note = 	 {accepted; to appear}}
+
