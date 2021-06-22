@@ -2926,6 +2926,12 @@ compilation strategies in RPython.}}
   author = 	 chenxin #and# masuhara,
   title = 	 {Nested Object Support in a Structure-of-Arrays Dynamic Objector Allocator},
   howpublished = {Presentation at the ARRAY 2021 Workshop, co-located with PLDI 2021},
+  abstract = 	 {DynaSOAr is a dynamic object allocator for GPGPU that enables object-oriented programming with an efficient structure-of-arrays (SOA) memory layout.  One of the limitations in DynaSOAr is its poor support for nested objects.  
+When a class has a field of another class, the fields of the inner class are allocated in an arrays-of-structure layout.  
+This paper proposes a technique that translates nested class definitions into flat ones by inlining inner classes into top-level classes.
+We implemented this technique as a Sanajeh domain-specific language that translates Python class definitions into C++ classes using DynaSOAr.  
+Our preliminary evaluation showed that Sanajeh executes a parallel benchmark program with nested objects at almost the same speed as the one with manually flatten classes.  
+},
   month = 	 jun,
   year = 	 2021}
 
