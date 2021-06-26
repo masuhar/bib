@@ -2921,7 +2921,6 @@ does not extend the compiler itself but designs an interpreter to enable the two
 compilation strategies in RPython.}}
 
 2021-06-21
-
 @Misc{chenxin2021array,
   author = 	 chenxin #and# masuhara,
   title = 	 {Nested Object Support in a Structure-of-Arrays Dynamic Objector Allocator},
@@ -2934,6 +2933,23 @@ Our preliminary evaluation showed that Sanajeh executes a parallel benchmark pro
 },
   month = 	 jun,
   year = 	 2021}
+
+
+
+2021-07-13
+@Misc{izawa2021icooolps,
+  OPTkey = 	 {},
+  OPTauthor = 	 izawa #and# masuhara #and# bolz #and# cong,
+  OPTtitle = 	 {Threaded Code Generation with a Meta-tracing {JIT} Compiler},
+  OPThowpublished = {Talk at ICOOOLPS 2021},
+  OPTmonth = 	 jul,
+  OPTyear = 	 2021,
+  date = 	 {2021-07-13},
+  abstract = 	 {Language implementation frameworks such as RPython and Truffle/Graal are effective tools for creating a high-performance language with lower effort than implementing from scratch. The two frameworks support only a single JIT compilation strategy, trace-based compilation, and method-based compilation, but they have its own advantages and disadvantages. We proposed a meta-hybrid JIT compiler framework to take advantages of the two strategies as a meta-tracing JIT compiler framework. We also implemented a proof-of-concept framework called BacCaml. As a next step, in this position paper, we propose a new approach to realize a method-based baseline JIT compiler along with a trace-based JIT compilation. We aim to use it for further speed-up by preventing the path-divergence problem, which causes serious slow-down. We also show how to implement the baseline JIT compiler with minimal changes on the top of RPython. },
+  OPTnote = 	 {Position paper is archived as arXiv:2106.12496.},
+  url = 	 {https://conf.researchr.org/details/issta-2021/ecoop-issta-2021-icooolps/3/Threaded-Code-Generation-with-a-Meta-tracing-JIT-Compiler},
+  OPTannote = 	 {}
+}
 
 2021-07-14
 @InProceedings{kamina2021ecoop,
@@ -2960,6 +2976,15 @@ Our preliminary evaluation showed that Sanajeh executes a parallel benchmark pro
 In this paper, we show that these problems are derived from more fundamental one: no language mechanism is provided to group related persistent signals. To address this problem, we propose a new language mechanism signal classes. A signal class packages a network of related persistent signals that comprises a complex data structure. A signal class defines the scope of synchronization, making it possible to flexibly create persistent signal networks by methods not limited to the use of pre-defined API methods. Furthermore, a signal class can be instantiated, and this instance forms a unit of lifecycle management, which enables the dynamic creation of persistent signals. We formalize signal classes as a small core language where the computation is deliberately defined to interact with the underlying database system using relational algebra. Based on this formalization, we prove the language,F"(Bs glitch freedom. This formalization also clarifies the initialization problem regarding the underlying database relations, and we formulate its type soundness by introducing an additional check of program well-formedness. This mechanism is implemented as a compiler and a runtime library that is based on a time-series database. The usefulness of the language is demonstrated through the vehicle tracking simulator and viewer case study. We also conducted a performance evaluation that confirms the feasibility of this application scenario.}
 }
 
+2021-08-22
+@InProceedings{niimi2021tyde,
+  author = 	 niimi #and# cong #and# masuhara #and# {Jonathan Immanuel Brachth,Ad(Buser},
+  title = 	 {Contextual Polymorphism Meets Bidirectional Effects},
+  booktitle = {In Proceedings of Workshop on Type-Driven Development 2021 (TyDe 2021)},
+  year = 	 2021,
+  date = 	 {2021-08-22},
+  month = 	 aug,
+  note = 	 {to appear}}
 2022-03-21
 @Article{tanabe2022programming,
   author = 	 tanabe #and# luthfan #and# aotani #and# masuhara,
@@ -2974,12 +2999,5 @@ In this paper, we show that these problems are derived from more fundamental one
   OPTabstract = 	 {While modern software development heavily uses versioned packages, programming languages rarely support the concept of versions in their semantics, which makes software update more bulky and unsafe. This paper proposes a programming language that intrinsically supports versions. The main goals are to design core language features to support multiple versions in one program and establish a proper notion of type safety with those features. The proposed a core calculus, called Lambda VL, has versioned values, each of which can contain different values under different versions. We show the construction of the type system as an extension of coeffect calculus by mapping versions to computational resources. The type system guarantees the existence of a valid combinations of versions for a program. The calculus enables programming languages to use multiple versions of a package within a program. It will serve as a basis for designing advanced language features like module systems and semantic versioning.},
   note = 	 {accepted; to appear}}
 
-@InProceedings{niimi2021tyde,
-  author = 	 niimi #and# cong #and# masuhara #and# {Jonathan Immanuel Brachth,Ad(Buser},
-  title = 	 {Contextual Polymorphism Meets Bidirectional Effects},
-  booktitle = {In Proceedings of Workshop on Type-Driven Development 2021 (TyDe 2021)},
-  year = 	 2021,
-  date = 	 {2021-08-22},
-  month = 	 aug,
-  note = 	 {to appear}}
+
 
