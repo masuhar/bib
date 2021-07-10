@@ -2955,25 +2955,25 @@ Our preliminary evaluation showed that Sanajeh executes a parallel benchmark pro
 @InProceedings{kamina2021ecoop,
   author = 	 kamina #and# aotani #and# masuhara,
   title = 	 {Signal Classes: A Mechanism for Building Synchronous and Persistent Signal Networks},
-  OPTcrossref =  {},
-  OPTkey = 	 {},
   booktitle = {Proceedings of the 35th European Conference on Object-Oriented Programming (ECOOP 2021)},
   url = 	 {https://2021.ecoop.org/details/ecoop-2021-ecoop-research-papers/19/Signal-Classes-A-Mechanism-for-Building-Synchronous-and-Persistent-Signal-Networks},
+  pdf = 	 {ecoop2021.pdf},
   year = 	 2021,
-  OPTeditor = 	 {.},
-  OPTvolume = 	 {.},
-  OPTnumber = 	 {},
   series = 	 LIPICS,
-  OPTpages = 	 {TBA},
+  pages =	{17:1--17:30},
   month = 	 jul,
-  OPTaddress = 	 {},
-  OPTorganization = {},
-  OPTpublisher = {},
-  note = 	 {to appear},
-  OPTannote = 	 {},
+  ISBN =	{978-3-95977-190-0},
+  ISSN =	{1868-8969},
+  volume =	194,
+  editor =	{M{\o}ller, Anders and Sridharan, Manu},
+  address =	{Dagstuhl, Germany},
+  URN =		{urn:nbn:de:0030-drops-140605},
+  doi =		{10.4230/LIPIcs.ECOOP.2021.17},
+  annote =	{Keywords: Persistent signals, Reactive programming, Time-series databases},
+  publisher = {Schloss Dagstuhl -- Leibniz-Zentrum f{\"u}r Informatik},
   abstract = 	 {Signals are principal abstraction in reactive programming languages and constitute the basics of reactive computations in modern systems, such as the Internet of Things. Signals sometimes utilize past values, which leads to space leak, a problem where accumulated past values waste resources such as the main memory. Persistent signals, an abstraction for time-varying values with their execution histories, provide a generalized and standardized way of space leak management by leaving this management to the database system. However, the current design of persistent signals is very rudimental. For example, they cannot represent complex data structures; they can only be connected using pre-defined API methods that implicitly synchronize the persistent signal network; and they cannot be created dynamically.
 
-In this paper, we show that these problems are derived from more fundamental one: no language mechanism is provided to group related persistent signals. To address this problem, we propose a new language mechanism signal classes. A signal class packages a network of related persistent signals that comprises a complex data structure. A signal class defines the scope of synchronization, making it possible to flexibly create persistent signal networks by methods not limited to the use of pre-defined API methods. Furthermore, a signal class can be instantiated, and this instance forms a unit of lifecycle management, which enables the dynamic creation of persistent signals. We formalize signal classes as a small core language where the computation is deliberately defined to interact with the underlying database system using relational algebra. Based on this formalization, we prove the language,F"(Bs glitch freedom. This formalization also clarifies the initialization problem regarding the underlying database relations, and we formulate its type soundness by introducing an additional check of program well-formedness. This mechanism is implemented as a compiler and a runtime library that is based on a time-series database. The usefulness of the language is demonstrated through the vehicle tracking simulator and viewer case study. We also conducted a performance evaluation that confirms the feasibility of this application scenario.}
+In this paper, we show that these problems are derived from more fundamental one: no language mechanism is provided to group related persistent signals. To address this problem, we propose a new language mechanism signal classes. A signal class packages a network of related persistent signals that comprises a complex data structure. A signal class defines the scope of synchronization, making it possible to flexibly create persistent signal networks by methods not limited to the use of pre-defined API methods. Furthermore, a signal class can be instantiated, and this instance forms a unit of lifecycle management, which enables the dynamic creation of persistent signals. We formalize signal classes as a small core language where the computation is deliberately defined to interact with the underlying database system using relational algebra. Based on this formalization, we prove the language,F"(Bs glitch freedom. We also formulate its type soundness by introducing an additional check of program well-formedness. This mechanism is implemented as a compiler and a runtime library that is based on a time-series database. The usefulness of the language is demonstrated through the vehicle tracking simulator and viewer case study. We also conducted a performance evaluation that confirms the feasibility of this case study. }
 }
 
 2021-08-22
