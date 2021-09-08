@@ -1549,15 +1549,35 @@ Koka言語ではエフェクト割り当てに基づいた変換であるエビ�
 2021-09-01 
 @InProceedings{arai2021jssst,
   author = 	 jarai #and# jmasuhara #and# jcong,
+  yomi = 	 arai #and# masuhara #and# cong,
   title = 	 {{WebAssembly}を対象にした{Scheme}コンパイラの作成に向けて},
-  date = 	 {2021-09-01},
-  url = 	 {http://jssst.or.jp/files/user/taikai/2021/proceedings.html},
-  booktitle =    JSSSTConf #{第38回大会論文集},
-  year = 	 2021,
+  OPTdate = 	 {2021-09-01},
+  OPTurl = 	 {http://jssst.or.jp/files/user/taikai/2021/proceedings.html},
+  OPTbooktitle =    JSSSTConf #{第38回大会論文集},
+  OPTyear = 	 2021,
   pages = 	 {22-S},
-  month = 	 sep,
-  organization = JSSST,
+  OPTmonth = 	 sep,
+  OPTorganization = JSSST,
   pdf = 	 {jssst2021.pdf},
+  crossref = 	 {jssst2021},
   abstract = 	 {WebAssembly はスタックベースの仮想機械語であり， Java バイトコードや CIL のような仮想機械語と比較してより機械語に近い抽象度を持つ． Scheme のように第一級継続を有する言語からそのような対象言語へのコンパイルに対する取り組みが行われていないため，本論文では第一級継続をサポートする Scheme から高速な WebAssemblyへのコンパイル手法を検討する準備として，簡単なコンパイラと基本的な最適化のいくつかを実現し，その効果を測定した．今後の展望として，コンパイラの対象言語を WebAssembly に限定継続を導入した wasm/k に変更し，call-with-current-continuation をその限定継続を用いて実装することで，今回作成したコンパイラとどのような性能差が生じるかについて議論する．}
+}
+
+2021-09-02
+@Misc{tsuyama2021jssst,
+  author = 	 jtsuyama #and# jcong #and# jmasuhara,
+  yomi = 	 tsuyama #and# cong #and# masuhara,
+  title = 	 {型安全性の証明付きインタプリタのための汎用ライブラリの実装へ向けて},
+  note = 	 {ポスター発表},
+                  crossref = {jssst2021},
+}
+
+2021-09-02
+@Misc{tsunoda2021jssst,
+  author = 	 jtsunoda #and# jmasuhara #and# jcong,
+  yomi = 	 tsunoda #and# masuhara #and# cong,
+  title = 	 {エラーを起こさせる初学者向けプログラミングドリルの提案},
+  note = 	 {ポスター発表},
+                  crossref = {jssst2021},
 }
 
