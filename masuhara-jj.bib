@@ -1599,3 +1599,16 @@ Koka言語ではエフェクト割り当てに基づいた変換であるエビ�
   date = 	 {2021-11-01},
   abstract = 	 {データ構造ライブプログラミング環境は，プログラム実行途中で生成・変更されたオブジェクトの参照関係を収集し，即座に図示する．既存のライブプログラミング環境は，このオブジェクト参照関係の収集を，プログラムの随所にチェックポイントを挿入する方法で実現している．各チェックポイントは到達可能な全てのオブジェクトの情報をコピーするため，その実行オーバーヘッドプログラムによっては無視できない大きさとなる．本論文は参照関係の収集を，オブジェクトの生成・変更操作が起きる度にその操作を記録する手法を言語実現フレームワークを用いて実現することを提案する．これによって実行オーバーヘッドをオブジェクトの生成・変更操作回数に比例する程度に抑えることを目指す．実際にGraal/Truffle言語実現フレームワークを用いて実現されたJavaScript 処理系GraalJS を拡張し，データ構造プログラミング環境Kanon のための参照関係収集のための機構を作成した．実験によって既存のKanon 処理系と比べたところ，データ収集を行うためのプログラム実行速度が向上することと，収集データから参照関係を複元するオーバーヘッドが充分小さいことを確認した．},
   year = 	 2021}
+
+2021-11-22
+@Misc{saito2021tpp,
+  author = 	 jsaito #and# affeldt,
+  yomi = 	 saito #and# affeldt,
+  title = 	 {定理証明支援系{Coq}でのモナドを用いたクイックソートの形式化と{Monae}の拡張},
+  howpublished = {The 17th Theorem Proving and Provers meeting (TPP 2021)},
+  url = 	 {https://t6s.github.io/tpp2021/},
+  month = 	 nov,
+  year = 	 2021,
+  abstract = 	 { Functional programming languages are suitable for equational reasoning because of their referential transparency.  However, many practical programs have side effects which can be dealt with using monads. Therefore, there is a lot of interest in formal verification with monadic effects. In order to improve the proving experience using monadic effects, we enrich an existing formalization of monads using a formalization of quicksort. For that purpose, we built on a result by Mu and Chiang who derived two implementations of quicksort using monads: a pure one and another one using the array monad. They also provide an Agda formalization with axiomatized facts that highlight technical difficulties about nondeterministic permutations and the termination of monadic functions. We address these difficulties by providing lacking lemmas about nondeterministic permutations and by proving the termination of all monadic functions. In particular, we explain how to deal with termination in a systematic way.},
+}
+
