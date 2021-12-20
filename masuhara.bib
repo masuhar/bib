@@ -2948,7 +2948,7 @@ Our preliminary evaluation showed that Sanajeh executes a parallel benchmark pro
   year = 	 2021,
   date = 	 {2021-07-13},
   abstract = 	 {Language implementation frameworks such as RPython and Truffle/Graal are effective tools for creating a high-performance language with lower effort than implementing from scratch. The two frameworks support only a single JIT compilation strategy, trace-based compilation, and method-based compilation, but they have its own advantages and disadvantages. We proposed a meta-hybrid JIT compiler framework to take advantages of the two strategies as a meta-tracing JIT compiler framework. We also implemented a proof-of-concept framework called BacCaml. As a next step, in this position paper, we propose a new approach to realize a method-based baseline JIT compiler along with a trace-based JIT compilation. We aim to use it for further speed-up by preventing the path-divergence problem, which causes serious slow-down. We also show how to implement the baseline JIT compiler with minimal changes on the top of RPython. },
-  note = 	 {Position paper is archived as arXiv:2106.12496.},
+  note = 	 {Position paper is archived as arXiv:2106.12496.  Revised article appears in JOT \cite{izawa2022jot-icooolps}.},
   pdf = 	 {icooolps2021.pdf},
   url = 	 {https://conf.researchr.org/details/issta-2021/ecoop-issta-2021-icooolps/3/Threaded-Code-Generation-with-a-Meta-tracing-JIT-Compiler}}
 
@@ -3028,6 +3028,21 @@ In this paper, we show that these problems are derived from more fundamental one
   note = 	 {Poster Presentation},
                   crossref = {jssst2021e},
 }
+                  
+2021-12-xx
+@Article{izawa2022jot-icooolps,
+  author = 	 izawa #and# masuhara #and# bolz #and# cong,
+  title = 	 {Threaded Code Generation with a Meta-tracing {JIT} Compiler},
+  journal = 	 JOT,
+  year = 	 2022,
+  OPTkey = 	 {},
+  OPTvolume = 	 {.},
+  OPTnumber = 	 {.},
+  OPTpages = 	 {.},
+  OPTmonth = 	 {.},
+  OPTnote = 	 {Presented at ICOOOLPS 2021 \cite{izawa2021icooolps}. Accepted December 2022. To appear.},
+  OPTannote = 	 {}
+}
 
 2022-01-17
 @Misc{izawa2022pepm,
@@ -3037,7 +3052,7 @@ In this paper, we show that these problems are derived from more fundamental one
   howpublished = {The ACM SIGPLAN Workshop on Partial Evaluation and Program Manipulation (PEPM 2022)},
   month = 	 jan,
   year = 	 2022,
-  note = 	 {(short paper)},
+  OPTnote = 	 {(short paper)},
   url = 	 {https://popl22.sigplan.org/home/pepm-2022}
 }
 
@@ -3050,3 +3065,4 @@ In this paper, we show that these problems are derived from more fundamental one
   year = 	 2022,
   url = 	 {https://popl22.sigplan.org/details/wits-2022-papers/11/Intrinsically-Typed-Interpreters-for-Effectful-Languages-discussion-}}
 
+                  
