@@ -3029,18 +3029,23 @@ In this paper, we show that these problems are derived from more fundamental one
                   crossref = {jssst2021e},
 }
                   
-2021-12-xx
+2021-12-00
 @Article{izawa2022jot-icooolps,
   author = 	 izawa #and# masuhara #and# bolz #and# cong,
   title = 	 {Threaded Code Generation with a Meta-tracing {JIT} Compiler},
   journal = 	 JOT,
   year = 	 2022,
+  issn = {1660-1769},
+  editor = {Davide Ancona and Olivier Fl,A|(Bckiger and Adrian Francalanza and Chris Seaton},
   volume = 	 21,
+  pdf = 	 {jot2022icooolps.pdf},
   number = 	 2,
-  pages = 	 {a1},
-  OPTmonth = 	 {.},
-  url = 	 {http://www.jot.fm/},
-  note = 	 {Presented at ICOOOLPS 2021 \cite{izawa2021icooolps}. Accepted December 2021. To appear.}}
+  pages = 	 {2:1--11},
+  doi = {10.5381/jot.2022.21.2.a1},
+  url = {http://www.jot.fm/contents/issue_2022_02/article1.html},
+  note = {Presented at ICOOOLPS 2021 \cite{izawa2021icooolps}. Accepted December 2021. },
+  abstract = 	 {Language implementation frameworks, e.g., RPython and Truffle/Graal, are practical tools for creating efficient virtual machines, including a well-functioning just-in-time (JIT) compiler. It is demanding to support multitier JIT compilation in such a framework for language developers. This paper presents an idea to generate threaded code by reusing an existing meta-tracing JIT compiler, as well as an interpreter design for it. Our approach does not largely modify RPython itself but constructs an effective interpreter definition to enable threaded code generation in RPython. We expect our system to be extended to support multilevel JIT compilation in the RPython framework. We measured the potential performance of our threaded code generation by simulating its behavior in PyPy. We confirmed that our approach reduced code sizes by 80\% and compilation times by 60\% compared to PyPy's JIT compiler on average, and ran about 7\% faster than the interpreter-only execution.},
+  keyword = 	 {JIT compiler, meta-tracing JIT compiler, RPython, threaded code}}
 
 2022-01-17
 @Misc{izawa2022pepm,
