@@ -3167,3 +3167,26 @@ In this paper, we show that these problems are derived from more fundamental one
   note = 	 {Presented at IPSJ SIG PRO Workshop \cite{takahashi2021ipsj-pro136}.  Accepted on 2022-01-11. {A preprint is also archived as IPSJ Transaction on Programming, 15(2), May 2022}},
   abstract = 	 {Data-structure live programming environments execute programs, collect object graphs (objects and their mutual references) created and modified during the execution, and visualize the graphs as a node-link diagram. Existing implementations collect object graphs by instrumenting checkpoints, at which the system traverses reachable objects, at every necessary point in the program. Since the cost of each checkpoint is proportional to the number of existing objects, the overhead of running checkpoints can be huge. This paper proposes (1) a technique to collect object graphs by recording object creation and modification events into an efficient data structure, and (2) an implementation design for the object graph collection mechanism by extending a language implemented on top of a language implementation framework. As a result, the overhead of object graph collection is almost proportional to the number of object creation/modification operations in total. We implemented the proposed mechanism for the Kanon data-structure live programming environment by extending GraalJS, a JavaScript implementation on the Graal/Truffle language implementation framework. We compared our new implementation against the original Kanon, which is based on checkpointing, and confirmed that our implementation improves program execution (and data collection) speed, and has sufficiently small overheads to reconstruct object graphs.}
 }
+
+2022-08-31
+@InProceedings{fathul2022jssst,
+  author = 	 fathul #AND# masuhara #AND# luthfan #AND# cong,
+  title = 	 {Supporting Multiple Inheritance in an Object-Oriented {DSL} for {GPGPU} by Class Hierarchy Transformation},
+  crossref =  {jssst2022e},
+}
+
+2022-08-31
+@InProceedings{takeuchi2022jssst,
+  author = 	 takeuchi #AND# masuhara #AND# khatchadourian #AND# cong #AND# ishibashi,
+  title = 	 {How Many Mutex Bugs can a Simple Analysis Find in {Go} Programs?},
+  crossref =  {jssst2022e},
+  
+}
+
+2022-08-31
+@InProceedings{apriyadi2022jssst,
+  author = 	 apriyadi #AND# masuhara #AND# cong,
+  title = 	 {Interactive Visual Debugger with a Customizable View},
+  crossref =  {jssst2022e},
+}
+
