@@ -2974,7 +2974,7 @@ Our preliminary evaluation showed that Sanajeh executes a parallel benchmark pro
   publisher = {Schloss Dagstuhl -- Leibniz-Zentrum f{\"u}r Informatik},
   abstract = 	 {Signals are principal abstraction in reactive programming languages and constitute the basics of reactive computations in modern systems, such as the Internet of Things. Signals sometimes utilize past values, which leads to space leak, a problem where accumulated past values waste resources such as the main memory. Persistent signals, an abstraction for time-varying values with their execution histories, provide a generalized and standardized way of space leak management by leaving this management to the database system. However, the current design of persistent signals is very rudimental. For example, they cannot represent complex data structures; they can only be connected using pre-defined API methods that implicitly synchronize the persistent signal network; and they cannot be created dynamically.
 
-In this paper, we show that these problems are derived from more fundamental one: no language mechanism is provided to group related persistent signals. To address this problem, we propose a new language mechanism signal classes. A signal class packages a network of related persistent signals that comprises a complex data structure. A signal class defines the scope of synchronization, making it possible to flexibly create persistent signal networks by methods not limited to the use of pre-defined API methods. Furthermore, a signal class can be instantiated, and this instance forms a unit of lifecycle management, which enables the dynamic creation of persistent signals. We formalize signal classes as a small core language where the computation is deliberately defined to interact with the underlying database system using relational algebra. Based on this formalization, we prove the language,F"(Bs glitch freedom. We also formulate its type soundness by introducing an additional check of program well-formedness. This mechanism is implemented as a compiler and a runtime library that is based on a time-series database. The usefulness of the language is demonstrated through the vehicle tracking simulator and viewer case study. We also conducted a performance evaluation that confirms the feasibility of this case study. }
+In this paper, we show that these problems are derived from more fundamental one: no language mechanism is provided to group related persistent signals. To address this problem, we propose a new language mechanism signal classes. A signal class packages a network of related persistent signals that comprises a complex data structure. A signal class defines the scope of synchronization, making it possible to flexibly create persistent signal networks by methods not limited to the use of pre-defined API methods. Furthermore, a signal class can be instantiated, and this instance forms a unit of lifecycle management, which enables the dynamic creation of persistent signals. We formalize signal classes as a small core language where the computation is deliberately defined to interact with the underlying database system using relational algebra. Based on this formalization, we prove the language's glitch freedom. We also formulate its type soundness by introducing an additional check of program well-formedness. This mechanism is implemented as a compiler and a runtime library that is based on a time-series database. The usefulness of the language is demonstrated through the vehicle tracking simulator and viewer case study. We also conducted a performance evaluation that confirms the feasibility of this case study. }
 }
 
 2021-07-15
@@ -3036,7 +3036,7 @@ In this paper, we show that these problems are derived from more fundamental one
   journal = 	 JOT,
   year = 	 2022,
   issn = {1660-1769},
-  editor = {Davide Ancona and Olivier Fl,A|(Bckiger and Adrian Francalanza and Chris Seaton},
+  editor = {Davide Ancona and Olivier Fl\"uckiger and Adrian Francalanza and Chris Seaton},
   volume = 	 21,
   pdf = 	 {jot2022icooolps.pdf},
   number = 	 2,
@@ -3065,7 +3065,7 @@ In this paper, we show that these problems are derived from more fundamental one
 @Misc{tsuyama2022wits,
   author = 	 tsuyama #and# cong #and# masuhara,
   title = 	 {Intrinsically-Typed Interpreters for Effectful Languages},
-  howpublished = {The 1st Workshop on the Implementation of Type Systems (WITS 2022},
+  howpublished = {The 1st Workshop on the Implementation of Type Systems (WITS 2022)},
   month = 	 jan,
   year = 	 2022,
   url = 	 {https://popl22.sigplan.org/details/wits-2022-papers/11/Intrinsically-Typed-Interpreters-for-Effectful-Languages-discussion-},
@@ -3174,7 +3174,7 @@ In this paper, we show that these problems are derived from more fundamental one
   title = 	 {Supporting Multiple Inheritance in an Object-Oriented {DSL} for {GPGPU} by Class Hierarchy Transformation},
   crossref =  {jssst2022e},
   pdf = 	 {jssst2022-5.pdf},
-  abstract = 	 {Object-support in GPGPU domain specific languages (DSL) enables highly parallel object-oriented programming on GPUs. This paper improves object-support in Sanajeh, a Python DSL for GPGPU, by adding a multiple inheritance feature. Existing Sanajeh is restricted to single inheritance, which has limited $,3h"(Bexibility. This restriction is due to its backend library which is not trivial to be extended. The limitation makes it di$,3h#(Bcult for Sanajeh to represent multiple classes that share common behaviors but belong to di$,3h (Berent class hierarchies. Our approach transforms a multiple inheritance class hierarchy into a single inheritance class hierarchy through mixin linearization, class duplication and wrapper functions at the Python level. We evaluate this work by rewriting agent-based modeling simulation program. We then compare the original and rewritten version with respect to their execution result and code e$,3h (Bectiveness. The execution time is 2\% slower than the original code.},
+  abstract = 	 {Object-support in GPGPU domain specific languages (DSL) enables highly parallel object-oriented programming on GPUs. This paper improves object-support in Sanajeh, a Python DSL for GPGPU, by adding a multiple inheritance feature. Existing Sanajeh is restricted to single inheritance, which has limited flexibility. This restriction is due to its backend library which is not trivial to be extended. The limitation makes it difficult for Sanajeh to represent multiple classes that share common behaviors but belong to different class hierarchies. Our approach transforms a multiple inheritance class hierarchy into a single inheritance class hierarchy through mixin linearization, class duplication and wrapper functions at the Python level. We evaluate this work by rewriting agent-based modeling simulation program. We then compare the original and rewritten version with respect to their execution result and code effectiveness. The execution time is 2\% slower than the original code.},
 }
 
 2022-08-31
@@ -3183,7 +3183,7 @@ In this paper, we show that these problems are derived from more fundamental one
   title = 	 {How Many Mutex Bugs can a Simple Analysis Find in {Go} Programs?},
   crossref =  {jssst2022e},
   pdf = 	 {jssst2022-23.pdf},
-  abstract = 	 {In open source software, it is known that there are many concurrenc ybugs. A previous study in Go revealed that a considerable number of such bugs are simple (for example, 9\% of the bugs are the ones that forget to unlock a mutex,) through a manual program investigation. This paper tries to detect such bugs by applying a simple analysis in order to see how far such a tool can match the manual analysis. We built a simple intraprocedural control $,3h"(Bow analysis in Go, and evaluated its performance with respect to the open source programs with concurrency bugs reported in the previous study. Consequently, as for quality, the recall is good at 88\% and the precision is poor at 60\%, and as for analysis time, it can be $,3h!(Bnished within practical amount of time (for example, 1 second per 5000 LoC).},
+  abstract = 	 {In open source software, it is known that there are many concurrenc ybugs. A previous study in Go revealed that a considerable number of such bugs are simple (for example, 9\% of the bugs are the ones that forget to unlock a mutex,) through a manual program investigation. This paper tries to detect such bugs by applying a simple analysis in order to see how far such a tool can match the manual analysis. We built a simple intraprocedural control flow analysis in Go, and evaluated its performance with respect to the open source programs with concurrency bugs reported in the previous study. Consequently, as for quality, the recall is good at 88\% and the precision is poor at 60\%, and as for analysis time, it can be finished within practical amount of time (for example, 1 second per 5000 LoC).},
   
 }
 
@@ -3193,6 +3193,19 @@ In this paper, we show that these problems are derived from more fundamental one
   title = 	 {Interactive Visual Debugger with a Customizable View},
   crossref =  {jssst2022e},
   pdf = 	 {jssst2022-45.pdf},
-  abstract = 	 {Visual debuggers provide more concrete representations of program behavior than what might normally still be abstract. For object-oriented languages, their object-centric components, such as objects and their relationships, are the information their visual debuggers aim to concretize. However, none of such debuggers provide the capability to customize their graphical view. Customization ought to facilitate better comprehensibility of the program behavior, which consequently aids in bug discovery, by allowing for a more focused program state view. This can be achieved by customizing the representation of objects of a class in accordance with the theoretical concept, or by abstracting away unnecessary information. This research proposes a visual debugger for Java with customization features for its graphical view that allows users to customize the visual representation of the program state through customization speci$,3h!(Bcations. To provide $,3h"(Bexible customizability, the proposed system would provide customization elements that function as building blocks for users to use in their speci$,3h!(Bcations.},
+  abstract = 	 {Visual debuggers provide more concrete representations of program behavior than what might normally still be abstract. For object-oriented languages, their object-centric components, such as objects and their relationships, are the information their visual debuggers aim to concretize. However, none of such debuggers provide the capability to customize their graphical view. Customization ought to facilitate better comprehensibility of the program behavior, which consequently aids in bug discovery, by allowing for a more focused program state view. This can be achieved by customizing the representation of objects of a class in accordance with the theoretical concept, or by abstracting away unnecessary information. This research proposes a visual debugger for Java with customization features for its graphical view that allows users to customize the visual representation of the program state through customization specifications. To provide flexible customizability, the proposed system would provide customization elements that function as building blocks for users to use in their specifications.},
+}
+
+2022-12-05
+@InProceedings{luthfan2022sle,
+  author = 	 luthfan #AND# tanabe #AND# aotani #AND# masuhara,
+  title = 	 {{BatakJava}: an Object-Oriented Programming Language with Versions},
+  booktitle = {Proceedings of the 14th ACM SIGPLAN International Conference on Software Language Engineering (SLE 2022)},
+  year = 	 2022,
+  editor = 	 {Lola Burgue{\~n}o and Walter Cazzola},
+  pages = 	 {.},
+  month = 	 dec,
+  url = 	 {https://2022.splashcon.org/home/sle-2022},
+  annote = 	 {to appear}
 }
 
