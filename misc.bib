@@ -986,7 +986,27 @@ publisher={Addison-Wesley Professional} }
  acmid = 1565827,
  publisher = {ACM},
  address = {New York, NY, USA},
-} 
+}
+
+@InProceedings{bolz2016ecoop,
+  author =	{Carl Friedrich Bolz and Darya Kurilova and Laurence Tratt},
+  title =	{Making an Embedded {DBMS} {JIT}-friendly},
+  booktitle =	{30th European Conference on Object-Oriented Programming (ECOOP 2016)},
+  pages =	{4:1--4:24},
+  series =	{Leibniz International Proceedings in Informatics (LIPIcs)},
+  ISBN =	{978-3-95977-014-9},
+  ISSN =	{1868-8969},
+  year =	{2016},
+  volume =	{56},
+  editor =	{Shriram Krishnamurthi and Benjamin S. Lerner},
+  publisher =	{Schloss Dagstuhl--Leibniz-Zentrum fuer Informatik},
+  address =	{Dagstuhl, Germany},
+  URL =		{http://drops.dagstuhl.de/opus/volltexte/2016/6098},
+  URN =		{urn:nbn:de:0030-drops-60986},
+  doi =		{10.4230/LIPIcs.ECOOP.2016.4},
+  annote =	{Keywords: DBMSs, JIT, performance, tracing}
+}
+
 @inproceedings{boner2004aosd,
  author = {Jonas Bon\'er},
  title = {What are the Key Issues for Commercial {AOP} use: How Does {AspectWerkz} Address Them?},
@@ -5539,6 +5559,13 @@ address = {New York, NY, USA},
   serialNo =	 "14-1"
 }
 
+@misc{mueller2020grcuda,
+  title={{GrCUDA}},
+  author={Mueller, R and Stadler, L},
+  howpublished={github.com/NVIDIA/grcuda},
+  year={2020}
+}
+                  
 @inproceedings{muth00sas,
     author = "Robert Muth and Scott A. Watterson and Saumya K. Debray",
     title = "Code Specialization Based on Value Profiles",
@@ -5644,7 +5671,7 @@ address = {New York, NY, USA},
 
                   
 @InProceedings{niephaus2020onward,
-  author = 	 {Fabio Niephaus and Patrick Rein and Jakob Edding and Jonas Hering and Bastian König and Kolya Opahle and Nico Scordialo and Robert Hirschfeld},
+  author = 	 {Fabio Niephaus and Patrick Rein and Jakob Edding and Jonas Hering and Bastian K{\"o}nig and Kolya Opahle and Nico Scordialo and Robert Hirschfeld},
   title = 	 {Example-Based Live Programming for Everyone: Building Language-agnostic Tools for Live Programming with {LSP} and {GraalVM}},
   booktitle = {Proceedings of the ACM Symposium for New Ideas, New Paradigms, and Reflections on Everything to do with Programming and Software (Onward! 2020)},
   year = 	 2020,
@@ -6323,6 +6350,14 @@ series = {Programming '17}
 	title = "Fine-grained Generic Aspects",
 	booktitle = "FOAL'06",
 	year = 2006
+}
+                  
+@inproceedings{rigger2016vmil,
+  title={Bringing low-level languages to the {JVM}: Efficient execution of {LLVM IR} on {Truffle}},
+  author={Rigger, Manuel and Grimmer, Matthias and Wimmer, Christian and W{\"u}rthinger, Thomas and M{\"o}ssenb{\"o}ck, Hanspeter},
+  booktitle={Proceedings of the 8th International Workshop on Virtual Machines and Intermediate Languages},
+  pages={6--15},
+  year={2016}
 }
 
 @InProceedings{rinard04osdi,
@@ -8123,6 +8158,24 @@ Foundations of Object-Oriented Languages (FOOL9)},
   keywords =	 "ABC++, Amelia Vector Template Library, CC++,
 		  CHAOS++, CHARM++, COOL, C++//, C**, ICC++, Mentat,
 		  MPC++, MPI++, pC++, POOMA, TAU, UC++"
+}
+
+@inproceedings{wimmer2012splash,
+author = {Wimmer, Christian and W\"{u}rthinger, Thomas},
+title = {Truffle: A Self-Optimizing Runtime System},
+year = {2012},
+isbn = {9781450315630},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2384716.2384723},
+doi = {10.1145/2384716.2384723},
+abstract = {We present Truffle, a novel framework for implementing managed languages in Java™. The language implementer writes an AST interpreter, which is integrated in our framework that allows tree rewriting during AST interpretation. Tree rewrites incorporate type feedback and other profiling information into the tree, thus specializing the tree and augmenting it with run-time information. When the tree reaches a stable state, partial evaluation compiles the tree into optimized machine code. The partial evaluation is done by Graal, the just-in-time compiler of our Java VM (a variation of the Java HotSpot VM). To show that Truffle supports a variety of programming language paradigms, we present prototype implementations of JavaScript (a dynamically typed programming language) and J (an array programming language).},
+booktitle = {Proceedings of the 3rd Annual Conference on Systems, Programming, and Applications: Software for Humanity},
+pages = {13–14},
+numpages = {2},
+keywords = {graal, dynamic languages, virtual machine, j, java, truffle, javascript, language implementation},
+location = {Tucson, Arizona, USA},
+series = {SPLASH '12}
 }
 
 @InProceedings{wu2005gpce,

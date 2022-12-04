@@ -13,9 +13,11 @@
   school =  "Department of Information Science, the University of Tokyo",
   year =	 1992,
   keywords = 	 {ABCL/R},
+  pdf = 	 {seniorthesis.pdf},
   url = 	 {https://www.is.s.u-tokyo.ac.jp/},
   month = 	 feb,
-  note = 	 {Supervisor: Akinori Yonezawa}
+  note = 	 {Supervisor: Akinori Yonezawa},
+  abstract = {Computational reflection is the computational activity of a system whose targets of computation are its own structure and its own computation. Programming languages which support reflective capabilities facilitate a modular way of describing the meta-level features such as debugging and resource management --- in conventional languages, these features were only available in an ad-hoc fashion. Operational semantics of a reflective language is usually given in terms of an infinite tower of interpreters (the so-called `reflective tower.') For actual implementation of such languages, however, the tower itself must have some finite implementation. Optimization is also necessary to reduce the overhead of the interpretation. There have been several researches on such issues with sequential reflective languages, but none on concurrent reflective languages. The study of effective implementation of concurrent reflective languages is essential. Since resource management in concurrent computing systems is more dynamic and complex compared to that in sequential systems, the use of reflective facilities for the control of such management from within the language is even more beneficial. In this research , we study the implementation of ABCL/R2, an object-oriented concurrent reflective language. The operational semantics of ABCL/R2 is given in terms of two reflective towers; in order to have finite representations of these towers, we employ `lazy creation' technique, which postpones the creation of the upper-levels until they are actually needed. We also explore optimizations, such as method compilation, for efficient execution.}
 }
 
 @InProceedings{masuhara92oopsla,
@@ -3196,16 +3198,37 @@ In this paper, we show that these problems are derived from more fundamental one
   abstract = 	 {Visual debuggers provide more concrete representations of program behavior than what might normally still be abstract. For object-oriented languages, their object-centric components, such as objects and their relationships, are the information their visual debuggers aim to concretize. However, none of such debuggers provide the capability to customize their graphical view. Customization ought to facilitate better comprehensibility of the program behavior, which consequently aids in bug discovery, by allowing for a more focused program state view. This can be achieved by customizing the representation of objects of a class in accordance with the theoretical concept, or by abstracting away unnecessary information. This research proposes a visual debugger for Java with customization features for its graphical view that allows users to customize the visual representation of the program state through customization specifications. To provide flexible customizability, the proposed system would provide customization elements that function as building blocks for users to use in their specifications.},
 }
 
-2022-12-05
+2022-12-06
 @InProceedings{luthfan2022sle,
   author = 	 luthfan #AND# tanabe #AND# aotani #AND# masuhara,
   title = 	 {{BatakJava}: an Object-Oriented Programming Language with Versions},
-  booktitle = {Proceedings of the 14th ACM SIGPLAN International Conference on Software Language Engineering (SLE 2022)},
+  booktitle = {Proceedings of the 15th ACM SIGPLAN International Conference on Software Language Engineering (SLE 2022)},
   year = 	 2022,
   editor = 	 {Lola Burgue{\~n}o and Walter Cazzola},
-  pages = 	 {.},
+  pages = {222--234},
+  numpages = {13},
   month = 	 dec,
-  url = 	 {https://2022.splashcon.org/home/sle-2022},
-  annote = 	 {to appear}
+  url = 	 {https://2022.splashcon.org/details/sle-2022/19/BatakJava-An-Object-Oriented-Programming-Language-with-Versions},
+  doi = {10.1145/3567512.3567531},
+  isbn = {9781450399197},
+  keywords = {dependency problem, backward compatibility, Java},
+  location = {Auckland, New Zealand},
+  series = {SLE 2022},
+  abstract = {Programming with versions is a recent proposal that supports multiple versions of software components in a program. Though it would provide greater freedom for the programmer, the concept is only realized as a simple core calculus, called \lambda{}VL, where a value consists of \lambda-terms with multiple versions. We explore a design space of programming with versions in the presence of data structures and module systems, and propose BatakJava, an object-oriented programming language in which multiple versions of a class can be used in a program. This paper presents BatakJava's language design, its core semantics with subject reduction, an implementation as a source-to-Java translator, and a case study to understand how we can exploit multiple versions in BatakJava for developing an application program with an evolving library.},
+  pdf = 	 {sle2022.pdf}
 }
+
+2022-12-05
+@InProceedings{nose2022splash-e,
+  author = 	 nose #AND# cong #AND# masuhara,
+  title = 	 {Mio: a Block-Based Environment for Program Design},
+  booktitle = {Proceedings of the 2022 ACM SIGPLAN International Symposium SPLASH-E (SPLASH-E 2022)},
+  year = 	 2022,
+  editor = 	 {Martin Henz and Benjamin Lerner},
+  url = 	 {https://2022.splashcon.org/details/splash-2022-SPLASH-E/1/Mio-a-Block-Based-Environment-for-Program-Design},
+  month = 	 dec,
+  location = 	 {Auckland, New Zealand},
+  abstract = 	 {Program design should be taught with a comprehensible guideline and appropriate tool support. While the program design recipe serves as a good guideline for novice learners, no existing tool provides sufficient support for step-by-step design. We propose Mio, an environment for designing programs based on the design recipe. In Mio, the programmer uses blocks to express designs, such as example input and output data. The system checks the consistency of the design, gives feedback to the programmer, and produces a half-completed program for steps after designing. A preliminary experiment in the classroom showed its ability to make program design easier for beginners, and to encourage programmers to follow the design recipe. In this paper, we demonstrate the core features of Mio, report the results of the experiment, and discuss our plans for extensions.},
+  organization = {ACM},
+  note = 	 {to appear}}
 
