@@ -3255,3 +3255,30 @@ In this paper, we show that these problems are derived from more fundamental one
   abstract = 	 {Program design should be taught with a comprehensible guideline and appropriate tool support. While the program design recipe serves as a good guideline for novice learners, no existing tool provides sufficient support for step-by-step design. We propose Mio, an environment for designing programs based on the design recipe. In Mio, the programmer uses blocks to express designs, such as example input and output data. The system checks the consistency of the design, gives feedback to the programmer, and produces a half-completed program for steps after designing. A preliminary experiment in the classroom showed its ability to make program design easier for beginners, and to encourage programmers to follow the design recipe. In this paper, we demonstrate the core features of Mio, report the results of the experiment, and discuss our plans for extensions.},
   organization = {ACM},
   }
+
+2022-12-13
+@article{leger2023infosof,
+  title = {An expressive and modular layer activation mechanism for Context-Oriented Programming},
+  journal = {Information and Software Technology},
+  volume = {156},
+  month = 	 apr,
+  pdf = 	 {infosof2023.pdf},
+  pages = {107132},
+  year = {2023},
+  issn = {0950-5849},
+  doi = {https://doi.org/10.1016/j.infsof.2022.107132},
+  url = {https://www.sciencedirect.com/science/article/pii/S0950584922002415},
+  author = {Paul Leger and Nicol\'as Cardozo and Hidehiko Masuhara},
+  keywords = {Context-Oriented Programming, Activation mechanisms, EMA},
+  abstract = {Context.
+  There is a trend in the software industry towards building systems that dynamically adapt their behavior in response to their surrounding environment, given the proliferation of various technological devices, such as notebooks, smartphones, and wearables, capable of capturing their execution context. Context-oriented Programming (COP) allows developers to use layer abstractions to adapt software behavior to the context. A layer is associated with a context and can be dynamically activated in direct response to gathered information from its surrounding execution environment. However, most existing layer activation mechanisms have been tailored specifically to address a particular concern; implying that developers need to tweak layer definitions in contortive ways or create new specialized activation mechanisms altogether if their specific needs are not supported.
+  Objective.
+  Complementing ideas to expressively declare activation mechanism models with interfaces that define conditionals of activation mechanisms modularly, this paper proposes an Expressive and Modular Activation mechanism, named EMA.
+  Method.
+  To propose EMA, we analyze existing activation mechanisms in COP regarding activation features and scope strategies. After, we propose the design of EMA and validate it with a case study discussion.
+  Results.
+  Using a concrete JavaScript implementation of EMA, named EMAjs, we can implement two Web applications: a smartphone application as an example to illustrate EMAjs in action, and an application of home automation to discuss and compare our proposal.
+  Conclusions.
+  Our proposed mechanism allows developers to instantiate different activation scope strategies and interfaces to decouple the declaration of activation mechanism conditionals from the base code.}
+
+}
