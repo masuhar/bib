@@ -3096,25 +3096,44 @@ In this paper, we show that these problems are derived from more fundamental one
 }
 
 2022-03-17
-@Misc{ikemori2022tfp,
+@InProceedings{ikemori2022tfp,
   author = 	 ikemori #AND# cong #AND# masuhara #and# leijen,
   title = 	 {Sound and Complete Type Inference for Closed Effect Rows},
-  howpublished = {23rd International Symposium on Trends in Functional Programming},
+  editor="Swierstra, Wouter and Wu, Nicolas",
+  booktitle="Trends in Functional Programming",
+  year=2022,
+  publisher="Springer International Publishing",
+  pages="144--168",
   month = 	 mar,
+  doi = 	 {10.1007/978-3-031-21314-4_8},
+  series = 	 lncs,
+  volume = 	 {13401},
   date = 	 {2022-03-17},
   year = 	 2022,
+  pdf = 	 {tfp2022inference.pdf},
+  abstract="Koka is a functional programming language that has algebraic effect handlers and a row-based effect system. The row-based effect system infers types by naively applying the Hindley-Milner type inference. However, it infers effect-polymorphic types for many functions, which are hard to read by the programmers and have a negative runtime performance impact to the evidence-passing translation. In order to improve readability and runtime efficiency, we aim to infer closed effect rows when possible, and open those closed effect rows automatically at instantiation to avoid loss of typability. This paper gives a type inference algorithm with the open and close mechanisms. In this paper, we define a type inference algorithm with the open and close constructs.",  
+  isbn="978-3-031-21314-4",
   url = 	 {https://trendsfp.github.io/schedule.html}}
 
 2022-03-17
-@Misc{furudono2022tfp,
+@InProceedings{furudono2022tfp,
   author = 	 furudono #AND# cong #AND# masuhara #and# leijen,
   title = 	 {Towards Efficient Adjustment of Effect Rows},
-  howpublished = {23rd International Symposium on Trends in Functional Programming},
+  editor="Swierstra, Wouter and Wu, Nicolas",
+  booktitle="Trends in Functional Programming",
+  year=2022,
+  publisher="Springer International Publishing",
+  pages="169--191",
   month = 	 mar,
+  series = 	 lncs,
+  volume = 	 {13401},
   date = 	 {2022-03-17},
   year = 	 2022,
+  pdf = 	 {tfp2022adjustment.pdf},
+  doi = 	 {10.1007/978-3-031-21314-4_9},
+  isbn="978-3-031-21314-4",
+  abstract="Koka is a functional programming language with native support for algebraic effects and handlers. To implement effect handler operations efficiently, Koka employs a semantics where the handlers in scope are passed down to each function as an evidence vector. At runtime, these evidence vectors are adjusted using the open constructs to match the evidence for a particular function. All these adjustments can cause significant runtime overhead. In this paper, we present a novel transformation on the Koka core calculus that we call open floating. This transformation aims to float up open constructs and combine them in order to minimize the adjustments needed at runtime. Open floating improves performance by 2.5 times in an experiment. Furthermore, we formalize an aspect of row-based effect typing, including the closed prefix relation on effect rows, which clarifies the constraint on open floating.",  
   url = 	 {https://trendsfp.github.io/schedule.html}}
-
 
 @Misc{masuhara2022cthpc,
   author = 	 masuhara,
